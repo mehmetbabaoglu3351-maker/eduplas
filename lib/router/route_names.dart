@@ -22,4 +22,6 @@ class RouteNames {
   // Kayıt akışı (yeni)
   static const String rolSec = '/rol_sec';
   static const String ilgiSec = '/ilgi_sec';
+
+  static Object? get kayit => null;
 }

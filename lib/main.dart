@@ -40,11 +40,15 @@ Future<void> main() async {
       initialLocale = _matchSupported(device, supported) ?? const Locale('tr');
     }
 
+    // hukuk + çekirdek için dili hazırla
     DilYoneticisi.instance.dilAyarla(initialLocale.languageCode);
 
     runApp(EduPlasApp(initialLocale: initialLocale));
   }, (error, stack) {
+    // geliştirme logu
+    // ignore: avoid_print
     print('UNCAUGHT ERROR: $error');
+    // ignore: avoid_print
     print(stack);
   });
 }
@@ -73,11 +77,13 @@ class EduPlasApp extends StatefulWidget {
 
 class _EduPlasAppState extends State<EduPlasApp> {
   late Locale _locale;
+  late final AppRouter _router;
 
   @override
   void initState() {
     super.initState();
     _locale = widget.initialLocale;
+    _router = AppRouter();
   }
 
   Future<void> setLocale(Locale locale) async {
@@ -96,9 +102,15 @@ class _EduPlasAppState extends State<EduPlasApp> {
     return MaterialApp(
       title: 'EduPlas',
       debugShowCheckedModeBanner: false,
-      initialRoute: RouteNames.giris,
-      onGenerateRoute: appRouter, // ✅ DÜZELTİLDİ
 
+      // 🔴 BURASI ÖNEMLİ: doğrudan geçide gideceğiz
+      // initialRoute: RouteNames.giris,
+      initialRoute: '/', // KimlikGecidi
+
+      // 🔴 BURASI DA ÖNEMLİ: instance’ın metodu
+      onGenerateRoute: _router.onGenerateRoute,
+
+      // Dil
       locale: _locale,
       supportedLocales: kSupportedLocales,
       localizationsDelegates: const [
