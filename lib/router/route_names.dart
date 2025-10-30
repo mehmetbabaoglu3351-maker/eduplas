@@ -1,27 +1,25 @@
 // lib/router/route_names.dart
-/// Uygulama içinde kullanılan rota adlarının tek kaynağı.
-/// Akış (MVP):
-/// /giris → /otp → /rol_sec → /ilgi_sec → /sozlesme_kabul → /user
 class RouteNames {
-  // Ana girişler
-  static const String root = '/';
-  static const String giris = '/giris';
-  static const String otp = '/otp';
+  // Giriş / Kayıt
+  static const giris = '/giris';
+  static const kayit = '/kayit';
+  static const otp = '/otp';
 
-  // Hukuk / onay
-  static const String legal = '/legal';
-  static const String sozlesmeKabul = '/sozlesme_kabul';
-  static const String onay = '/onay';
+  // Kayıt sihirbazı alt adımlar
+  static const rolSec = '/kayit/rol_sec';
+  static const ilgiSec = '/kayit/ilgi_sec';
+
+  // Hukuk
+  static const sozlesmeKabul = '/sozlesme_kabul';
+  static const onay = '/onay'; // genel onay listesi
+  static const hukukAydinlatma = '/hukuk/aydinlatma';
+  static const hukukGizlilik = '/hukuk/gizlilik';
+  static const hukukUyelik = '/hukuk/uyelik';
+  static const hukukAcikRiza = '/hukuk/acik_riza';
 
   // Kullanıcı
-  static const String user = '/user';
+  static const user = '/user';
 
   // Ayarlar
-  static const String lang = '/settings/language';
-
-  // Kayıt akışı (yeni)
-  static const String rolSec = '/rol_sec';
-  static const String ilgiSec = '/ilgi_sec';
-
-  static Object? get kayit => null;
+  static const lang = '/settings/language';
 }

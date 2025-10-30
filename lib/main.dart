@@ -4,19 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-// Firebase
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 
-// Router
-import 'package:eduplas/router/app_router.dart'; // <<< fonksiyonlu olanı import ediyoruz
+import 'package:eduplas/router/app_router.dart';
 import 'package:eduplas/router/route_names.dart';
 
-// L10n
 import 'package:eduplas/l10n/supported_locales.dart';
 import 'package:eduplas/l10n/app_localizations.dart';
-
-// Çekirdek dil yöneticisi
 import 'package:eduplas/cekirdek/dil/dil_yoneticisi.dart';
 
 Future<void> main() async {
@@ -40,7 +35,6 @@ Future<void> main() async {
       initialLocale = _matchSupported(device, supported) ?? const Locale('tr');
     }
 
-    // çekirdeğe de yaz
     DilYoneticisi.instance.dilAyarla(initialLocale.languageCode);
 
     runApp(EduPlasApp(initialLocale: initialLocale));
@@ -99,12 +93,9 @@ class _EduPlasAppState extends State<EduPlasApp> {
     return MaterialApp(
       title: 'EduPlas',
       debugShowCheckedModeBanner: false,
+      initialRoute: RouteNames.giris,
+      onGenerateRoute: appRouter, // <- tek kapı burası
 
-      // 🔴 Artık burası kök
-      initialRoute: '/',               // KimlikGecidi
-      onGenerateRoute: appRouter,      // lib/router/app_router.dart içindeki FONKSİYON
-
-      // Dil ayarları
       locale: _locale,
       supportedLocales: kSupportedLocales,
       localizationsDelegates: const [
@@ -121,7 +112,6 @@ class _EduPlasAppState extends State<EduPlasApp> {
         return _matchSupported(deviceLocale, List<Locale>.from(supported)) ??
             supported.first;
       },
-
       theme: ThemeData(
         useMaterial3: true,
         colorSchemeSeed: const Color(0xFF00BFA5),
