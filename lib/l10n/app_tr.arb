@@ -1,0 +1,36 @@
+{
+  "@@locale": "tr",
+  "appTitle": "EduPlas",
+  "changeLanguage": "Dili değiştir",
+  "registerTitle": "Kayıt",
+  "fieldNickname": "Takma ad",
+  "fieldNicknameHelper": "Kullanılacak ad: {nick}",
+  "@fieldNicknameHelper": {
+    "description": "Nick alanının altında görünen yardım metni",
+    "placeholders": {
+      "nick": {
+        "type": "String"
+      }
+    }
+  },
+  "fieldPassword": "Şifre",
+  "fieldPasswordRepeat": "Şifre tekrarı",
+  "fieldFullName": "Ad Soyad",
+  "fieldPhone": "Telefon",
+  "btnSaveAndVerify": "Kaydet ve Telefonu Doğrula",
+  "valRequired": "Bu alan zorunludur",
+  "valPasswordShort": "En az 6 karakter olmalı",
+  "valPasswordMismatch": "Şifreler uyuşmuyor",
+  "valFullnameInvalid": "Geçerli bir ad soyad girin",
+  "valPhoneInvalid": "Telefon formatı geçersiz",
+  "uiShowPassword": "Şifreyi göster",
+  "uiHidePassword": "Şifreyi gizle",
+  "activeLanguageLabel": "Aktif dil: {code}",
+  "@activeLanguageLabel": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  }
+}

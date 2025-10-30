@@ -1,0 +1,20 @@
+# analysis_options.yaml
+# 🎯 EduPlas projesi için analiz kuralları
+# VS Code’daki “dalgalı mavi çizgiler” (info/hint) azaltılmıştır.
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  errors:
+    unnecessary_import: ignore
+    unused_import: ignore
+    unused_local_variable: ignore
+    dead_code: ignore
+
+linter:
+  rules:
+    prefer_const_constructors: true
+    prefer_const_literals_to_create_immutables: false
+    avoid_print: false
+    library_private_types_in_public_api: false
+    non_constant_identifier_names: false
+

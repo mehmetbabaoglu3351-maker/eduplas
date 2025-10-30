@@ -1,0 +1,36 @@
+EDUPLAS AÇIK RIZA BEYANI
+Sürüm: 1.0.0
+Son güncelleme: 2025-10-30
+
+1. AMAÇ
+Bu beyan, 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) gereğince, kişisel verilerimin işlenmesine açık rızamı beyan ettiğimi bildirir.
+
+2. KAPSAM
+EduPlas; kimlik, iletişim, eğitim, konum, cihaz ve kullanım verilerimi aşağıdaki amaçlarla işleyebilir:
+- Üyelik işlemleri ve kimlik doğrulama
+- Eğitim ve etkinlik katılımı
+- Kişiselleştirilmiş öğrenme deneyimi
+- Güvenlik ve sistem iyileştirmeleri
+
+3. PAYLAŞIM VE AKTARIM
+Verilerim; sadece yurt içi veya yurt dışındaki EduPlas altyapı sağlayıcılarıyla (örneğin Google Firebase) paylaşılabilir.
+Veri güvenliği için gerekli teknik ve idari önlemler alınmaktadır.
+
+4. SAKLAMA SÜRESİ
+Verilerim, üyeliğim devam ettiği sürece saklanır; hesabın silinmesi halinde yasal yükümlülük süresi sonunda imha edilir.
+
+5. HAKLARIM
+KVKK 11. madde kapsamında verilerime erişme, düzeltme, silme veya işlemeyi durdurma talebinde bulunabilirim.
+
+Bu beyanı okuyarak, kişisel verilerimin belirtilen amaçlarla işlenmesine açık rıza gösteriyorum.
+
+Not: Bu metin, EduPlas'ın resmi Türkçe sürümünün tercümesidir.
+Ana dilinizde sürüm bulunmuyorsa, Türkçe sürüm yasal geçerliliğe sahiptir.
+
+ULUSLARARASI HÜKÜM VE GEÇERLİLİK:
+EduPlas, farklı ülkelerde hizmet sunarken yerel dillerde bilgilendirme sağlamaya çalışır.
+Ancak bu metnin Türkçe sürümü resmi ve yasal olarak bağlayıcı olandır.
+Çeviri sürümleri bilgilendirme amaçlıdır.
+
+
+© 2025 EduPlas

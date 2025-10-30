@@ -1,0 +1,36 @@
+EDUPLAS ÜYELİK SÖZLEŞMESİ
+Sürüm: 1.0.0
+Son güncelleme: 2025-10-30
+
+1. AMAÇ VE KAPSAM
+Bu sözleşme, EduPlas platformuna üye olan kişilerin hak ve yükümlülüklerini düzenler.
+EduPlas; eğitim, üretkenlik, sosyal etkileşim ve ödül ekonomisi işlevlerini içeren bir öğrenme ekosistemidir.
+
+2. ÜYELİK KOŞULLARI
+Kayıt yapan her kullanıcı, doğru ve güncel bilgi vermekle yükümlüdür.
+18 yaşından küçük kullanıcılar yalnızca veli onayıyla kayıt olabilir.
+
+3. HİZMETLER
+EduPlas, üyelerine çevrim içi dersler, sosyal etkileşim, proje paylaşımı ve ödül sistemi sunar.
+Hizmet kapsamı, platform politikaları doğrultusunda güncellenebilir.
+
+4. ÜYELİK SONA ERMESİ
+Kullanıcı, hesabını istediği zaman kapatabilir.
+Kurallara aykırı davranışlar durumunda EduPlas hesabı askıya alabilir veya silebilir.
+
+5. YASAL SORUMLULUK
+Kullanıcı, platform içeriğini üçüncü kişilerin haklarını ihlal etmeyecek biçimde kullanmakla yükümlüdür.
+EduPlas, kullanıcıların paylaşımlarından doğan sorumlulukları kabul etmez.
+
+6. UYGULANACAK HUKUK
+Bu sözleşme Türkiye Cumhuriyeti yasalarına tabidir.
+
+Not: Bu metin, EduPlas'ın resmi Türkçe sürümünün tercümesidir.
+Ana dilinizde sürüm bulunmuyorsa, Türkçe sürüm yasal geçerliliğe sahiptir.
+
+ULUSLARARASI HÜKÜM VE GEÇERLİLİK:
+EduPlas, farklı ülkelerde hizmet sunarken yerel dillerde bilgilendirme sağlamaya çalışır.
+Ancak bu metnin Türkçe sürümü resmi ve yasal olarak bağlayıcı olandır.
+Çeviri sürümleri bilgilendirme amaçlıdır.
+
+© 2025 EduPlas

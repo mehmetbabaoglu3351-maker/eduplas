@@ -1,0 +1,70 @@
+{
+  "iller": [
+    {
+      "ad": "Adana",
+      "slug": "adana",
+      "ilceler": [
+        {
+          "ad": "Seyhan",
+          "slug": "seyhan",
+          "mahalleler": [
+            { "ad": "Barbaros", "slug": "barbaros" },
+            { "ad": "Tellidere", "slug": "tellidere" }
+          ]
+        },
+        {
+          "ad": "Yüreğir",
+          "slug": "yuregir",
+          "mahalleler": [
+            { "ad": "Yavuzlar", "slug": "yavuzlar" },
+            { "ad": "Dadaloğlu", "slug": "dadaloglu" }
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Ankara",
+      "slug": "ankara",
+      "ilceler": [
+        {
+          "ad": "Çankaya",
+          "slug": "cankaya",
+          "mahalleler": [
+            { "ad": "Birlik", "slug": "birlik" },
+            { "ad": "Yıldız", "slug": "yildiz" }
+          ]
+        },
+        {
+          "ad": "Keçiören",
+          "slug": "kecioren",
+          "mahalleler": [
+            { "ad": "Etlik", "slug": "etlik" },
+            { "ad": "Kösrelik", "slug": "kosrelik" }
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "İstanbul",
+      "slug": "istanbul",
+      "ilceler": [
+        {
+          "ad": "Kadıköy",
+          "slug": "kadikoy",
+          "mahalleler": [
+            { "ad": "Koşuyolu", "slug": "kosyolu" },
+            { "ad": "Caddebostan", "slug": "caddebostan" }
+          ]
+        },
+        {
+          "ad": "Üsküdar",
+          "slug": "uskudar",
+          "mahalleler": [
+            { "ad": "Kuzguncuk", "slug": "kuzguncuk" },
+            { "ad": "Çengelköy", "slug": "cengelkoy" }
+          ]
+        }
+      ]
+    }
+  ]
+}

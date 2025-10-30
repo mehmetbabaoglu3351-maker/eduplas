@@ -1,0 +1,36 @@
+{
+  "@@locale": "en",
+  "appTitle": "EduPlas",
+  "changeLanguage": "Change language",
+  "registerTitle": "Register",
+  "fieldNickname": "Nickname",
+  "fieldNicknameHelper": "Will be used as: {nick}",
+  "@fieldNicknameHelper": {
+    "description": "Helper text under nickname field",
+    "placeholders": {
+      "nick": {
+        "type": "String"
+      }
+    }
+  },
+  "fieldPassword": "Password",
+  "fieldPasswordRepeat": "Repeat password",
+  "fieldFullName": "Full name",
+  "fieldPhone": "Phone",
+  "btnSaveAndVerify": "Save and verify phone",
+  "valRequired": "This field is required",
+  "valPasswordShort": "Must be at least 6 characters",
+  "valPasswordMismatch": "Passwords do not match",
+  "valFullnameInvalid": "Please enter a valid full name",
+  "valPhoneInvalid": "Phone number is invalid",
+  "uiShowPassword": "Show password",
+  "uiHidePassword": "Hide password",
+  "activeLanguageLabel": "Active language: {code}",
+  "@activeLanguageLabel": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  }
+}

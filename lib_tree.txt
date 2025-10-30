@@ -1,0 +1,112 @@
+Folder PATH listing for volume DEPOMM D˜KKAT!!!!
+Volume serial number is 00000031 F036:2A53
+C:\MEHMET\EDUPLAS\LIB
+|   firebase_options.dart
+|   main.dart
+|   
++---ayarlar
+|       dil_degistirici.dart
+|       dil_secimi_sayfasi.dart
+|       
++---cekirdek
+|   +---arayuz
+|   |       app_logo.dart
+|   |       error_banner.dart
+|   |       input_decorations.dart
+|   |       loading_button.dart
+|   |       
+|   +---kimlik
+|   |       bootstrap_claims.dart
+|   |       bootstrap_guard.dart
+|   |       device_hash.dart
+|   |       email_ureticisi.dart
+|   |       
+|   +---konum
+|   |       konum_adres_secici.dart
+|   |       konum_secici.dart
+|   |       konum_servisi.dart
+|   |       
+|   +---validasyon
+|   |       validators.dart
+|   |       
+|   \---veri
+|           yerveri_servisi.dart
+|           yer_model.dart
+|           
++---diagnostics
+|       asset_selftest.dart
+|       
++---hizmetler
+|       auth_servisi.dart
+|       mock_sms_servisi.dart
+|       
++---hukuk
+|       acik_riza_sayfasi.dart
+|       aydinlatma_sayfasi.dart
+|       gizlilik_politikasi_sayfasi.dart
+|       gizlilik_sayfasi.dart
+|       uyelik_sozlesmesi_sayfasi.dart
+|       
++---l10n
+|       app_en.arb
+|       app_localizations.dart
+|       app_localizations_en.dart
+|       app_localizations_tr.dart
+|       app_tr.arb
+|       l10n_untranslated.txt
+|       supported_locales.dart
+|       untranslatable.txt
+|       
++---ozellikler
+|   +---admin
+|   |       onay_kutusu_sayfasi.dart
+|   |       
+|   +---beklemede
+|   |       beklemede_sayfasi.dart
+|   |       
+|   +---gecit
+|   |       kimlik_gecidi.dart
+|   |       
+|   +---giris
+|   |       ana_sayfa.dart
+|   |       giris_sayfasi.dart
+|   |       
+|   +---kapigecit
+|   |       kapigecit.dart
+|   |       
+|   +---kayit
+|   |       kayit_sayfasi.dart
+|   |       kayit_sihirbazi_sayfasi.dart
+|   |       sms_kurtarma_sayfasi.dart
+|   |       telefon_dogrulama_sayfasi.dart
+|   |       
+|   +---kullanici
+|   |       kullanici_sayfasi.dart
+|   |       
+|   +---onay
+|   |       onay_karti.dart
+|   |       onay_mock_depo.dart
+|   |       onay_modeller.dart
+|   |       onay_sayfasi.dart
+|   |       onay_servisi.dart
+|   |       sozlesme_kabul_sayfasi.dart
+|   |       sozlesme_onay_sayfasi.dart
+|   |       
+|   \---rol_ana
+|           bas_admin_paneli.dart
+|           destekci_paneli.dart
+|           ilce_admin_paneli.dart
+|           il_admin_paneli.dart
+|           isyeri_paneli.dart
+|           koordinator_paneli.dart
+|           ogrenci_anasayfasi.dart
+|           ogretmen_paneli.dart
+|           onaylarim_butonu.dart
+|           
++---router
+|       app_router.dart
+|       route_names.dart
+|       
+\---tema
+        app_tema.dart
+        

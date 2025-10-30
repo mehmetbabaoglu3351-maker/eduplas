@@ -1,0 +1,51 @@
+{
+  // Code Spell Checker: Proje dili Türkçe
+  "cSpell.language": "tr",
+
+  // Dart dosyalarında da Türkçe sözlüğü kullan
+  "cSpell.languageSettings": [
+    {
+      "languageId": "dart",
+      "dictionaries": ["turkish"],
+      "allowCompoundWords": true
+    }
+  ],
+
+  // Sık geçen ürün/özel isimler: yanlış işaretlenmesin
+  "cSpell.words": [
+    "EduPlas",
+    "takma",
+    "kayıt",
+    "şifre",
+    "İlçe",
+    "İl",
+    "öğrenci",
+    "öğretmen",
+    "Koordinatör",
+    "Baş",
+    "Admin",
+    "telefon",
+    "kapat",
+    "giriş",
+    "kayıtlı",
+    "onay",
+    "rol",
+    "kullanıcı",
+    "tema",
+    "turkuaz"
+  ],
+
+  // Çizgi karmaşasını azalt: build, lock, dart_tool, vs. taranmasın
+  "cSpell.ignorePaths": [
+    "**/node_modules/**",
+    "**/.git/**",
+    "**/.dart_tool/**",
+    "**/build/**",
+    "pubspec.lock",
+    "ios/Pods/**",
+    "android/**/build/**"
+  ],
+"cSpell.enabled": false
+  // İstersen tamamen kapat (geçici): true yaparsan Türkçe sözlük yerine tüm kontrol kapanır
+  // "cSpell.enabled": false
+}

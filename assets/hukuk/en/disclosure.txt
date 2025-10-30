@@ -1,0 +1,10 @@
+EDUPLAS PRIVACY NOTICE
+Version: 1.0.0
+Last update: 2025-10-30
+
+EduPlas collects identity, contact, location and usage data
+to provide and improve its educational platform.
+Data is shared only with necessary service providers.
+Users can request access, correction, or deletion.
+
+© 2025 EduPlas

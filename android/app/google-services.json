@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "886900694249",
+    "project_id": "eduplas-1f09e",
+    "storage_bucket": "eduplas-1f09e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:886900694249:android:7721eac11a1fe06c8de478",
+        "android_client_info": {
+          "package_name": "com.example.eduplas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYO5F_DfOUQS4ijDwje8qTrFaUxMVrKCk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
