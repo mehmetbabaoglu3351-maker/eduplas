@@ -3,9 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:eduplas/router/route_names.dart';
 
 class RolSecimiSayfasi extends StatefulWidget {
-  // const + RouteNames.olmaz → string literal
-  static const route = '/kayit/rol_sec';
-
+  static const route = RouteNames.rolSec;
   const RolSecimiSayfasi({super.key});
 
   @override
@@ -30,9 +28,7 @@ class _RolSecimiSayfasiState extends State<RolSecimiSayfasi> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Rol Seç'),
-      ),
+      appBar: AppBar(title: const Text('Rol Seç')),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -61,9 +57,7 @@ class _RolSecimiSayfasiState extends State<RolSecimiSayfasi> {
                 onPressed: _seciliRol == null
                     ? null
                     : () {
-                        // rol seçtikten sonra ilgi sayfasına
-                        Navigator.pushReplacementNamed(
-                          context,
+                        Navigator.of(context).pushReplacementNamed(
                           RouteNames.ilgiSec,
                           arguments: {
                             'role': _seciliRol,

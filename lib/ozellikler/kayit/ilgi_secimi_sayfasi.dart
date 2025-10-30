@@ -3,9 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:eduplas/router/route_names.dart';
 
 class IlgiSecimiSayfasi extends StatefulWidget {
-  // DİKKAT: burada const yerine sabit string kullanıyoruz
-  static const route = '/kayit/ilgi_sec';
-
+  static const route = RouteNames.ilgiSec;
   const IlgiSecimiSayfasi({super.key});
 
   @override
@@ -13,74 +11,56 @@ class IlgiSecimiSayfasi extends StatefulWidget {
 }
 
 class _IlgiSecimiSayfasiState extends State<IlgiSecimiSayfasi> {
-  static const _ilgiSecenekleri = <String>[
+  final List<String> _tumIlgiler = const [
     'Matematik',
     'Fen',
     'Kodlama',
-    'Robotik',
-    'Yapay Zekâ',
-    'Yabancı Dil',
-    'Edebiyat',
-    'Tarih',
-    'Coğrafya',
-    'Sanat',
+    'Yapay Zeka',
     'Müzik',
-    'Spor',
-    'Satranç',
-    'Girişimcilik',
-    'Psikoloji',
+    'Şiir',
+    'Yabancı Dil',
+    'Robotik',
   ];
 
-  final Set<String> _secili = <String>{};
+  final Set<String> _secili = {};
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('İlgi Alanlarını Seç'),
-      ),
+      appBar: AppBar(title: const Text('İlgi Alanı Seç')),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text('Seni en iyi anlatan alanları seç (opsiyonel):'),
-            const SizedBox(height: 12),
             Expanded(
-              child: Wrap(
-                spacing: 8,
-                runSpacing: 8,
-                children: _ilgiSecenekleri.map((e) {
-                  final secili = _secili.contains(e);
-                  return FilterChip(
-                    label: Text(e),
-                    selected: secili,
-                    onSelected: (_) {
+              child: ListView.builder(
+                itemCount: _tumIlgiler.length,
+                itemBuilder: (context, index) {
+                  final ad = _tumIlgiler[index];
+                  final tikli = _secili.contains(ad);
+                  return CheckboxListTile(
+                    value: tikli,
+                    title: Text(ad),
+                    onChanged: (v) {
                       setState(() {
-                        if (secili) {
-                          _secili.remove(e);
+                        if (v == true) {
+                          _secili.add(ad);
                         } else {
-                          _secili.add(e);
+                          _secili.remove(ad);
                         }
                       });
                     },
                   );
-                }).toList(),
+                },
               ),
             ),
-            const SizedBox(height: 12),
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: () {
-                  // buradan hukuk / sözleşmeye geç
-                  Navigator.pushReplacementNamed(
-                    context,
-                    RouteNames.sozlesmeKabul,
-                    arguments: {
-                      'ilgiler': _secili.toList(),
-                    },
-                  );
+                  // ilgi seçtikten sonra → sözleşme
+                  Navigator.of(context)
+                      .pushReplacementNamed(RouteNames.sozlesmeKabul);
                 },
                 child: const Text('Devam'),
               ),

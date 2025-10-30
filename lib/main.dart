@@ -94,7 +94,8 @@ class _EduPlasAppState extends State<EduPlasApp> {
       title: 'EduPlas',
       debugShowCheckedModeBanner: false,
       initialRoute: RouteNames.giris,
-      onGenerateRoute: appRouter, // <- tek kapı burası
+      // 🔴 BURASI ESAS: appRouter DEĞİL → onGenerateAppRoute
+      onGenerateRoute: onGenerateAppRoute,
 
       locale: _locale,
       supportedLocales: kSupportedLocales,
