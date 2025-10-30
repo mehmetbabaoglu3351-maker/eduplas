@@ -108,10 +108,7 @@ class _SozlesmeKabulSayfasiState extends State<SozlesmeKabulSayfasi> {
       if (phone != null) 'telefon': phone,
     }, SetOptions(merge: true));
 
-    // ⚠️ NOT: Burada eskiden
-    // await authUser.updateEmail(email);
-    // yapıyorduk. Mevcut firebase_auth sürümünde görünmediği için kaldırdık.
-    // Bundan sonra admin/Cloud Function Auth tarafını eşitler.
+    // Auth updateEmail kaldırıldı (sürüm uyumsuzluğu)
 
     if (!mounted) return;
     setState(() => _isSaving = false);
@@ -129,6 +126,78 @@ class _SozlesmeKabulSayfasiState extends State<SozlesmeKabulSayfasi> {
       base = uid;
     }
     return '$base@eduplas.club';
+  }
+
+  void _showHukukSheet(String baslik, String icerik) {
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      showDragHandle: true,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
+      ),
+      builder: (ctx) {
+        return SafeArea(
+          child: DraggableScrollableSheet(
+            expand: false,
+            maxChildSize: 0.9,
+            initialChildSize: 0.8,
+            minChildSize: 0.4,
+            builder: (context, scrollController) {
+              return Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(16, 12, 16, 0),
+                    child: Text(
+                      baslik,
+                      style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                    ),
+                  ),
+                  const SizedBox(height: 6),
+                  Expanded(
+                    child: SingleChildScrollView(
+                      controller: scrollController,
+                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                      child: Text(icerik),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(16),
+                    child: SizedBox(
+                      width: double.infinity,
+                      child: ElevatedButton(
+                        onPressed: () => Navigator.of(context).pop(),
+                        child: const Text('Kapat'),
+                      ),
+                    ),
+                  ),
+                ],
+              );
+            },
+          ),
+        );
+      },
+    );
+  }
+
+  Widget _hukukLink({
+    required String title,
+    required VoidCallback onTap,
+  }) {
+    return ListTile(
+      contentPadding: EdgeInsets.zero,
+      title: Text(
+        title,
+        style: const TextStyle(
+          decoration: TextDecoration.underline,
+          color: Colors.blue,
+          fontWeight: FontWeight.w500,
+        ),
+      ),
+      trailing: const Icon(Icons.open_in_new, size: 20),
+      onTap: onTap,
+    );
   }
 
   @override
@@ -155,23 +224,31 @@ class _SozlesmeKabulSayfasiState extends State<SozlesmeKabulSayfasi> {
                     style: theme.textTheme.bodyMedium,
                   ),
                   const SizedBox(height: 10),
-                  Expanded(
-                    child: SingleChildScrollView(
-                      padding: const EdgeInsets.all(16),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          _hukukBolum('1) Üyelik / Kullanım Sözleşmesi', _sozlesme),
-                          const SizedBox(height: 16),
-                          _hukukBolum('2) Gizlilik Politikası', _gizlilik),
-                          const SizedBox(height: 16),
-                          _hukukBolum('3) KVKK / Aydınlatma Metni', _aydinlatma),
-                          const SizedBox(height: 16),
-                          _hukukBolum('4) Açık Rıza Metni', _acikRiza),
-                        ],
-                      ),
+                  // Linkli liste
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: Column(
+                      children: [
+                        _hukukLink(
+                          title: '1) Üyelik / Kullanım Sözleşmesi',
+                          onTap: () => _showHukukSheet('Üyelik / Kullanım Sözleşmesi', _sozlesme),
+                        ),
+                        _hukukLink(
+                          title: '2) Gizlilik Politikası',
+                          onTap: () => _showHukukSheet('Gizlilik Politikası', _gizlilik),
+                        ),
+                        _hukukLink(
+                          title: '3) KVKK / Aydınlatma Metni',
+                          onTap: () => _showHukukSheet('KVKK / Aydınlatma Metni', _aydinlatma),
+                        ),
+                        _hukukLink(
+                          title: '4) Açık Rıza Metni',
+                          onTap: () => _showHukukSheet('Açık Rıza Metni', _acikRiza),
+                        ),
+                      ],
                     ),
                   ),
+                  const Spacer(),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
                     child: Row(
@@ -210,25 +287,6 @@ class _SozlesmeKabulSayfasiState extends State<SozlesmeKabulSayfasi> {
                   ),
                 ],
               ),
-      ),
-    );
-  }
-
-  Widget _hukukBolum(String baslik, String icerik) {
-    return Card(
-      elevation: 0,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-      color: Colors.grey.withValues(alpha: 0.05),
-      child: Padding(
-        padding: const EdgeInsets.all(12),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(baslik, style: const TextStyle(fontWeight: FontWeight.bold)),
-            const SizedBox(height: 8),
-            Text(icerik),
-          ],
-        ),
       ),
     );
   }
