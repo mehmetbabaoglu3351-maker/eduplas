@@ -9,7 +9,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 
 // Router
-import 'package:eduplas/router/app_router.dart';
+import 'package:eduplas/router/app_router.dart'; // <<< fonksiyonlu olanı import ediyoruz
 import 'package:eduplas/router/route_names.dart';
 
 // L10n
@@ -40,12 +40,11 @@ Future<void> main() async {
       initialLocale = _matchSupported(device, supported) ?? const Locale('tr');
     }
 
-    // hukuk + çekirdek için dili hazırla
+    // çekirdeğe de yaz
     DilYoneticisi.instance.dilAyarla(initialLocale.languageCode);
 
     runApp(EduPlasApp(initialLocale: initialLocale));
   }, (error, stack) {
-    // geliştirme logu
     // ignore: avoid_print
     print('UNCAUGHT ERROR: $error');
     // ignore: avoid_print
@@ -77,13 +76,11 @@ class EduPlasApp extends StatefulWidget {
 
 class _EduPlasAppState extends State<EduPlasApp> {
   late Locale _locale;
-  late final AppRouter _router;
 
   @override
   void initState() {
     super.initState();
     _locale = widget.initialLocale;
-    _router = AppRouter();
   }
 
   Future<void> setLocale(Locale locale) async {
@@ -103,14 +100,11 @@ class _EduPlasAppState extends State<EduPlasApp> {
       title: 'EduPlas',
       debugShowCheckedModeBanner: false,
 
-      // 🔴 BURASI ÖNEMLİ: doğrudan geçide gideceğiz
-      // initialRoute: RouteNames.giris,
-      initialRoute: '/', // KimlikGecidi
+      // 🔴 Artık burası kök
+      initialRoute: '/',               // KimlikGecidi
+      onGenerateRoute: appRouter,      // lib/router/app_router.dart içindeki FONKSİYON
 
-      // 🔴 BURASI DA ÖNEMLİ: instance’ın metodu
-      onGenerateRoute: _router.onGenerateRoute,
-
-      // Dil
+      // Dil ayarları
       locale: _locale,
       supportedLocales: kSupportedLocales,
       localizationsDelegates: const [
