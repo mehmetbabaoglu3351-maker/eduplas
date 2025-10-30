@@ -13,15 +13,27 @@ class IlgiSecimiSayfasi extends StatefulWidget {
 }
 
 class _IlgiSecimiSayfasiState extends State<IlgiSecimiSayfasi> {
+  // 👇 Daha kapsayıcı, EduPlas senaryosuna uygun liste
   final List<String> _tumIlgiler = const [
+    // Eğitim / Bilim
     'Matematik',
-    'Fen',
-    'Kodlama',
-    'Yapay Zeka',
-    'Müzik',
-    'Şiir',
+    'Fen & Teknoloji',
     'Yabancı Dil',
-    'Robotik',
+    // Sanat / Yaratıcılık
+    'Müzik',
+    'Şiir & Edebiyat',
+    'Tiyatro & Sahne',
+    'Resim & Tasarım',
+    // Dijital / Gelecek
+    'Kodlama & Yapay Zekâ',
+    'Robotik & Maker',
+    // Sosyal / Yaşam
+    'Spor & Sağlık',
+    'Kişisel Gelişim',
+    'Sosyal Sorumluluk',
+    // Ekonomi / İş
+    'Ekonomi & Finans',
+    'Girişimcilik',
   ];
 
   final Set<String> _secili = {};
@@ -64,11 +76,15 @@ class _IlgiSecimiSayfasiState extends State<IlgiSecimiSayfasi> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('İlgi Alanı Seç')),
+      appBar: AppBar(title: const Text('İlgi Alanlarını Seç')),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
           children: [
+            const Text(
+              'Seni ilgilendiren alanları seç. İstersen sonra profilden değiştirebilirsin.',
+            ),
+            const SizedBox(height: 12),
             Expanded(
               child: ListView.builder(
                 itemCount: _tumIlgiler.length,
@@ -93,6 +109,7 @@ class _IlgiSecimiSayfasiState extends State<IlgiSecimiSayfasi> {
             ),
             if (_hata != null)
               Text(_hata!, style: const TextStyle(color: Colors.red)),
+            const SizedBox(height: 8),
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(

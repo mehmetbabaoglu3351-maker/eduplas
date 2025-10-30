@@ -28,7 +28,6 @@ class _TelefonDogrulamaSayfasiState extends State<TelefonDogrulamaSayfasi> {
     final kod = _kodController.text.trim();
     if (kod.isEmpty) return;
 
-    // Girişten gelen veriler
     final args =
         ModalRoute.of(context)?.settings.arguments as Map<String, dynamic>?;
 
@@ -37,7 +36,6 @@ class _TelefonDogrulamaSayfasiState extends State<TelefonDogrulamaSayfasi> {
     final tel = (args?['tel'] ?? '').toString();
     final pass = (args?['pass'] ?? 'Eduplas123!').toString();
 
-    // senin aldığın domain
     final email = '${nick.toLowerCase()}@eduplas.club';
 
     setState(() {
@@ -46,34 +44,30 @@ class _TelefonDogrulamaSayfasiState extends State<TelefonDogrulamaSayfasi> {
     });
 
     try {
-      // 1) AUTH OLUŞTUR
       final cred = await FirebaseAuth.instance.createUserWithEmailAndPassword(
         email: email,
         password: pass,
       );
 
-      // 2) DISPLAY NAME
       await cred.user?.updateDisplayName(adSoyad);
 
-      // 3) 🔴 FIRESTORE’A YAZ
-      // koleksiyon adını istersen 'kullanicilar' yapabilirsin
+      // 🔴 Firestore kullanıcı dokümanı
       await FirebaseFirestore.instance
           .collection('users')
           .doc(cred.user!.uid)
           .set({
         'uid': cred.user!.uid,
         'nick': nick,
-        'adSoyad': adSoyad,
+        'adSoyad': adSoyad,         // 👈 artık var
         'tel': tel,
         'email': email,
-        'rol': null,              // rol_seciminden sonra güncelleriz
-        'ilgiler': <String>[],    // ilgi_seciminden sonra güncelleriz
+        'rol': null,
+        'ilgiler': <String>[],
         'createdAt': FieldValue.serverTimestamp(),
         'kaynak': 'otp-akisi-v1',
-      });
+      }, SetOptions(merge: true));
 
       if (!mounted) return;
-      // 4) Akışa devam → ROL SEÇ
       Navigator.of(context)
           .pushReplacementNamed(RouteNames.rolSec, arguments: args);
     } on FirebaseAuthException catch (e) {
@@ -85,19 +79,15 @@ class _TelefonDogrulamaSayfasiState extends State<TelefonDogrulamaSayfasi> {
             password: pass,
           );
 
-          // Kullanıcı daha önce oluşmuş ama Firestore'da olmayabilir → garantiye al
+          // var olan kullanıcıya da adSoyad yaz
           await FirebaseFirestore.instance
               .collection('users')
               .doc(signInCred.user!.uid)
               .set({
-            'uid': signInCred.user!.uid,
             'nick': nick,
-            'adSoyad': adSoyad,
+            'adSoyad': adSoyad,       // 👈 burası da
             'tel': tel,
             'email': email,
-            'rol': null,
-            'ilgiler': <String>[],
-            'createdAt': FieldValue.serverTimestamp(),
             'kaynak': 'otp-akisi-v1-signin',
           }, SetOptions(merge: true));
 
@@ -105,12 +95,10 @@ class _TelefonDogrulamaSayfasiState extends State<TelefonDogrulamaSayfasi> {
           Navigator.of(context)
               .pushReplacementNamed(RouteNames.rolSec, arguments: args);
         } on FirebaseAuthException catch (e2) {
-          setState(() => _hata = e2.message ?? 'Giriş yapılamadı.');
+          setState(() => _hata = e2.message);
         }
-      } else if (e.code == 'operation-not-allowed') {
-        setState(() => _hata = 'Firebase\'de Email/Şifre oturumu aktif değil.');
       } else {
-        setState(() => _hata = e.message ?? 'Bilinmeyen hata.');
+        setState(() => _hata = e.message);
       }
     } catch (e) {
       setState(() => _hata = e.toString());
@@ -127,7 +115,7 @@ class _TelefonDogrulamaSayfasiState extends State<TelefonDogrulamaSayfasi> {
         padding: const EdgeInsets.all(16),
         child: Column(
           children: [
-            const Text('Telefonuna gelen doğrulama kodunu gir. (mock)'),
+            const Text('Telefonuna gelen doğrulama kodunu gir.'),
             const SizedBox(height: 12),
             TextField(
               controller: _kodController,
@@ -139,10 +127,7 @@ class _TelefonDogrulamaSayfasiState extends State<TelefonDogrulamaSayfasi> {
             ),
             const SizedBox(height: 12),
             if (_hata != null)
-              Text(
-                _hata!,
-                style: const TextStyle(color: Colors.red),
-              ),
+              Text(_hata!, style: const TextStyle(color: Colors.red)),
             const SizedBox(height: 20),
             SizedBox(
               width: double.infinity,
@@ -163,4 +148,3 @@ class _TelefonDogrulamaSayfasiState extends State<TelefonDogrulamaSayfasi> {
     );
   }
 }
-

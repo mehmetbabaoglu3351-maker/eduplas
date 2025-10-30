@@ -1,5 +1,5 @@
-// lib/ozellikler/onay/sozlesme_kabul_sayfasi.dart
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart' show rootBundle;
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:eduplas/router/route_names.dart';
@@ -16,13 +16,22 @@ class _SozlesmeKabulSayfasiState extends State<SozlesmeKabulSayfasi> {
   bool _kaydediyor = false;
   String? _hata;
 
-  void _ac(String title, String icerik) {
-    showDialog(
+  // Asset dosyasını açar
+  Future<void> _acAssetTR(String baslik, String dosyaAdi) async {
+    final path = 'assets/hukuk/tr/$dosyaAdi';
+    final icerik = await rootBundle.loadString(path);
+    if (!mounted) return;
+    await showDialog(
       context: context,
       builder: (_) {
         return AlertDialog(
-          title: Text(title),
-          content: SingleChildScrollView(child: Text(icerik)),
+          title: Text(baslik),
+          content: SizedBox(
+            width: double.maxFinite,
+            child: SingleChildScrollView(
+              child: Text(icerik),
+            ),
+          ),
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context),
@@ -52,18 +61,16 @@ class _SozlesmeKabulSayfasiState extends State<SozlesmeKabulSayfasi> {
       await FirebaseFirestore.instance
           .collection('users')
           .doc(user.uid)
-          .set(
-        {
-          'sozlesme': {
-            'kullanim': true,
-            'kvkk': true,
-            'acikRiza': true,
-            'onayZamani': FieldValue.serverTimestamp(),
-          },
-          'profilDurumu': 'tamamlandi',
+          .set({
+        'sozlesme': {
+          'kullanim': true,
+          'kvkk': true,
+          'acikRiza': true,
+          'onayZamani': FieldValue.serverTimestamp(),
+          'kaynak': 'assets/hukuk/tr/',
         },
-        SetOptions(merge: true),
-      );
+        'profilDurumu': 'tamamlandi',
+      }, SetOptions(merge: true));
 
       if (!mounted) return;
       Navigator.of(context).pushReplacementNamed(RouteNames.user);
@@ -84,28 +91,29 @@ class _SozlesmeKabulSayfasiState extends State<SozlesmeKabulSayfasi> {
           children: [
             ListTile(
               title: const Text('Kullanım Şartları'),
-              trailing: const Icon(Icons.chevron_right),
-              onTap: () => _ac('Kullanım Şartları',
-                  'Buraya kullanım şartlarının metni gelecek...'),
+              leading: const Icon(Icons.description),
+              trailing: const Icon(Icons.open_in_new),
+              onTap: () => _acAssetTR('Kullanım Şartları', 'kullanim_sartlari.txt'),
             ),
             ListTile(
-              title: const Text('Aydınlatma Metni'),
-              trailing: const Icon(Icons.chevron_right),
-              onTap: () => _ac(
-                  'Aydınlatma Metni', 'Buraya KVKK / aydınlatma metni gelecek...'),
+              title: const Text('Aydınlatma Metni (KVKK)'),
+              leading: const Icon(Icons.shield_outlined),
+              trailing: const Icon(Icons.open_in_new),
+              onTap: () => _acAssetTR('Aydınlatma Metni', 'aydinlatma_metni.txt'),
             ),
             ListTile(
               title: const Text('Açık Rıza Metni'),
-              trailing: const Icon(Icons.chevron_right),
-              onTap: () => _ac(
-                  'Açık Rıza Metni', 'Buraya açık rıza metni gelecek...'),
+              leading: const Icon(Icons.privacy_tip_outlined),
+              trailing: const Icon(Icons.open_in_new),
+              onTap: () => _acAssetTR('Açık Rıza Metni', 'acik_riza.txt'),
             ),
             const Divider(),
             CheckboxListTile(
               value: _kabul,
               onChanged: (v) => setState(() => _kabul = v ?? false),
               title: const Text(
-                  'Yukarıdaki tüm metinleri okudum ve kabul ediyorum.'),
+                'Yukarıdaki tüm metinleri okudum ve kabul ediyorum.',
+              ),
             ),
             if (_hata != null)
               Text(_hata!, style: const TextStyle(color: Colors.red)),
