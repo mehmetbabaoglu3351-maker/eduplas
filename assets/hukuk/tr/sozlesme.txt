@@ -1,36 +1,19 @@
-EDUPLAS ÜYELİK SÖZLEŞMESİ
-Sürüm: 1.0.0
-Son güncelleme: 2025-10-30
+EDUPLAS ÜYELİK VE KULLANIM SÖZLEŞMESİ (TR)
 
-1. AMAÇ VE KAPSAM
-Bu sözleşme, EduPlas platformuna üye olan kişilerin hak ve yükümlülüklerini düzenler.
-EduPlas; eğitim, üretkenlik, sosyal etkileşim ve ödül ekonomisi işlevlerini içeren bir öğrenme ekosistemidir.
+1. Taraflar
+Bu sözleşme, eduplas.club alan adı ve bu alan adına bağlı tüm alt servisleri işleten platform (“EDUPLAS”) ile platforma üye olan gerçek/tüzel kişi (“Kullanıcı”) arasında akdedilmiştir.
 
-2. ÜYELİK KOŞULLARI
-Kayıt yapan her kullanıcı, doğru ve güncel bilgi vermekle yükümlüdür.
-18 yaşından küçük kullanıcılar yalnızca veli onayıyla kayıt olabilir.
+2. Konu
+İşbu sözleşmenin konusu, EDUPLAS platformunun eğitim, sosyal etkileşim, yarışma, altın/puan ekonomisi ve diğer bütün modüllerinin kullanımına ilişkin koşulların belirlenmesidir.
 
-3. HİZMETLER
-EduPlas, üyelerine çevrim içi dersler, sosyal etkileşim, proje paylaşımı ve ödül sistemi sunar.
-Hizmet kapsamı, platform politikaları doğrultusunda güncellenebilir.
+3. Kayıt ve Doğrulama
+Kullanıcı, telefon numarası ile kayıt olur, OTP doğrulamasını tamamlar. Gerekli hallerde konum bilgisi (ülke, şehir, ilçe, mahalle) eğitim içeriğinin doğru gösterimi için işlenebilir.
 
-4. ÜYELİK SONA ERMESİ
-Kullanıcı, hesabını istediği zaman kapatabilir.
-Kurallara aykırı davranışlar durumunda EduPlas hesabı askıya alabilir veya silebilir.
+4. Veri İşleme
+Kullanıcının platformda paylaştığı veriler, yalnızca eğitim ekosistemi kapsamında ve ilgili mevzuata uygun olarak işlenir.
 
-5. YASAL SORUMLULUK
-Kullanıcı, platform içeriğini üçüncü kişilerin haklarını ihlal etmeyecek biçimde kullanmakla yükümlüdür.
-EduPlas, kullanıcıların paylaşımlarından doğan sorumlulukları kabul etmez.
+5. İletişim
+Her türlü hukuki talep için: destek@eduplas.club
 
-6. UYGULANACAK HUKUK
-Bu sözleşme Türkiye Cumhuriyeti yasalarına tabidir.
-
-Not: Bu metin, EduPlas'ın resmi Türkçe sürümünün tercümesidir.
-Ana dilinizde sürüm bulunmuyorsa, Türkçe sürüm yasal geçerliliğe sahiptir.
-
-ULUSLARARASI HÜKÜM VE GEÇERLİLİK:
-EduPlas, farklı ülkelerde hizmet sunarken yerel dillerde bilgilendirme sağlamaya çalışır.
-Ancak bu metnin Türkçe sürümü resmi ve yasal olarak bağlayıcı olandır.
-Çeviri sürümleri bilgilendirme amaçlıdır.
-
-© 2025 EduPlas
+6. Yürürlük
+Kullanıcının “kabul ediyorum” seçeneğini işaretlemesiyle yürürlüğe girer.

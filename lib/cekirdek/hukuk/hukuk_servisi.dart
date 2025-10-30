@@ -1,75 +1,70 @@
 // lib/cekirdek/hukuk/hukuk_servisi.dart
 import 'dart:async';
 import 'package:flutter/services.dart' show rootBundle;
-import 'package:eduplas/cekirdek/dil/dil_yoneticisi.dart';
 
+/// Desteklenen hukuk türleri
+enum HukukTipi {
+  sozlesme,
+  gizlilik,
+  aydinlatma,
+  acikRiza,
+}
+
+/// Basit hukuk servisi:
+/// - TR ve EN için ayrı asset yolları var
+/// - Dosya yoksa kısa fallback döner
 class HukukServisi {
   HukukServisi._internal();
-  static final HukukServisi _i = HukukServisi._internal();
-  factory HukukServisi() => _i;
+  static final HukukServisi instance = HukukServisi._internal();
 
-  /// [belgeId]: 'sozlesme' | 'acik_riza' | 'aydinlatma' | 'gizlilik'
-  /// [locale]: verilmezse sistem dilini kullanır
-  Future<String> yukle(String belgeId, {String? locale}) async {
-    final normalizedLocale =
-        _normalizeLocale(locale ?? DilYoneticisi.instance.aktifDil);
-    final pathPrimary = 'assets/hukuk/$normalizedLocale/$belgeId.txt';
-    final pathFallback = 'assets/hukuk/tr/$belgeId.txt';
+  /// Dil koduna göre asset yolu üret
+  String _assetPath(String dilKodu, HukukTipi tip) {
+    final isTr = dilKodu.toLowerCase().startsWith('tr');
 
-    try {
-      final data = await rootBundle.loadString(pathPrimary, cache: true);
-      return _ekleResmiUyari(data, locale: normalizedLocale);
-    } catch (_) {
-      try {
-        final dataTr = await rootBundle.loadString(pathFallback, cache: true);
-        return _ekleResmiUyari(
-          dataTr,
-          locale: normalizedLocale,
-          fallback: true,
-        );
-      } catch (e) {
-        return '⚠️ ${belgeId.toUpperCase()} metni yüklenemedi.\n'
-            'Lütfen sistem yöneticisine bildirin.\n\nHata: $e';
+    if (isTr) {
+      switch (tip) {
+        case HukukTipi.sozlesme:
+          return 'assets/hukuk/tr/sozlesme.txt';
+        case HukukTipi.gizlilik:
+          return 'assets/hukuk/tr/gizlilik.txt';
+        case HukukTipi.aydinlatma:
+          return 'assets/hukuk/tr/aydinlatma.txt';
+        case HukukTipi.acikRiza:
+          return 'assets/hukuk/tr/acik_riza.txt';
+      }
+    } else {
+      // EN fallback
+      switch (tip) {
+        case HukukTipi.sozlesme:
+          return 'assets/hukuk/en/contract.txt';
+        case HukukTipi.gizlilik:
+          return 'assets/hukuk/en/privacy.txt';
+        case HukukTipi.aydinlatma:
+          return 'assets/hukuk/en/disclosure.txt';
+        case HukukTipi.acikRiza:
+          return 'assets/hukuk/en/consent.txt';
       }
     }
   }
 
-  // ignore: unused_element
-  Future<String> _aiCeviri(String text, String targetLang) async {
-    // ileride AI çeviri buraya
-    return text;
+  /// Asset'ten oku
+  Future<String> yukle(String dilKodu, HukukTipi tip) async {
+    final path = _assetPath(dilKodu, tip);
+    try {
+      final data = await rootBundle.loadString(path);
+      return data;
+    } catch (_) {
+      // Fallback
+      return 'Bu hukuk metni şu anda gösterilemiyor ($path). Lütfen daha sonra tekrar deneyin.';
+    }
   }
 
-  String _ekleResmiUyari(
-    String text, {
-    required String locale,
-    bool fallback = false,
-  }) {
-    const resmiUyari = '''
-
----
-Not: Bu metin, EduPlas'ın resmi Türkçe sürümünün tercümesidir.
-Ana dilinizde sürüm bulunmuyorsa, Türkçe sürüm yasal geçerliliğe sahiptir.
-© 2025 EduPlas
-''';
-
-    if (locale == 'tr' || text.contains('EduPlas\'ın resmi Türkçe')) {
-      return text;
+  /// TR için kısa toplu yükleme
+  Future<Map<HukukTipi, String>> hepsiniYukle(String dilKodu) async {
+    final Map<HukukTipi, String> sonuc = {};
+    for (final tip in HukukTipi.values) {
+      sonuc[tip] = await yukle(dilKodu, tip);
     }
-    if (fallback) {
-      return text + resmiUyari;
-    }
-    return text;
-  }
-
-  String _normalizeLocale(String raw) {
-    final lower = raw.toLowerCase();
-    if (lower.startsWith('tr')) return 'tr';
-    if (lower.startsWith('en')) return 'en';
-    if (lower.startsWith('es')) return 'es';
-    if (lower.startsWith('fr')) return 'fr';
-    if (lower.startsWith('de')) return 'de';
-    if (lower.startsWith('ar')) return 'ar';
-    return 'tr';
+    return sonuc;
   }
 }

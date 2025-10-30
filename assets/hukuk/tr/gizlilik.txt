@@ -1,36 +1,19 @@
-EDUPLAS GİZLİLİK POLİTİKASI
-Sürüm: 1.0.0
-Son güncelleme: 2025-10-30
+EDUPLAS GİZLİLİK POLİTİKASI (TR)
 
-1. GENEL
-Bu politika, EduPlas kullanıcılarının gizliliğini koruma ilkelerini açıklar.
+1. Amaç
+Bu metin, eduplas.club platformunda toplanan kişisel verilerin hangi amaçla işlendiğini açıklamak için hazırlanmıştır.
 
-2. VERİ GÜVENLİĞİ
-Tüm kullanıcı verileri güvenli sunucularda saklanır.
-İletişim SSL şifrelemesi ile korunur.
-Kritik verilere yalnızca yetkili personel erişebilir.
+2. Toplanan Veriler
+Kimlik, iletişim, lokasyon (il/ilçe/mahalle düzeyi), eğitim tercihleri, yarışma katılım bilgileri, altın/puan hareketleri.
 
-3. ÇEREZLER
-EduPlas; oturum yönetimi, güvenlik ve kullanım analitiği için çerezlerden yararlanır.
-Çerezler hassas kişisel verileri içermez.
+3. Kullanım Amaçları
+- Eğitim içeriğini kişiselleştirmek
+- Konuma göre okul/sınıf/eğitmen eşleştirmek
+- Güvenlik, kötüye kullanım ve spam’i engellemek
+- Yasal yükümlülükleri yerine getirmek
 
-4. ÜÇÜNCÜ TARAF HİZMETLER
-EduPlas; Google, Firebase, Cloud Storage gibi servislerden faydalanabilir.
-Bu hizmetlerin gizlilik politikaları ayrıca geçerlidir.
+4. Saklama Süresi
+Veriler ilgili mevzuata ve EDUPLAS iç işleyişine uygun süre boyunca saklanır.
 
-5. VERİ AKTARIMI
-Yasal zorunluluk olmadıkça kullanıcı verileri üçüncü kişilerle paylaşılmaz.
-Yurt dışı aktarımı yalnızca gerekli teknik hizmetler için yapılabilir.
-
-6. KULLANICI HAKLARI
-Kullanıcı, kişisel verilerinin işlenip işlenmediğini öğrenme, düzeltme veya silme hakkına sahiptir.
-
-Not: Bu metin, EduPlas'ın resmi Türkçe sürümünün tercümesidir.
-Ana dilinizde sürüm bulunmuyorsa, Türkçe sürüm yasal geçerliliğe sahiptir.
-
-ULUSLARARASI HÜKÜM VE GEÇERLİLİK:
-EduPlas, farklı ülkelerde hizmet sunarken yerel dillerde bilgilendirme sağlamaya çalışır.
-Ancak bu metnin Türkçe sürümü resmi ve yasal olarak bağlayıcı olandır.
-Çeviri sürümleri bilgilendirme amaçlıdır.
-
-© 2025 EduPlas
+5. İletişim
+destek@eduplas.club

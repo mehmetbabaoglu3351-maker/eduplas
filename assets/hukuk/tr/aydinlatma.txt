@@ -1,35 +1,17 @@
-EDUPLAS AYDINLATMA METNİ
-Sürüm: 1.0.0
-Son güncelleme: 2025-10-30
+EDUPLAS AYDINLATMA METNİ (TR)
 
-1. VERİ SORUMLUSU
-Veri sorumlusu EduPlas’tır. İletişim: kvkk@eduplas.com
+Veri Sorumlusu: eduplas.club
 
-2. TOPLANAN VERİLER
-Üyelik işlemleri sırasında; ad-soyad, telefon, e-posta, şehir, eğitim bilgisi, konum ve kullanım istatistikleri toplanabilir.
+İşleme Amaçları:
+- Üyelik ve kimlik doğrulama süreçlerinin yürütülmesi
+- Konum tabanlı eğitim ve sosyal içeriklerin sunulması
+- Bağış, altın/puan ve diğer ekonomik hareketlerin kaydı
+- Eğitim, yarışma ve sosyal modüllerin yönetimi
 
-3. İŞLEME AMAÇLARI
-- Üyelik kayıt ve kimlik doğrulama
-- Eğitim süreçlerinin yürütülmesi
-- Platformun iyileştirilmesi ve güvenliğinin sağlanması
-- Kullanıcılara kişiselleştirilmiş içerik ve ödül sistemi sunulması
+Hukuki Sebep:
+- Açık rıza (KVKK m.5/1)
+- Sözleşmenin kurulması ve ifası (KVKK m.5/2-c)
+- Veri sorumlusunun meşru menfaati (KVKK m.5/2-f)
 
-4. PAYLAŞIM
-Veriler, yalnızca sistemin çalışması için gerekli hizmet sağlayıcılarla paylaşılır.
-Veriler üçüncü kişilere satılmaz.
-
-5. SAKLAMA SÜRESİ
-Veriler, üyelik devam ettiği sürece saklanır; üyelik sona erdiğinde 2 yıl içinde silinir veya anonimleştirilir.
-
-6. HAKLAR
-Kullanıcı, KVKK 11. madde kapsamındaki tüm haklarını kvkk@eduplas.com adresine iletebilir.
-
-Not: Bu metin, EduPlas'ın resmi Türkçe sürümünün tercümesidir.
-Ana dilinizde sürüm bulunmuyorsa, Türkçe sürüm yasal geçerliliğe sahiptir.
-
-ULUSLARARASI HÜKÜM VE GEÇERLİLİK:
-EduPlas, farklı ülkelerde hizmet sunarken yerel dillerde bilgilendirme sağlamaya çalışır.
-Ancak bu metnin Türkçe sürümü resmi ve yasal olarak bağlayıcı olandır.
-Çeviri sürümleri bilgilendirme amaçlıdır.
-
-© 2025 EduPlas
+Haklarınız:
+Kişisel verilerinize erişebilir, düzeltilmesini ve silinmesini talep edebilirsiniz.
