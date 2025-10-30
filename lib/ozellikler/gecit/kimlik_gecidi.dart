@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 import '../giris/giris_sayfasi.dart';
 import '../onay/onay_sayfasi.dart';
 import '../beklemede/beklemede_sayfasi.dart';
-import '../onay/sozlesme_kabul_sayfasi.dart'; // LEGAL kontrol için
+import '../onay/sozlesme_kabul_sayfasi.dart';
 
 // Rol bazlı ana sayfalar
 import '../rol_ana/ogrenci_anasayfasi.dart';
@@ -19,10 +19,10 @@ import '../rol_ana/bas_admin_paneli.dart';
 import '../rol_ana/destekci_paneli.dart';
 import '../rol_ana/isyeri_paneli.dart';
 
-// ROUTE isimleri (sözleşmeye argümanla gidebilmek için)
+// ROUTE isimleri
 import 'package:eduplas/router/route_names.dart';
 
-// Bizim MOCK hukuk onaylarını tutan servis
+// Servisler
 import 'package:eduplas/ozellikler/onay/onay_servisi.dart';
 import 'package:eduplas/cekirdek/hukuk/legal_versiyonlar.dart';
 
@@ -36,7 +36,7 @@ class KimlikGecidi extends StatefulWidget {
 class _KimlikGecidiState extends State<KimlikGecidi> {
   final FirebaseFirestore _db = FirebaseFirestore.instance;
   bool _profilOlusturuluyor = false;
-  bool _legalYonlendirildi = false; // aynı frame'de birden fazla kez push etmesin
+  bool _navigating = false;
 
   Future<void> _ensureUserProfileFromRegistration({
     required String uid,
@@ -47,16 +47,22 @@ class _KimlikGecidiState extends State<KimlikGecidi> {
 
     try {
       final usersRef = _db.collection('users').doc(uid);
-      final u = await usersRef.get();
-      if (u.exists) return;
+      final snapshot = await usersRef.get();
+      if (snapshot.exists) return;
 
+      // Rol yoksa ilk kullanıcı baş admin olsun
+      final existing = await _db.collection('users').get();
+      final isFirstUser = existing.size == 0;
       final requestedRole =
           (reg['requestedRole'] ?? reg['roleIntent'] ?? '').toString();
+      final role = isFirstUser
+          ? 'bas_admin'
+          : (requestedRole.isNotEmpty ? requestedRole : 'ogrenci');
 
       await usersRef.set({
         'uid': uid,
         'takmaAd': reg['takmaAd'] ?? '',
-        'role': requestedRole,
+        'role': role,
         'telefon': reg['telefon'] ?? '',
         'il': reg['il'] ?? '',
         'ilce': reg['ilce'] ?? '',
@@ -64,13 +70,12 @@ class _KimlikGecidiState extends State<KimlikGecidi> {
         'okul': reg['okul'] ?? '',
         'profil': reg['profil'] ?? <String, dynamic>{},
         'ilgiler': reg['ilgiler'] ?? <dynamic>[],
-        // 🤜 dikkat: burada default'u "legal_pending"
-        'durum': reg['durum'] ?? 'legal_pending',
+        'durum': 'approved',
         'createdAt': FieldValue.serverTimestamp(),
         'updatedAt': FieldValue.serverTimestamp(),
       }, SetOptions(merge: true));
-    } catch (_) {
-      // Sessiz geç
+    } catch (e) {
+      debugPrint('Profil oluşturma hatası: $e');
     } finally {
       _profilOlusturuluyor = false;
     }
@@ -78,31 +83,14 @@ class _KimlikGecidiState extends State<KimlikGecidi> {
 
   Widget _sayfaFromRole(String role) {
     final r = role.toLowerCase().trim();
-
-    if (r.contains('baş admin') || r.contains('bas admin') || r == 'bas_admin') {
-      return const BasAdminPaneli();
-    }
-    if (r.contains('ülke admin') || r.contains('ulke admin') || r == 'ulke_admin') {
-      return const IlAdminPaneli(); // Ülke/İl ayrımı gelecekte panel ayrışabilir
-    }
-    if (r.contains('ilçe admin') || r.contains('ilce admin') || r == 'ilce_admin') {
-      return const IlceAdminPaneli();
-    }
-    if (r.contains('il admin') || r == 'il_admin') {
-      return const IlAdminPaneli();
-    }
-    if (r.contains('koordinatör') || r.contains('koordinator') || r == 'koordinator') {
-      return const KoordinatorPaneli();
-    }
-    if (r.contains('öğretmen') || r.contains('ogretmen') || r == 'ogretmen') {
-      return const OgretmenPaneli();
-    }
-    if (r.contains('destekçi') || r.contains('destekci') || r == 'destekci') {
-      return const DestekciPaneli();
-    }
-    if (r.contains('işyeri') || r.contains('isyeri') || r == 'isyeri') {
-      return const IsyeriPaneli();
-    }
+    if (r.contains('bas_admin')) return const BasAdminPaneli();
+    if (r.contains('ulke_admin') || r.contains('ülke admin')) return const IlAdminPaneli();
+    if (r.contains('il_admin') || r.contains('il admin')) return const IlAdminPaneli();
+    if (r.contains('ilce_admin') || r.contains('ilçe admin')) return const IlceAdminPaneli();
+    if (r.contains('koordinator')) return const KoordinatorPaneli();
+    if (r.contains('ogretmen')) return const OgretmenPaneli();
+    if (r.contains('destekci')) return const DestekciPaneli();
+    if (r.contains('isyeri')) return const IsyeriPaneli();
     return const OgrenciAnasayfasi();
   }
 
@@ -149,32 +137,26 @@ class _KimlikGecidiState extends State<KimlikGecidi> {
                     : <String, dynamic>{};
                 var role = (userDoc['role'] ?? '').toString().trim();
 
-                // 1) Firestore'daki durum
+                // Firestore’daki durum
                 final durum = (userDoc['durum'] ?? '').toString();
 
-                // 2) MOCK hukuk servisi üzerinden de kontrol et
+                // Hukuk kontrolü
                 final onayServ = OnayServisi.instance;
                 final mockLegalOk = onayServ.kullaniciZorunluHukuklariTamMi(
                   uid: uid,
                   dokumanlar: LegalVersiyonlar.dokumanlar,
                 );
+                final gercektenLegalOk =
+                    durum == 'legal_ok' || mockLegalOk;
 
-                // Şayet Firestore "legal_pending" dese bile, mock servis "tamam" diyorsa,
-                // kullanıcıyı artık sözleşmeye kilitlemeyelim.
-                final gercektenLegalOk = durum == 'legal_ok' || mockLegalOk;
-
-                if (!gercektenLegalOk) {
-                  // Aynı frame'de pushReplacementNamed'i birden fazla kez çağırmamak için
-                  if (!_legalYonlendirildi) {
-                    _legalYonlendirildi = true;
-                    WidgetsBinding.instance.addPostFrameCallback((_) {
-                      Navigator.of(context).pushReplacementNamed(
-                        RouteNames.sozlesmeKabul,
-                        arguments: uid,
-                      );
-                    });
-                  }
-                  // Geçici loading göster
+                if (!gercektenLegalOk && !_navigating) {
+                  _navigating = true;
+                  WidgetsBinding.instance.addPostFrameCallback((_) {
+                    Navigator.of(context).pushReplacementNamed(
+                      RouteNames.sozlesmeKabul,
+                      arguments: uid,
+                    );
+                  });
                   return const _LoadingScaffold();
                 }
 
@@ -209,9 +191,9 @@ class _KimlikGecidiState extends State<KimlikGecidi> {
                     _ensureUserProfileFromRegistration(uid: uid, reg: reg);
                     return const _LoadingScaffold();
                   }
-                  // Emniyet: role boş ise registration’dan al (eski/yeniyi destekle)
+
                   if (role.isEmpty) {
-                    role = (reg['requestedRole'] ?? reg['roleIntent'] ?? '')
+                    role = (reg['requestedRole'] ?? reg['roleIntent'] ?? 'ogrenci')
                         .toString()
                         .trim();
                   }

@@ -16,7 +16,7 @@ import 'package:eduplas/router/route_names.dart';
 import 'package:eduplas/l10n/supported_locales.dart';
 import 'package:eduplas/l10n/app_localizations.dart';
 
-// >>> EKLENDİ
+// Çekirdek dil yöneticisi
 import 'package:eduplas/cekirdek/dil/dil_yoneticisi.dart';
 
 Future<void> main() async {
@@ -40,15 +40,11 @@ Future<void> main() async {
       initialLocale = _matchSupported(device, supported) ?? const Locale('tr');
     }
 
-    // >>> Çekirdeğe de ilk dili yaz (hukuk, onay, servisler için)
     DilYoneticisi.instance.dilAyarla(initialLocale.languageCode);
 
     runApp(EduPlasApp(initialLocale: initialLocale));
-  }, (Object error, StackTrace stack) {
-    // Geliştirici logu
-    // ignore: avoid_print
+  }, (error, stack) {
     print('UNCAUGHT ERROR: $error');
-    // ignore: avoid_print
     print(stack);
   });
 }
@@ -56,10 +52,10 @@ Future<void> main() async {
 Locale? _matchSupported(Locale? want, List<Locale> supported) {
   if (want == null) return null;
   for (final l in supported) {
-    if (l == want) return l; // tam eşleşme
+    if (l == want) return l;
   }
   for (final l in supported) {
-    if (l.languageCode == want.languageCode) return l; // dil eşleşmesi
+    if (l.languageCode == want.languageCode) return l;
   }
   return null;
 }
@@ -77,26 +73,20 @@ class EduPlasApp extends StatefulWidget {
 
 class _EduPlasAppState extends State<EduPlasApp> {
   late Locale _locale;
-  late final AppRouter _appRouter;
 
   @override
   void initState() {
     super.initState();
     _locale = widget.initialLocale;
-    _appRouter = AppRouter();
   }
 
   Future<void> setLocale(Locale locale) async {
     final List<Locale> supported = List<Locale>.from(kSupportedLocales);
     final matched = _matchSupported(locale, supported) ?? supported.first;
 
-    // 1) MaterialApp'i değiştir
     setState(() => _locale = matched);
-
-    // 2) Çekirdek dil yöneticisini de değiştir (hukuk bunu dinliyor)
     DilYoneticisi.instance.dilAyarla(matched.languageCode);
 
-    // 3) Kalıcı sakla
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString('localeCode', matched.languageCode);
   }
@@ -107,9 +97,8 @@ class _EduPlasAppState extends State<EduPlasApp> {
       title: 'EduPlas',
       debugShowCheckedModeBanner: false,
       initialRoute: RouteNames.giris,
-      onGenerateRoute: _appRouter.onGenerateRoute,
+      onGenerateRoute: appRouter, // ✅ DÜZELTİLDİ
 
-      // Dil
       locale: _locale,
       supportedLocales: kSupportedLocales,
       localizationsDelegates: const [
