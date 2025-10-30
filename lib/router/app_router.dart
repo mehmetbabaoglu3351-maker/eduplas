@@ -30,11 +30,11 @@ class AppRouter {
           settings: settings,
         );
 
-      case RouteNames.otp:
-        return MaterialPageRoute<void>(
-          builder: (_) => const TelefonDogrulamaSayfasi(),
-          settings: settings,
-        );
+     // case RouteNames.otp:
+       // return MaterialPageRoute<void>(
+         // builder: (_) => const TelefonDogrulamaSayfasi(),
+         // settings: settings,
+       // );
 
       // Yeni akış
       case RouteNames.rolSec:
