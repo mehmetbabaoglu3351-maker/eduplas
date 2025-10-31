@@ -14,6 +14,9 @@ import 'package:eduplas/ayarlar/dil_secimi_sayfasi.dart';
 import 'package:eduplas/ozellikler/kayit/rol_secimi_sayfasi.dart';
 import 'package:eduplas/ozellikler/kayit/ilgi_secimi_sayfasi.dart';
 
+// Hukuk (az önce verdiğimiz sayfa)
+import 'package:eduplas/hukuk/sozlesme_okuma_sayfasi.dart';
+
 Route<dynamic> onGenerateAppRoute(RouteSettings settings) {
   switch (settings.name) {
     case RouteNames.root:
@@ -28,7 +31,7 @@ Route<dynamic> onGenerateAppRoute(RouteSettings settings) {
         settings: settings,
       );
 
-    case RouteNames.otp: // 🔴 eksik olan kısım
+    case RouteNames.otp:
       return MaterialPageRoute(
         builder: (_) => const TelefonDogrulamaSayfasi(),
         settings: settings,
@@ -37,6 +40,12 @@ Route<dynamic> onGenerateAppRoute(RouteSettings settings) {
     case RouteNames.sozlesmeKabul:
       return MaterialPageRoute(
         builder: (_) => const SozlesmeKabulSayfasi(),
+        settings: settings,
+      );
+
+    case RouteNames.hukukiGenelSozlesme:
+      return MaterialPageRoute(
+        builder: (_) => const SozlesmeOkumaSayfasi(),
         settings: settings,
       );
 

@@ -8,11 +8,12 @@ import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 
 import 'package:eduplas/router/app_router.dart';
-import 'package:eduplas/router/route_names.dart';
-
 import 'package:eduplas/l10n/supported_locales.dart';
 import 'package:eduplas/l10n/app_localizations.dart';
 import 'package:eduplas/cekirdek/dil/dil_yoneticisi.dart';
+
+// 🔴 GEÇİT
+import 'package:eduplas/ozellikler/gecit/kimlik_gecidi.dart';
 
 Future<void> main() async {
   runZonedGuarded(() async {
@@ -93,8 +94,13 @@ class _EduPlasAppState extends State<EduPlasApp> {
     return MaterialApp(
       title: 'EduPlas',
       debugShowCheckedModeBanner: false,
-      initialRoute: RouteNames.giris,
-      // 🔴 BURASI ESAS: appRouter DEĞİL → onGenerateAppRoute
+
+      // 🔴 ÖNEMLİ: Artık sabit /giris açmıyoruz.
+      // initialRoute: RouteNames.giris,
+      // onGenerateRoute: onGenerateAppRoute,
+      // Bunun yerine geçit açılacak:
+      home: const KimlikGecidi(),
+
       onGenerateRoute: onGenerateAppRoute,
 
       locale: _locale,

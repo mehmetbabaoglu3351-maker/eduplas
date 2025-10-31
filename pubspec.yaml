@@ -52,6 +52,5 @@ flutter:
   assets:
     - assets/images/
     - assets/veri/yerler/tr.json
-    - assets/hukuk/tr/
-    - assets/hukuk/en/
-    
+    - assets/hukuk/eduplas_sozlesme_tr.txt
+    - assets/hukuk/eduplas_sozlesme_en.txt

@@ -8,6 +8,9 @@ class RouteNames {
   static const otp = '/otp';
   static const sozlesmeKabul = '/sozlesme_kabul';
 
+  // Tek sözleşmenin içerik ekranı (asset'ten okuyan sayfa)
+  static const hukukiGenelSozlesme = '/hukuk/sozlesme';
+
   // Kayıt sihirbazı adımları
   static const rolSec = '/kayit/rol_sec';
   static const ilgiSec = '/kayit/ilgi_sec';

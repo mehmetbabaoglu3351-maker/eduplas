@@ -22,7 +22,7 @@ class SozlesmeOnaySayfasi extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text('Sözleşme onaylarınız başarıyla alındı.'),
+            const Text('Tek sözleşme onayınız başarıyla alındı.'),
             const SizedBox(height: 12),
             if (args != null)
               Text('Ek bilgi: ${args.toString()}'),

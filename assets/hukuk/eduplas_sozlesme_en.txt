@@ -1,0 +1,40 @@
+EDUPLAS GENERAL TERMS OF USE (Version 1.0)
+
+1. PURPOSE
+This agreement applies to all users of the EduPlas educational and social learning platform,
+including students, teachers, coordinators, provincial/district administrators, supporters,
+business partners, and sponsors.
+
+2. ACCOUNT AND VERIFICATION
+- Phone number verification is mandatory for registration.
+- The selected role may be modified by higher-level administrators.
+- The processing of location data (country, province, district) is deemed accepted.
+
+3. PERSONAL DATA & PRIVACY
+EduPlas protects personal data in accordance with the Turkish Personal Data Protection Law
+(KVKK No. 6698) and related international standards. By accepting this agreement, the user
+also agrees to the EduPlas Privacy Notice and Consent to Data Processing.
+
+4. GOLD / POINTS / DONATION ECONOMY
+All in-app currencies (gold, points, or donations) are virtual units and not real money.
+They may, however, be used in system-based shopping, competitions, or sponsor payments.
+
+5. ROLE-BASED RESPONSIBILITIES
+- Chief Admin: approves all sub-roles.
+- Province/District Admins: manage their regions.
+- Coordinators: oversee sub-groups.
+- Teachers: provide content for students.
+- Students: access content and join contests.
+- Supporters / Business Partners / Sponsors: may donate or run campaigns.
+
+6. CONTENT RESPONSIBILITY
+Each user is responsible for their own shared content. Copyright or ethical violations
+may lead to account suspension.
+
+7. CHILD PROTECTION
+Special protection layers apply to users under 18. Non-educational or inappropriate content
+may be restricted.
+
+8. EFFECTIVENESS
+By checking “Read and Approved,” the user accepts all terms of this agreement.
+Logging in to EduPlas implies full acceptance of these terms.

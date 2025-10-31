@@ -1,0 +1,40 @@
+EDUPLAS GENEL KULLANIM SÖZLEŞMESİ (Sürüm 1.0)
+
+1. AMAÇ
+Bu sözleşme, EduPlas eğitim ve sosyal öğrenme platformunu kullanan tüm kullanıcılar
+(öğrenci, öğretmen, koordinatör, il/ilçe adminleri, destekçiler, üye işyerleri ve sponsorlar)
+için geçerlidir.
+
+2. HESAP VE DOĞRULAMA
+- Kayıt için telefon numarası doğrulaması zorunludur.
+- Rol seçimi kayıt sırasında yapılır, üst yönetim tarafından değiştirilebilir.
+- Konum (ülke, il, ilçe) bilgilerinin işlenmesi onaylanmış sayılır.
+
+3. KİŞİSEL VERİLER VE KVKK
+EduPlas, 6698 sayılı Kişisel Verilerin Korunması Kanunu ve ilgili mevzuat kapsamında,
+kişisel verilerin korunmasına önem verir. Kullanıcı; bu sözleşme ile birlikte KVKK Aydınlatma
+Metni ve Açık Rıza hükümlerini de kabul etmiş sayılır.
+
+4. ALTIN / PUAN / BAĞIŞ EKONOMİSİ
+EduPlas içinde yer alan altın, puan veya bağış işlemleri sanal ekonomidir. Gerçek para değildir.
+Ancak sistem içi alışveriş, yarışma ödülü veya üye işyeri ödemelerinde kullanılabilir.
+
+5. ROL BAZLI YÜKÜMLÜLÜKLER
+- Baş Admin: tüm alt rolleri onaylayabilir.
+- İl / İlçe Adminleri: kendi bölgelerini yönetir.
+- Koordinatör: alt grupları denetler.
+- Öğretmen: öğrencilere içerik sağlar.
+- Öğrenci: içerikleri görüntüler, yarışmalara katılır.
+- Destekçi / Üye İşyeri / Sponsor: bağış, kampanya veya destek faaliyetlerinde bulunabilir.
+
+6. İÇERİK SORUMLULUĞU
+Kullanıcı, paylaştığı her türlü içerikten sorumludur. Telif hakkı ihlali, kişisel haklara saldırı
+veya etik dışı paylaşım tespit edilirse hesap askıya alınabilir.
+
+7. ÇOCUKLARIN KORUNMASI
+18 yaş altı kullanıcılar için özel koruma katmanları uygulanır. Eğitimle ilgisi olmayan içerikler
+kısıtlanabilir.
+
+8. YÜRÜRLÜK
+Kullanıcı “Okudum, onayladım” seçeneğini işaretlediğinde bu sözleşmeyi kabul etmiş sayılır.
+EduPlas sistemine giriş, bu metnin tüm hükümlerinin kabul edildiği anlamına gelir.

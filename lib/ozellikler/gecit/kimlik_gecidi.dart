@@ -8,6 +8,7 @@ import '../giris/giris_sayfasi.dart';
 import '../onay/onay_sayfasi.dart';
 import '../beklemede/beklemede_sayfasi.dart';
 import '../onay/sozlesme_kabul_sayfasi.dart';
+import '../kayit/kayit_sayfasi.dart'; // ← kayıt yoksa buraya gideceğiz
 
 // Rol bazlı ana sayfalar
 import '../rol_ana/ogrenci_anasayfasi.dart';
@@ -21,10 +22,6 @@ import '../rol_ana/isyeri_paneli.dart';
 
 // ROUTE isimleri
 import 'package:eduplas/router/route_names.dart';
-
-// Servisler
-import 'package:eduplas/ozellikler/onay/onay_servisi.dart';
-import 'package:eduplas/cekirdek/hukuk/legal_versiyonlar.dart';
 
 class KimlikGecidi extends StatefulWidget {
   const KimlikGecidi({super.key});
@@ -73,6 +70,7 @@ class _KimlikGecidiState extends State<KimlikGecidi> {
         'durum': 'approved',
         'createdAt': FieldValue.serverTimestamp(),
         'updatedAt': FieldValue.serverTimestamp(),
+        // hukuk burada set edilmez, sözleşme ekranı set eder
       }, SetOptions(merge: true));
     } catch (e) {
       debugPrint('Profil oluşturma hatası: $e');
@@ -84,9 +82,15 @@ class _KimlikGecidiState extends State<KimlikGecidi> {
   Widget _sayfaFromRole(String role) {
     final r = role.toLowerCase().trim();
     if (r.contains('bas_admin')) return const BasAdminPaneli();
-    if (r.contains('ulke_admin') || r.contains('ülke admin')) return const IlAdminPaneli();
-    if (r.contains('il_admin') || r.contains('il admin')) return const IlAdminPaneli();
-    if (r.contains('ilce_admin') || r.contains('ilçe admin')) return const IlceAdminPaneli();
+    if (r.contains('ulke_admin') || r.contains('ülke admin')) {
+      return const IlAdminPaneli();
+    }
+    if (r.contains('il_admin') || r.contains('il admin')) {
+      return const IlAdminPaneli();
+    }
+    if (r.contains('ilce_admin') || r.contains('ilçe admin')) {
+      return const IlceAdminPaneli();
+    }
     if (r.contains('koordinator')) return const KoordinatorPaneli();
     if (r.contains('ogretmen')) return const OgretmenPaneli();
     if (r.contains('destekci')) return const DestekciPaneli();
@@ -104,7 +108,10 @@ class _KimlikGecidiState extends State<KimlikGecidi> {
         }
 
         final user = authSnap.data;
-        if (user == null) return const GirisSayfasi();
+        // 1) Kullanıcı yoksa → Giriş
+        if (user == null) {
+          return const GirisSayfasi();
+        }
 
         final uid = user.uid;
         final regRef = _db.collection('registrations').doc(uid);
@@ -113,6 +120,7 @@ class _KimlikGecidiState extends State<KimlikGecidi> {
         return StreamBuilder<DocumentSnapshot<Map<String, dynamic>>>(
           stream: regRef.snapshots(),
           builder: (ctx, regSnap) {
+            // kayıt dokümanı yüklenirken
             if (regSnap.connectionState == ConnectionState.waiting) {
               return const _LoadingScaffold();
             }
@@ -137,19 +145,20 @@ class _KimlikGecidiState extends State<KimlikGecidi> {
                     : <String, dynamic>{};
                 var role = (userDoc['role'] ?? '').toString().trim();
 
+                // 2) Kayıt yoksa → KAYIT SAYFASI
+                // Senin kuralın: "kullanıcı kayıtlı ise giriş, kayıt yoksa kayıt sayfasına gitmeli"
+                if (!regExists && !userDocExists) {
+                  return const KayitSayfasi();
+                }
+
                 // Firestore’daki durum
                 final durum = (userDoc['durum'] ?? '').toString();
 
-                // Hukuk kontrolü
-                final onayServ = OnayServisi.instance;
-                final mockLegalOk = onayServ.kullaniciZorunluHukuklariTamMi(
-                  uid: uid,
-                  dokumanlar: LegalVersiyonlar.dokumanlar,
-                );
-                final gercektenLegalOk =
-                    durum == 'legal_ok' || mockLegalOk;
+                // 3) Hukuk kontrolü — sadece tek alan
+                final bool sozlesmeKabul =
+                    userDoc['sozlesmeKabul'] == true;
 
-                if (!gercektenLegalOk && !_navigating) {
+                if (!sozlesmeKabul && !_navigating) {
                   _navigating = true;
                   WidgetsBinding.instance.addPostFrameCallback((_) {
                     Navigator.of(context).pushReplacementNamed(
@@ -160,50 +169,42 @@ class _KimlikGecidiState extends State<KimlikGecidi> {
                   return const _LoadingScaffold();
                 }
 
-                if (!regExists) {
-                  return const _Placeholder(
-                    baslik: 'Kayıt eksik',
-                    aciklama:
-                        'Kayıt bilgilerin eksik görünüyor. Lütfen kaydı tamamla veya tekrar giriş yap.',
-                  );
-                }
+                // 4) registration durumu
+                if (regExists) {
+                  if (status == 'pending') {
+                    return const BeklemedeSayfasi(
+                      baslik: 'Onay bekleniyor',
+                      aciklama:
+                          'Başvurun ilgili onaylayıcıya iletildi. Lütfen beklemede kal.',
+                      reddedildi: false,
+                    );
+                  }
 
-                if (status == 'pending') {
-                  return const BeklemedeSayfasi(
-                    baslik: 'Onay bekleniyor',
-                    aciklama:
-                        'Başvurun ilgili onaylayıcıya iletildi. Lütfen beklemede kal.',
-                    reddedildi: false,
-                  );
-                }
+                  if (status == 'rejected') {
+                    return const BeklemedeSayfasi(
+                      baslik: 'Başvurun reddedildi',
+                      aciklama:
+                          'Yeni başvuru yapabilir veya destek alabilirsin.',
+                      reddedildi: true,
+                    );
+                  }
 
-                if (status == 'rejected') {
-                  return const BeklemedeSayfasi(
-                    baslik: 'Başvurun reddedildi',
-                    aciklama:
-                        'Yeni başvuru yapabilir veya destek alabilirsin.',
-                    reddedildi: true,
-                  );
-                }
-
-                if (status == 'approved') {
-                  if (!userDocExists) {
+                  if (status == 'approved' && !userDocExists) {
+                    // kayıt onaylanmış ama users yok → oluştur
                     _ensureUserProfileFromRegistration(uid: uid, reg: reg);
                     return const _LoadingScaffold();
                   }
-
-                  if (role.isEmpty) {
-                    role = (reg['requestedRole'] ?? reg['roleIntent'] ?? 'ogrenci')
-                        .toString()
-                        .trim();
-                  }
-                  return _sayfaFromRole(role);
                 }
 
-                return const _Placeholder(
-                  baslik: 'Durum okunamadı',
-                  aciklama: 'Beklenmedik durum. Lütfen tekrar deneyin.',
-                );
+                // 5) role belirle
+                if (role.isEmpty) {
+                  role = (reg['requestedRole'] ?? reg['roleIntent'] ?? 'ogrenci')
+                      .toString()
+                      .trim();
+                }
+
+                // 6) Son: rol ekranına git
+                return _sayfaFromRole(role);
               },
             );
           },

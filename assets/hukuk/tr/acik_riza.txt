@@ -1,9 +1,0 @@
-EDUPLAS AÇIK RIZA METNİ (TR)
-
-Kullanıcı, eduplas.club platformu kapsamında;
-- Pazarlama/duyuru bildirimleri almayı,
-- Eğitim ve yarışma duyuruları almayı,
-- Konumuna göre seçilmiş içeriklerin sunulmasını
-kabul ettiğini beyan eder.
-
-Kullanıcı bu rızayı dilediği zaman uygulama içi ayarlardan geri alabilir.
