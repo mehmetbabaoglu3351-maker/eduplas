@@ -4,6 +4,9 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:eduplas/router/route_names.dart';
 
+/// EduPlas A3 – İlgi Alanı Seçimi (Sade 8’li model)
+/// Amaç: Kayıt sırasında kullanıcıyı YORMADAN ana kategori seçtirmek.
+/// Detaylı alt kategoriler daha sonra profil ekranında açılacak.
 class IlgiSecimiSayfasi extends StatefulWidget {
   static const route = RouteNames.ilgiSec;
   const IlgiSecimiSayfasi({super.key});
@@ -13,32 +16,63 @@ class IlgiSecimiSayfasi extends StatefulWidget {
 }
 
 class _IlgiSecimiSayfasiState extends State<IlgiSecimiSayfasi> {
-  // 👇 Daha kapsayıcı, EduPlas senaryosuna uygun liste
-  final List<String> _tumIlgiler = const [
-    // Eğitim / Bilim
-    'Matematik',
-    'Fen & Teknoloji',
-    'Yabancı Dil',
-    // Sanat / Yaratıcılık
-    'Müzik',
-    'Şiir & Edebiyat',
-    'Tiyatro & Sahne',
-    'Resim & Tasarım',
-    // Dijital / Gelecek
-    'Kodlama & Yapay Zekâ',
-    'Robotik & Maker',
-    // Sosyal / Yaşam
-    'Spor & Sağlık',
-    'Kişisel Gelişim',
-    'Sosyal Sorumluluk',
-    // Ekonomi / İş
-    'Ekonomi & Finans',
-    'Girişimcilik',
+  // 8 ANA BAŞLIK
+  final List<_IlgiKategori> _anaKategoriler = const [
+    _IlgiKategori(
+      id: 'akademik',
+      ad: 'Akademik Dersler',
+      aciklama: 'Matematik, Fen, Türkçe, Sosyal, Yabancı Dil…',
+      ikon: Icons.school,
+    ),
+    _IlgiKategori(
+      id: 'bilim_tek',
+      ad: 'Bilim & Teknoloji',
+      aciklama: 'Kodlama, Robotik, Yapay Zekâ, Mühendislik…',
+      ikon: Icons.science,
+    ),
+    _IlgiKategori(
+      id: 'sanat',
+      ad: 'Sanat & Yaratıcılık',
+      aciklama: 'Müzik, Şiir, Resim, Tiyatro, Tasarım…',
+      ikon: Icons.palette,
+    ),
+    _IlgiKategori(
+      id: 'spor',
+      ad: 'Spor & Sağlık',
+      aciklama: 'Sporlar, hareket, sağlıklı yaşam…',
+      ikon: Icons.fitness_center,
+    ),
+    _IlgiKategori(
+      id: 'dil_iletisim',
+      ad: 'Dil & İletişim',
+      aciklama: 'Dil öğrenimi, yazarlık, sunum…',
+      ikon: Icons.translate,
+    ),
+    _IlgiKategori(
+      id: 'meslek',
+      ad: 'Meslek & Girişimcilik',
+      aciklama: 'Ticaret, esnaflık, finans, inovasyon…',
+      ikon: Icons.work,
+    ),
+    _IlgiKategori(
+      id: 'sosyal',
+      ad: 'Sosyal Sorumluluk & Toplum',
+      aciklama: 'Çevre, gönüllülük, bağış, yardımlaşma…',
+      ikon: Icons.volunteer_activism,
+    ),
+    _IlgiKategori(
+      id: 'kultur',
+      ad: 'Kültür & Yaşam',
+      aciklama: 'Tarih, seyahat, yemek, moda…',
+      ikon: Icons.public,
+    ),
   ];
 
-  final Set<String> _secili = {};
+  final Set<String> _secili = <String>{};
   bool _kaydediyor = false;
   String? _hata;
+
+  bool get _enAzBirSecildi => _secili.isNotEmpty;
 
   Future<void> _devamEt() async {
     final user = FirebaseAuth.instance.currentUser;
@@ -53,12 +87,11 @@ class _IlgiSecimiSayfasiState extends State<IlgiSecimiSayfasi> {
     });
 
     try {
-      await FirebaseFirestore.instance
-          .collection('users')
-          .doc(user.uid)
-          .set(
+      // İleride alt kategorilere genişleyebilmek için
+      // "anaIlgiler": ['akademik', 'sanat', ...] şeklinde kaydediyoruz
+      await FirebaseFirestore.instance.collection('users').doc(user.uid).set(
         {
-          'ilgiler': _secili.toList(),
+          'anaIlgiler': _secili.toList(),
           'ilgiKayitZamani': FieldValue.serverTimestamp(),
         },
         SetOptions(merge: true),
@@ -75,45 +108,129 @@ class _IlgiSecimiSayfasiState extends State<IlgiSecimiSayfasi> {
 
   @override
   Widget build(BuildContext context) {
+    final tema = Theme.of(context);
+
     return Scaffold(
-      appBar: AppBar(title: const Text('İlgi Alanlarını Seç')),
+      appBar: AppBar(
+        title: const Text('İlgi Alanlarını Seç'),
+      ),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
           children: [
-            const Text(
-              'Seni ilgilendiren alanları seç. İstersen sonra profilden değiştirebilirsin.',
+            Text(
+              'Seni en çok anlatan alanları seç.\nSonra profilden detaylandırabilirsin.',
+              style: tema.textTheme.bodyMedium,
+              textAlign: TextAlign.center,
             ),
-            const SizedBox(height: 12),
+            const SizedBox(height: 16),
             Expanded(
-              child: ListView.builder(
-                itemCount: _tumIlgiler.length,
+              child: GridView.builder(
+                itemCount: _anaKategoriler.length,
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2, // 2 x 4 = 8 şık görünür
+                  childAspectRatio: 1.35,
+                  crossAxisSpacing: 12,
+                  mainAxisSpacing: 12,
+                ),
                 itemBuilder: (context, index) {
-                  final ad = _tumIlgiler[index];
-                  final tikli = _secili.contains(ad);
-                  return CheckboxListTile(
-                    value: tikli,
-                    title: Text(ad),
-                    onChanged: (v) {
+                  final k = _anaKategoriler[index];
+                  final secili = _secili.contains(k.id);
+                  return GestureDetector(
+                    onTap: () {
                       setState(() {
-                        if (v == true) {
-                          _secili.add(ad);
+                        if (secili) {
+                          _secili.remove(k.id);
                         } else {
-                          _secili.remove(ad);
+                          _secili.add(k.id);
                         }
                       });
                     },
+                    child: AnimatedContainer(
+                      duration: const Duration(milliseconds: 160),
+                      padding: const EdgeInsets.all(12),
+                      decoration: BoxDecoration(
+                        color: secili
+                            ? tema.colorScheme.primaryContainer
+                            : tema.colorScheme.surface,
+                        borderRadius: BorderRadius.circular(14),
+                        border: Border.all(
+                          color: secili
+                              ? tema.colorScheme.primary
+                              : tema.colorScheme.outlineVariant,
+                        ),
+                        boxShadow: [
+                          if (secili)
+                            BoxShadow(
+                              // ignore: deprecated_member_use
+                              color: tema.colorScheme.primary.withOpacity(0.25),
+                              blurRadius: 6,
+                              offset: const Offset(0, 2),
+                            ),
+                        ],
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          CircleAvatar(
+                            radius: 18,
+                            backgroundColor: secili
+                                ? tema.colorScheme.primary
+                                // ignore: deprecated_member_use
+                                : tema.colorScheme.primary.withOpacity(0.1),
+                            child: Icon(
+                              k.ikon,
+                              color: secili
+                                  ? tema.colorScheme.onPrimary
+                                  : tema.colorScheme.primary,
+                              size: 18,
+                            ),
+                          ),
+                          const SizedBox(height: 10),
+                          Text(
+                            k.ad,
+                            style: tema.textTheme.titleSmall?.copyWith(
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                          const SizedBox(height: 6),
+                          Expanded(
+                            child: Text(
+                              k.aciklama,
+                              style: tema.textTheme.bodySmall?.copyWith(
+                                // ignore: deprecated_member_use
+                                color: tema.colorScheme.onSurface.withOpacity(0.55),
+                              ),
+                              maxLines: 3,
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                          ),
+                          const SizedBox(height: 4),
+                          if (secili)
+                            Align(
+                              alignment: Alignment.bottomRight,
+                              child: Icon(
+                                Icons.check_circle,
+                                size: 20,
+                                color: tema.colorScheme.primary,
+                              ),
+                            ),
+                        ],
+                      ),
+                    ),
                   );
                 },
               ),
             ),
-            if (_hata != null)
+            if (_hata != null) ...[
+              const SizedBox(height: 8),
               Text(_hata!, style: const TextStyle(color: Colors.red)),
+            ],
             const SizedBox(height: 8),
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: _kaydediyor ? null : _devamEt,
+                onPressed: !_enAzBirSecildi || _kaydediyor ? null : _devamEt,
                 child: _kaydediyor
                     ? const SizedBox(
                         height: 20,
@@ -128,4 +245,18 @@ class _IlgiSecimiSayfasiState extends State<IlgiSecimiSayfasi> {
       ),
     );
   }
+}
+
+class _IlgiKategori {
+  final String id;
+  final String ad;
+  final String aciklama;
+  final IconData ikon;
+
+  const _IlgiKategori({
+    required this.id,
+    required this.ad,
+    required this.aciklama,
+    required this.ikon,
+  });
 }

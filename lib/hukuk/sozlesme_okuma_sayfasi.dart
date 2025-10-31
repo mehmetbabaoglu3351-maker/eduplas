@@ -1,165 +1,113 @@
-// lib/hukuk/sozlesme_okuma_sayfasi.dart
-// Kaynak: assets/hukuk/eduplas_sozlesme_tr.txt ve eduplas_sozlesme_en.txt
-// Özellikler:
-// - Sistemin diline göre TR / EN asset açar
-// - Kullanıcı metni en alta kadar kaydırmadan onay veremez (opsiyonel parametre)
-// - Onaylanınca çağıran sayfaya "true" döner
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
+import 'package:eduplas/cekirdek/arayuz/app_logo.dart';
+import 'package:eduplas/cekirdek/dil/dil_yoneticisi.dart';
 
+/// EduPlas Tek Sözleşme Ekranı
+/// (Tüm hukuki metinler bu tek dosyada birleşiktir)
 class SozlesmeOkumaSayfasi extends StatefulWidget {
-  final bool scrollZorunlu;
-
-  const SozlesmeOkumaSayfasi({
-    super.key,
-    this.scrollZorunlu = true,
-  });
+  const SozlesmeOkumaSayfasi({super.key});
 
   @override
   State<SozlesmeOkumaSayfasi> createState() => _SozlesmeOkumaSayfasiState();
 }
 
 class _SozlesmeOkumaSayfasiState extends State<SozlesmeOkumaSayfasi> {
-  final _scrollController = ScrollController();
-
-  String _metin = 'Yükleniyor...';
-  bool _sonunaInildi = false;
-  bool _okudumKabul = false;
+  String? _metin;
+  String? _hata;
   bool _yukleniyor = true;
+  late final String _aktifDil;
 
   @override
   void initState() {
     super.initState();
-    _scrollController.addListener(_scrollDinle);
-    _metniYukle();
+    _aktifDil = DilYoneticisi.instance.aktifDil;
+    _yukle();
   }
 
-  Future<void> _metniYukle() async {
-    final localeCode = WidgetsBinding.instance.platformDispatcher.locale.languageCode;
-    final assetPath = localeCode == 'tr'
-        ? 'assets/hukuk/eduplas_sozlesme_tr.txt'
-        : 'assets/hukuk/eduplas_sozlesme_en.txt';
+  Future<void> _yukle() async {
+    setState(() {
+      _yukleniyor = true;
+      _hata = null;
+    });
+
+    final dosyaYolu = _aktifDil.startsWith('en')
+        ? 'assets/hukuk/eduplas_sozlesme_en.txt'
+        : 'assets/hukuk/eduplas_sozlesme_tr.txt';
 
     try {
-      final data = await rootBundle.loadString(assetPath);
-      if (mounted) {
-        setState(() {
-          _metin = data;
-          _yukleniyor = false;
-        });
-      }
+      final txt = await rootBundle.loadString(dosyaYolu);
+      if (!mounted) return;
+      setState(() {
+        _metin = txt;
+      });
     } catch (e) {
-      if (mounted) {
-        setState(() {
-          _metin = 'Sözleşme metni yüklenemedi. Lütfen yöneticinizle iletişime geçin.';
-          _yukleniyor = false;
-        });
-      }
+      setState(() {
+        _hata = 'Sözleşme dosyası yüklenemedi: $dosyaYolu\n$e';
+        _metin = _varsayilanSozlesme;
+      });
+    } finally {
+      if (mounted) setState(() => _yukleniyor = false);
     }
-  }
-
-  void _scrollDinle() {
-    if (!widget.scrollZorunlu) return;
-    if (!_scrollController.hasClients) return;
-
-    final max = _scrollController.position.maxScrollExtent;
-    final pos = _scrollController.position.pixels;
-
-    // En alta %95 içinde ise "okundu" kabul et
-    if (pos >= max * 0.95) {
-      if (!_sonunaInildi) {
-        setState(() {
-          _sonunaInildi = true;
-        });
-      }
-    }
-  }
-
-  bool get _butonAktif {
-    if (widget.scrollZorunlu) {
-      return _sonunaInildi && _okudumKabul;
-    }
-    return _okudumKabul;
-  }
-
-  void _onayla() {
-    if (!_butonAktif) return;
-    Navigator.of(context).pop(true);
-  }
-
-  @override
-  void dispose() {
-    _scrollController.removeListener(_scrollDinle);
-    _scrollController.dispose();
-    super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     final tema = Theme.of(context);
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('EduPlas Sözleşme'),
-      ),
-      body: Column(
-        children: [
-          Expanded(
-            child: _yukleniyor
-                ? const Center(child: CircularProgressIndicator())
-                : Scrollbar(
-                    controller: _scrollController,
-                    thumbVisibility: true,
-                    child: SingleChildScrollView(
-                      controller: _scrollController,
-                      padding: const EdgeInsets.all(16),
-                      child: Text(
-                        _metin,
-                        style: tema.textTheme.bodyMedium,
-                      ),
+      appBar: AppBar(title: const Text('EduPlas Sözleşme')),
+      body: _yukleniyor
+          ? const Center(child: CircularProgressIndicator())
+          : SafeArea(
+              child: Center(
+                child: ConstrainedBox(
+                  constraints: const BoxConstraints(maxWidth: 720),
+                  child: Padding(
+                    padding: const EdgeInsets.all(16),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        const Center(child: AppLogo(daire: true, compactHint: true)),
+                        const SizedBox(height: 8),
+                        Text(
+                          'EduPlas',
+                          textAlign: TextAlign.center,
+                          style: tema.textTheme.titleLarge?.copyWith(
+                                color: const Color(0xFF00BFA5),
+                                fontWeight: FontWeight.bold,
+                              ),
+                        ),
+                        const SizedBox(height: 12),
+                        Expanded(
+                          child: SingleChildScrollView(
+                            child: Text(
+                              _metin ?? '',
+                              style: const TextStyle(fontSize: 14, height: 1.5),
+                            ),
+                          ),
+                        ),
+                        const SizedBox(height: 12),
+                        if (_hata != null)
+                          Text(
+                            _hata!,
+                            style: const TextStyle(color: Colors.red),
+                          ),
+                        const SizedBox(height: 12),
+                        FilledButton(
+                          onPressed: () => Navigator.pop(context, true),
+                          child: const Text('Okudum, anladım'),
+                        ),
+                      ],
                     ),
                   ),
-          ),
-          const Divider(height: 1),
-          Container(
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-            child: Column(
-              children: [
-                CheckboxListTile(
-                  value: _okudumKabul,
-                  onChanged: (v) {
-                    setState(() {
-                      _okudumKabul = v ?? false;
-                    });
-                  },
-                  title: const Text('EduPlas Genel Sözleşmesini okudum, onaylıyorum.'),
-                  controlAffinity: ListTileControlAffinity.leading,
-                  contentPadding: EdgeInsets.zero,
                 ),
-                const SizedBox(height: 8),
-                SizedBox(
-                  width: double.infinity,
-                  child: FilledButton.icon(
-                    onPressed: _butonAktif ? _onayla : null,
-                    icon: const Icon(Icons.check),
-                    label: const Text('Onayla ve devam et'),
-                  ),
-                ),
-                if (widget.scrollZorunlu && !_sonunaInildi)
-                  Padding(
-                    padding: const EdgeInsets.only(top: 6),
-                    child: Text(
-                      'Metnin sonuna kadar inmeden onay veremezsiniz.',
-                      style: tema.textTheme.bodySmall?.copyWith(
-                        color: tema.colorScheme.error,
-                      ),
-                    ),
-                  ),
-              ],
+              ),
             ),
-          ),
-        ],
-      ),
     );
   }
 }
+
+const String _varsayilanSozlesme = '''
+EDUPLAS TEK SÖZLEŞME (GEÇİCİ)
+Bu metin, dosya yüklenemediğinde gösterilir.
+''';

@@ -4,6 +4,10 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:eduplas/router/route_names.dart';
 
+/// EduPlas A2 – Rol Seçimi ve Profil Başlatma
+/// - "Baş Admin" yalnızca ilk defa sistem kurulurken görünür.
+/// - Eğer Firestore'da zaten bir "Baş Admin" varsa, bu seçenek listeden kalkar.
+/// - Ek olarak "Ülke Admini" rolü eklendi.
 class RolSecimiSayfasi extends StatefulWidget {
   static const route = RouteNames.rolSec;
   const RolSecimiSayfasi({super.key});
@@ -13,13 +17,14 @@ class RolSecimiSayfasi extends StatefulWidget {
 }
 
 class _RolSecimiSayfasiState extends State<RolSecimiSayfasi> {
-  static const _roller = <String>[
+  final _roller = <String>[
     'Öğrenci',
     'Öğretmen',
     'Sınıf Başkanı',
     'Koordinatör',
     'İlçe Admin',
     'İl Admin',
+    'Ülke Admini',
     'Baş Admin',
     'Destekçi',
     'İşyeri',
@@ -27,7 +32,41 @@ class _RolSecimiSayfasiState extends State<RolSecimiSayfasi> {
 
   String? _seciliRol;
   bool _kaydediyor = false;
+  bool _yukleniyor = true;
   String? _hata;
+  List<String> _gorunenRoller = [];
+
+  @override
+  void initState() {
+    super.initState();
+    _kontrolEtVeRolleriHazirla();
+  }
+
+  Future<void> _kontrolEtVeRolleriHazirla() async {
+    try {
+      // Firestore'da herhangi bir "Baş Admin" var mı kontrol et
+      final snapshot = await FirebaseFirestore.instance
+          .collection('users')
+          .where('rol', isEqualTo: 'Baş Admin')
+          .limit(1)
+          .get();
+
+      final basAdminVar = snapshot.docs.isNotEmpty;
+
+      setState(() {
+        _gorunenRoller = List<String>.from(_roller);
+        if (basAdminVar) {
+          _gorunenRoller.remove('Baş Admin');
+        }
+        _yukleniyor = false;
+      });
+    } catch (e) {
+      setState(() {
+        _hata = 'Rol listesi yüklenemedi: $e';
+        _yukleniyor = false;
+      });
+    }
+  }
 
   Future<void> _devamEt() async {
     if (_seciliRol == null) return;
@@ -44,10 +83,7 @@ class _RolSecimiSayfasiState extends State<RolSecimiSayfasi> {
     });
 
     try {
-      await FirebaseFirestore.instance
-          .collection('users')
-          .doc(user.uid)
-          .set(
+      await FirebaseFirestore.instance.collection('users').doc(user.uid).set(
         {
           'rol': _seciliRol,
           'rolKayitZamani': FieldValue.serverTimestamp(),
@@ -66,45 +102,59 @@ class _RolSecimiSayfasiState extends State<RolSecimiSayfasi> {
 
   @override
   Widget build(BuildContext context) {
+    if (_yukleniyor) {
+      return const Scaffold(
+        body: Center(child: CircularProgressIndicator()),
+      );
+    }
+
     return Scaffold(
-      appBar: AppBar(title: const Text('Rol Seç')),
+      appBar: AppBar(title: const Text('Rol Seçimi')),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text('EduPlas’ta hangi rolde olacaksın?'),
+            const Text(
+              'EduPlas’ta hangi rolde olacaksın?',
+              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+            ),
             const SizedBox(height: 12),
-            Wrap(
-              spacing: 8,
-              runSpacing: 8,
-              children: _roller.map((rol) {
-                final secili = _seciliRol == rol;
-                return ChoiceChip(
-                  label: Text(rol),
-                  selected: secili,
-                  onSelected: (_) {
-                    setState(() => _seciliRol = rol);
-                  },
-                );
-              }).toList(),
+            Expanded(
+              child: SingleChildScrollView(
+                child: Wrap(
+                  spacing: 8,
+                  runSpacing: 8,
+                  children: _gorunenRoller.map((rol) {
+                    final secili = _seciliRol == rol;
+                    return ChoiceChip(
+                      label: Text(rol),
+                      selected: secili,
+                      selectedColor: Colors.teal.shade200,
+                      onSelected: (_) {
+                        setState(() => _seciliRol = rol);
+                      },
+                    );
+                  }).toList(),
+                ),
+              ),
             ),
             if (_hata != null) ...[
               const SizedBox(height: 12),
               Text(_hata!, style: const TextStyle(color: Colors.red)),
             ],
-            const Spacer(),
+            const SizedBox(height: 12),
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: _kaydediyor ? null : _devamEt,
+                onPressed: _kaydediyor || _seciliRol == null ? null : _devamEt,
                 child: _kaydediyor
                     ? const SizedBox(
                         height: 20,
                         width: 20,
                         child: CircularProgressIndicator(strokeWidth: 2),
                       )
-                    : const Text('Devam'),
+                    : const Text('Devam Et'),
               ),
             ),
           ],

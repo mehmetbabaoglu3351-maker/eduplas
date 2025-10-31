@@ -5,6 +5,12 @@ import 'package:eduplas/ayarlar/dil_degistirici.dart';
 import 'package:eduplas/router/route_names.dart';
 import 'package:eduplas/cekirdek/dil/dil_yoneticisi.dart';
 
+/// EduPlas A1 – Güvenli Giriş ve Kurtarma Akışı
+/// Bu ekran artık TELEFON ZORUNLU + DOĞUM TARİHİ ZORUNLU.
+/// Akış:
+/// - Giriş: Telefon + Şifre + Doğum Tarihi → OTP (mode: login)
+/// - "Hesabım yok mu? Kaydol" → RouteNames.kayit
+/// - "Hesabımı Kurtar" → OTP (mode: recovery)
 class GirisSayfasi extends StatefulWidget {
   static const route = RouteNames.giris;
   const GirisSayfasi({super.key});
@@ -17,15 +23,14 @@ class _GirisSayfasiState extends State<GirisSayfasi> {
   final _formKey = GlobalKey<FormState>();
 
   // Alanlar
-  final _nick = TextEditingController();
-  final _adSoyad = TextEditingController();
-  final _tel = TextEditingController();
+  final _telefon = TextEditingController();
   final _sifre = TextEditingController();
-  final _sifre2 = TextEditingController();
+  final _dogumTarihiCtrl = TextEditingController();
+
+  DateTime? _seciliDogumTarihi;
 
   bool _islem = false;
-  bool _obscure1 = true;
-  bool _obscure2 = true;
+  bool _obscure = true;
   String? _hata;
 
   String _aktifDil = 'tr';
@@ -33,7 +38,7 @@ class _GirisSayfasiState extends State<GirisSayfasi> {
   @override
   void initState() {
     super.initState();
-    _nick.addListener(_onNickChanged);
+    _telefon.addListener(_onAlanChanged);
 
     _aktifDil = DilYoneticisi.instance.aktifDil;
     DilYoneticisi.instance.addListener(_onDilChanged);
@@ -41,14 +46,11 @@ class _GirisSayfasiState extends State<GirisSayfasi> {
 
   @override
   void dispose() {
-    _nick
-      ..removeListener(_onNickChanged)
+    _telefon
+      ..removeListener(_onAlanChanged)
       ..dispose();
-    _adSoyad.dispose();
-    _tel.dispose();
     _sifre.dispose();
-    _sifre2.dispose();
-
+    _dogumTarihiCtrl.dispose();
     DilYoneticisi.instance.removeListener(_onDilChanged);
     super.dispose();
   }
@@ -60,43 +62,43 @@ class _GirisSayfasiState extends State<GirisSayfasi> {
     });
   }
 
-  void _onNickChanged() {
+  void _onAlanChanged() {
+    if (!mounted) return;
     setState(() {});
-  }
-
-  String _temizTakmaAd(String input) {
-    var s = input.trim().toLowerCase();
-    s = s
-        .replaceAll('ç', 'c')
-        .replaceAll('ğ', 'g')
-        .replaceAll('ı', 'i')
-        .replaceAll('i̇', 'i')
-        .replaceAll('ö', 'o')
-        .replaceAll('ş', 's')
-        .replaceAll('ü', 'u');
-    s = s.replaceAll(RegExp(r'\s+'), '.');
-    s = s.replaceAll(RegExp(r'[^a-z0-9._-]'), '');
-    s = s.replaceAll(RegExp(r'\.{2,}'), '.');
-    s = s.replaceAll(RegExp(r'^\.'), '');
-    s = s.replaceAll(RegExp(r'\.$'), '');
-    if (s.isEmpty) s = 'kullanici';
-    if (s.length < 3) s = '${s}___'.substring(0, 3);
-    return s;
   }
 
   String _sadeceRakamlar(String input) => input.replaceAll(RegExp(r'[^0-9+]'), '');
 
-  String? _telHata(String? v, _T t) {
-    if (v == null || v.trim().isEmpty) return t.valRequired;
-    final tel = _sadeceRakamlar(v);
+  bool _girdiTelefonMu(String input) {
+    final tel = _sadeceRakamlar(input);
     final digits = tel.replaceAll('+', '');
-    if (digits.length < 10 || digits.length > 15) {
-      return t.valPhoneInvalid;
-    }
-    return null;
+    return digits.length >= 10 && digits.length <= 15;
   }
 
-  Future<void> _kaydetVeOtp(_T t) async {
+  Future<void> _tarihSec(_T t) async {
+    // 100 yıl geriye gidebilsin
+    final now = DateTime.now();
+    final firstDate = DateTime(now.year - 100, now.month, now.day);
+    final lastDate = now;
+
+    final picked = await showDatePicker(
+      context: context,
+      initialDate: _seciliDogumTarihi ?? DateTime(now.year - 18, now.month, now.day),
+      firstDate: firstDate,
+      lastDate: lastDate,
+      helpText: t.dateHelp,
+    );
+
+    if (picked != null) {
+      setState(() {
+        _seciliDogumTarihi = picked;
+        _dogumTarihiCtrl.text =
+            '${picked.day.toString().padLeft(2, '0')}.${picked.month.toString().padLeft(2, '0')}.${picked.year.toString()}';
+      });
+    }
+  }
+
+  Future<void> _girisYap(_T t) async {
     if (!_formKey.currentState!.validate()) return;
 
     setState(() {
@@ -105,20 +107,20 @@ class _GirisSayfasiState extends State<GirisSayfasi> {
     });
 
     try {
-      final temizNick = _temizTakmaAd(_nick.text);
-      final adSoyad = _adSoyad.text.trim();
-      final tel = _sadeceRakamlar(_tel.text);
-      final sifre = _sifre.text;
+      final tel = _sadeceRakamlar(_telefon.text.trim());
+      final sifre = _sifre.text.trim();
+      final dogum = _seciliDogumTarihi?.toIso8601String();
 
       if (!mounted) return;
       await Navigator.pushNamed(
         context,
         RouteNames.otp,
         arguments: <String, dynamic>{
-          'nick': temizNick,
-          'fullName': adSoyad,
+          'nick': '', // artık girişte nick almıyoruz
           'phone': tel,
           'password': sifre,
+          'birthdate': dogum,
+          'mode': 'login',
         },
       );
     } catch (e) {
@@ -128,15 +130,30 @@ class _GirisSayfasiState extends State<GirisSayfasi> {
     }
   }
 
+  Future<void> _yeniKayit(_T t) async {
+    if (!mounted) return;
+    Navigator.pushNamed(context, RouteNames.kayit);
+  }
+
+  Future<void> _hesabimiKurtar(_T t) async {
+    if (!mounted) return;
+    await Navigator.pushNamed(
+      context,
+      RouteNames.otp,
+      arguments: <String, dynamic>{
+        'mode': 'recovery',
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
-    // Küçük çeviri katmanı
     final t = _T.of(_aktifDil);
-    final temizNick = _temizTakmaAd(_nick.text);
+    final girisDegeri = _telefon.text.trim();
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(t.registerTitle),
+        title: Text(t.loginTitle),
         actions: [
           Padding(
             padding: const EdgeInsets.only(right: 12),
@@ -144,7 +161,6 @@ class _GirisSayfasiState extends State<GirisSayfasi> {
               child: Container(
                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                 decoration: BoxDecoration(
-                  // withOpacity depreceated uyarısını önlemek için basit renk
                   color: Theme.of(context).colorScheme.primaryContainer,
                   borderRadius: BorderRadius.circular(12),
                 ),
@@ -186,26 +202,66 @@ class _GirisSayfasiState extends State<GirisSayfasi> {
                     ),
                     const SizedBox(height: 4),
                     Text(
-                      t.activeLanguageLabel(_aktifDil),
+                      t.slogan,
                       textAlign: TextAlign.center,
                       style: Theme.of(context).textTheme.bodySmall?.copyWith(
                             color: Colors.black54,
+                            fontWeight: FontWeight.w500,
+                          ),
+                    ),
+                    const SizedBox(height: 4),
+                    Text(
+                      t.activeLanguageLabel(_aktifDil),
+                      textAlign: TextAlign.center,
+                      style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                            color: Colors.black45,
                           ),
                     ),
                     const SizedBox(height: 12),
                     const Divider(),
                     const SizedBox(height: 12),
 
-                    // Takma ad
+                    // Telefon (zorunlu)
                     TextFormField(
-                      controller: _nick,
+                      controller: _telefon,
+                      keyboardType: TextInputType.phone,
                       decoration: InputDecoration(
-                        labelText: t.fieldNickname,
-                        helperText: t.fieldNicknameHelper(temizNick),
+                        labelText: t.fieldPhone,
+                        helperText: t.fieldPhoneHelper,
                       ),
                       textInputAction: TextInputAction.next,
-                      validator: (v) => (v == null || v.trim().isEmpty) ? t.valRequired : null,
+                      validator: (v) {
+                        if (v == null || v.trim().isEmpty) {
+                          return t.valRequired;
+                        }
+                        if (!_girdiTelefonMu(v.trim())) {
+                          return t.valPhoneInvalid;
+                        }
+                        return null;
+                      },
                       autofocus: true,
+                    ),
+                    const SizedBox(height: 12),
+
+                    // Doğum tarihi (zorunlu)
+                    TextFormField(
+                      controller: _dogumTarihiCtrl,
+                      readOnly: true,
+                      decoration: InputDecoration(
+                        labelText: t.fieldBirthdate,
+                        helperText: t.fieldBirthdateHelper,
+                        suffixIcon: IconButton(
+                          icon: const Icon(Icons.calendar_today),
+                          onPressed: () => _tarihSec(t),
+                        ),
+                      ),
+                      onTap: () => _tarihSec(t),
+                      validator: (v) {
+                        if (_seciliDogumTarihi == null) {
+                          return t.valBirthdateRequired;
+                        }
+                        return null;
+                      },
                     ),
                     const SizedBox(height: 12),
 
@@ -215,59 +271,16 @@ class _GirisSayfasiState extends State<GirisSayfasi> {
                       decoration: InputDecoration(
                         labelText: t.fieldPassword,
                         suffixIcon: IconButton(
-                          icon: Icon(_obscure1 ? Icons.visibility : Icons.visibility_off),
-                          onPressed: () => setState(() => _obscure1 = !_obscure1),
-                          tooltip: _obscure1 ? t.uiShowPassword : t.uiHidePassword,
+                          icon: Icon(_obscure ? Icons.visibility : Icons.visibility_off),
+                          onPressed: () => setState(() => _obscure = !_obscure),
+                          tooltip: _obscure ? t.uiShowPassword : t.uiHidePassword,
                         ),
                       ),
-                      obscureText: _obscure1,
-                      textInputAction: TextInputAction.next,
-                      validator: (v) => (v == null || v.length < 6) ? t.valPasswordShort : null,
-                    ),
-                    const SizedBox(height: 12),
-
-                    // Şifre tekrarı
-                    TextFormField(
-                      controller: _sifre2,
-                      decoration: InputDecoration(
-                        labelText: t.fieldPasswordRepeat,
-                        suffixIcon: IconButton(
-                          icon: Icon(_obscure2 ? Icons.visibility : Icons.visibility_off),
-                          onPressed: () => setState(() => _obscure2 = !_obscure2),
-                          tooltip: _obscure2 ? t.uiShowPassword : t.uiHidePassword,
-                        ),
-                      ),
-                      obscureText: _obscure2,
-                      textInputAction: TextInputAction.next,
-                      validator: (v) {
-                        if (v == null || v.isEmpty) return t.valRequired;
-                        if (v != _sifre.text) return t.valPasswordMismatch;
-                        return null;
-                      },
-                    ),
-                    const SizedBox(height: 12),
-
-                    // Ad Soyad
-                    TextFormField(
-                      controller: _adSoyad,
-                      decoration: InputDecoration(labelText: t.fieldFullName),
-                      textInputAction: TextInputAction.next,
-                      validator: (v) =>
-                          (v == null || v.trim().length < 3) ? t.valFullnameInvalid : null,
-                    ),
-                    const SizedBox(height: 12),
-
-                    // Telefon
-                    TextFormField(
-                      controller: _tel,
-                      decoration: InputDecoration(
-                        labelText: t.fieldPhone,
-                        hintText: '+905xxxxxxxxx',
-                      ),
-                      keyboardType: TextInputType.phone,
+                      obscureText: _obscure,
                       textInputAction: TextInputAction.done,
-                      validator: (v) => _telHata(v, t),
-                      onFieldSubmitted: (_) => _kaydetVeOtp(t),
+                      onFieldSubmitted: (_) => _girisYap(t),
+                      validator: (v) =>
+                          (v == null || v.length < 6) ? t.valPasswordShort : null,
                     ),
                     const SizedBox(height: 16),
 
@@ -277,18 +290,36 @@ class _GirisSayfasiState extends State<GirisSayfasi> {
                         child: Text(_hata!, style: const TextStyle(color: Colors.red)),
                       ),
 
+                    // Giriş yap
                     SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(
-                        onPressed: _islem ? null : () => _kaydetVeOtp(t),
+                        onPressed: _islem ? null : () => _girisYap(t),
                         child: _islem
                             ? const SizedBox(
                                 height: 18,
                                 width: 18,
                                 child: CircularProgressIndicator(strokeWidth: 2),
                               )
-                            : Text(t.btnSaveAndVerify),
+                            : Text(t.btnLogin),
                       ),
+                    ),
+                    const SizedBox(height: 8),
+
+                    // Hesabımı Kurtar
+                    SizedBox(
+                      width: double.infinity,
+                      child: OutlinedButton(
+                        onPressed: _islem ? null : () => _hesabimiKurtar(t),
+                        child: Text(t.btnRecovery),
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+
+                    // Yeni kayıt bağlantısı
+                    TextButton(
+                      onPressed: _islem ? null : () => _yeniKayit(t),
+                      child: Text(t.btnRegisterNow),
                     ),
                     const SizedBox(height: 4),
                   ],
@@ -303,7 +334,7 @@ class _GirisSayfasiState extends State<GirisSayfasi> {
   }
 }
 
-// Küçük geçici çeviri katmanı (ileride gerçek l10n ile değişeceğiz)
+// Küçük geçici çeviri katmanı
 class _T {
   final bool tr;
   _T(this.tr);
@@ -312,28 +343,31 @@ class _T {
     return _T(code.toLowerCase().startsWith('tr'));
   }
 
-  String get registerTitle => tr ? 'Kayıt' : 'Register';
-  String get fieldNickname => tr ? 'Takma ad' : 'Nickname';
-  String fieldNicknameHelper(String nick) =>
-      tr ? 'Kullanılacak ad: $nick' : 'Will be used as: $nick';
-  String get fieldPassword => tr ? 'Şifre' : 'Password';
-  String get fieldPasswordRepeat => tr ? 'Şifre tekrarı' : 'Repeat password';
-  String get fieldFullName => tr ? 'Ad Soyad' : 'Full name';
+  String get loginTitle => tr ? 'Giriş' : 'Sign in';
   String get fieldPhone => tr ? 'Telefon' : 'Phone';
+  String get fieldPhoneHelper =>
+      tr ? 'Telefon formatı: +90 5xx ... Zorunlu.' : 'Phone in intl format. Required.';
+  String get fieldPassword => tr ? 'Şifre' : 'Password';
+  String get fieldBirthdate => tr ? 'Doğum Tarihi' : 'Birthdate';
+  String get fieldBirthdateHelper =>
+      tr ? 'Doğum tarihinizi seçin (100 yıl geriye gidebilir).' : 'Select your birthdate.';
   String get valRequired => tr ? 'Bu alan zorunludur' : 'This field is required';
-  String get valPasswordShort =>
-      tr ? 'En az 6 karakter olmalı' : 'Must be at least 6 characters';
-  String get valPasswordMismatch =>
-      tr ? 'Şifreler uyuşmuyor' : 'Passwords do not match';
-  String get valFullnameInvalid =>
-      tr ? 'Geçerli bir ad soyad girin' : 'Please enter a valid full name';
   String get valPhoneInvalid =>
-      tr ? 'Telefon formatı geçersiz' : 'Phone number is invalid';
+      tr ? 'Geçerli bir telefon numarası girin' : 'Enter a valid phone number';
+  String get valBirthdateRequired =>
+      tr ? 'Doğum tarihi seçilmelidir' : 'Birthdate is required';
+  String get valPasswordShort => tr ? 'En az 6 karakter olmalı' : 'Must be at least 6 characters';
   String get uiShowPassword => tr ? 'Şifreyi göster' : 'Show password';
   String get uiHidePassword => tr ? 'Şifreyi gizle' : 'Hide password';
-  String get btnSaveAndVerify =>
-      tr ? 'Kaydet ve Telefonu Doğrula' : 'Save and verify phone';
+  String get btnLogin => tr ? 'Giriş Yap' : 'Sign in';
+  String get btnRecovery => tr ? 'Hesabımı Kurtar' : 'Recover account';
+  String get btnRegisterNow => tr ? 'Hesabın yok mu? Kaydol' : 'No account? Register';
+
+  String get slogan =>
+      tr ? 'Öğren, kazan; Öğret, kazandır.' : 'Learn and earn; Teach and empower.';
 
   String activeLanguageLabel(String code) =>
       tr ? 'Aktif dil: $code' : 'Active language: $code';
+
+  String get dateHelp => tr ? 'Doğum tarihinizi seçin' : 'Select your birthdate';
 }

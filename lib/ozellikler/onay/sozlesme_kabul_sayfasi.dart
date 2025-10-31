@@ -1,9 +1,15 @@
 // lib/ozellikler/onay/sozlesme_kabul_sayfasi.dart
-// EduPlas Master Senaryo v1.1 – Sprint-1 Legal Adımı
-// Bu ekran olmadan kayıt tamamlanamaz.
+// EduPlas – Tek Sözleşme Onay Ekranı (SADE / WEB YOK)
+// - Metin sadece uygulama içindeki asset'ten okunur
+// - Kullanıcı "okudum, kabul ediyorum" demeden geçemez
+// - Kabulde Firestore -> users/{uid} içine sozlesmeKabul: true yazılır
 
+import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:flutter/services.dart' show rootBundle;
+
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 import 'package:eduplas/router/route_names.dart';
 
@@ -17,55 +23,68 @@ class SozlesmeKabulSayfasi extends StatefulWidget {
 }
 
 class _SozlesmeKabulSayfasiState extends State<SozlesmeKabulSayfasi> {
-  // NOT: Bu URL’leri istersen Firestore’dan da çektirebiliriz.
-  // Şimdilik sabit verdim ki 1 ve 2 de çalışsın.
-  static const String _kullaniciSozlesmesiUrl =
-      'https://eduplas.fake/legal/kullanici-sozlesmesi';
-  static const String _aydinlatmaMetniUrl =
-      'https://eduplas.fake/legal/aydinlatma-metni';
-  static const String _acikRizaUrl =
-      'https://eduplas.fake/legal/acik-riza';
+  // Tek sözleşme dosyası (TR)
+  // pubspec.yaml:
+  // assets:
+  //   - assets/hukuk/eduplas_sozlesme_tr.txt
+  static const String _assetYolu = 'assets/hukuk/eduplas_sozlesme_tr.txt';
 
-  bool _kullaniciSozlesmesiOkundu = false;
-  bool _aydinlatmaMetniOkundu = false;
-  bool _acikRizaOkundu = false;
-
+  String _metin = '';
+  bool _yukleniyor = true;
+  bool _kabul = false;
   bool _islemde = false;
 
-  Future<void> _acUrl(String url) async {
-    final uri = Uri.parse(url);
-    if (!await canLaunchUrl(uri)) {
-      // ignore: use_build_context_synchronously
+  @override
+  void initState() {
+    super.initState();
+    _yukle();
+  }
+
+  Future<void> _yukle() async {
+    try {
+      final icerik = await rootBundle.loadString(_assetYolu);
+      if (!mounted) return;
+      setState(() {
+        _metin = icerik;
+        _yukleniyor = false;
+      });
+    } catch (e) {
+      if (!mounted) return;
+      setState(() {
+        _metin = '''
+EDUPLAS TEK KULLANICI SÖZLEŞMESİ
+
+Uygulama içinde gösterilecek sözleşme metni bulunamadı.
+Lütfen yöneticinizden "$_assetYolu" dosyasını eklemesini isteyin.
+''';
+        _yukleniyor = false;
+      });
+    }
+  }
+
+  Future<void> _kaydet() async {
+    final user = FirebaseAuth.instance.currentUser;
+    if (user == null) {
+      if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Bağlantı açılamadı.')),
+        const SnackBar(content: Text('Kullanıcı oturumu bulunamadı.')),
       );
       return;
     }
-    await launchUrl(
-      uri,
-      mode: LaunchMode.inAppBrowserView,
-    );
-  }
+    setState(() => _islemde = true);
 
-  bool get _hepsiKabul =>
-      _kullaniciSozlesmesiOkundu &&
-      _aydinlatmaMetniOkundu &&
-      _acikRizaOkundu;
+    final db = FirebaseFirestore.instance;
+    final ref = db.collection('users').doc(user.uid);
 
-  void _tamamla() async {
-    if (!_hepsiKabul) return;
-    setState(() {
-      _islemde = true;
-    });
+    await ref.set({
+      'sozlesmeKabul': true,
+      'sozlesmeSurum': '1.0',
+      'sozlesmeTarih': DateTime.now().toIso8601String(),
+      'updatedAt': FieldValue.serverTimestamp(),
+    }, SetOptions(merge: true));
 
-    // Buraya senin gerçek kayıt / Firestore update / onay kaydı gelecek.
-    // Şimdilik sadece sonraki sayfaya geçelim.
-    // ignore: use_build_context_synchronously
+    if (!mounted) return;
     Navigator.of(context).pushReplacementNamed(RouteNames.user);
-
-    setState(() {
-      _islemde = false;
-    });
   }
 
   @override
@@ -76,185 +95,70 @@ class _SozlesmeKabulSayfasiState extends State<SozlesmeKabulSayfasi> {
         title: const Text('Sözleşme Onayı'),
       ),
       body: SafeArea(
-        child: ListView(
-          padding: const EdgeInsets.all(16),
+        child: Column(
           children: [
-            // Logo / başlık alanı
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  'EduPlas',
-                  style: tema.textTheme.headlineSmall?.copyWith(
-                    fontWeight: FontWeight.bold,
+            // Logo / başlık alanı (senin standart)
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'EduPlas',
+                    style: tema.textTheme.headlineSmall?.copyWith(
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
+                  const SizedBox(height: 4),
+                  Text(
+                    'Öğren kazan, öğret kazandır.',
+                    style: tema.textTheme.bodyMedium,
+                  ),
+                  const SizedBox(height: 12),
+                  Text(
+                    'Lütfen aşağıdaki sözleşmeyi okuyup onaylayın.',
+                    style: tema.textTheme.titleMedium,
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 8),
+            Expanded(
+              child: _yukleniyor
+                  ? const Center(child: CircularProgressIndicator())
+                  : SingleChildScrollView(
+                      padding: const EdgeInsets.all(16),
+                      child: Text(
+                        _metin,
+                        style: const TextStyle(fontSize: 14, height: 1.4),
+                      ),
+                    ),
+            ),
+            CheckboxListTile(
+              value: _kabul,
+              onChanged: (v) => setState(() => _kabul = v ?? false),
+              title: const Text('Tüm şartları okudum ve kabul ediyorum.'),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(16),
+              child: SizedBox(
+                width: double.infinity,
+                child: FilledButton.icon(
+                  onPressed:
+                      (!_kabul || _islemde || _yukleniyor) ? null : _kaydet,
+                  icon: _islemde
+                      ? const SizedBox(
+                          height: 18,
+                          width: 18,
+                          child: CircularProgressIndicator(strokeWidth: 2),
+                        )
+                      : const Icon(Icons.check),
+                  label: const Text('Kaydet ve devam et'),
                 ),
-                const SizedBox(height: 4),
-                Text(
-                  'Öğren kazan, öğret kazandır.',
-                  style: tema.textTheme.bodyMedium,
-                ),
-                const SizedBox(height: 16),
-                Text(
-                  'Lütfen aşağıdaki belgeleri okuyup onaylayın.',
-                  style: tema.textTheme.titleMedium,
-                ),
-              ],
-            ),
-            const SizedBox(height: 24),
-
-            // 1) Kullanıcı Sözleşmesi
-            _LegalSatiri(
-              no: 1,
-              baslik: 'Kullanıcı Sözleşmesi',
-              aciklama:
-                  'EduPlas platformunu kullanmanın temel koşullarıdır.',
-              url: _kullaniciSozlesmesiUrl,
-              deger: _kullaniciSozlesmesiOkundu,
-              onDegisti: (v) {
-                setState(() {
-                  _kullaniciSozlesmesiOkundu = v;
-                });
-              },
-              onLink: _kullaniciSozlesmesiUrl.isEmpty
-                  ? null
-                  : () => _acUrl(_kullaniciSozlesmesiUrl),
-            ),
-
-            const SizedBox(height: 12),
-
-            // 2) Aydınlatma Metni
-            _LegalSatiri(
-              no: 2,
-              baslik: 'Aydınlatma Metni (KVKK)',
-              aciklama:
-                  'Kişisel verilerinizin hangi amaçlarla işlendiğini açıklar.',
-              url: _aydinlatmaMetniUrl,
-              deger: _aydinlatmaMetniOkundu,
-              onDegisti: (v) {
-                setState(() {
-                  _aydinlatmaMetniOkundu = v;
-                });
-              },
-              onLink: _aydinlatmaMetniUrl.isEmpty
-                  ? null
-                  : () => _acUrl(_aydinlatmaMetniUrl),
-            ),
-
-            const SizedBox(height: 12),
-
-            // 3) Açık Rıza
-            _LegalSatiri(
-              no: 3,
-              baslik: 'Açık Rıza / Onay Formu',
-              aciklama:
-                  'Ek hizmetler, kampanyalar ve konum temelli içerik için gereklidir.',
-              url: _acikRizaUrl,
-              deger: _acikRizaOkundu,
-              onDegisti: (v) {
-                setState(() {
-                  _acikRizaOkundu = v;
-                });
-              },
-              onLink: _acikRizaUrl.isEmpty ? null : () => _acUrl(_acikRizaUrl),
-            ),
-
-            const SizedBox(height: 32),
-
-            FilledButton.icon(
-              onPressed: _hepsiKabul && !_islemde ? _tamamla : null,
-              icon: _islemde
-                  ? const SizedBox(
-                      width: 16,
-                      height: 16,
-                      child: CircularProgressIndicator(strokeWidth: 2),
-                    )
-                  : const Icon(Icons.check),
-              label: const Text('Kabul ediyorum ve devam et'),
-            ),
-
-            const SizedBox(height: 16),
-            Text(
-              'Not: Kabul etmeden EduPlas hesabınız tamamlanmaz.',
-              style: tema.textTheme.bodySmall,
+              ),
             ),
           ],
         ),
-      ),
-    );
-  }
-}
-
-class _LegalSatiri extends StatelessWidget {
-  final int no;
-  final String baslik;
-  final String aciklama;
-  final String url;
-  final bool deger;
-  final ValueChanged<bool> onDegisti;
-  final VoidCallback? onLink;
-
-  const _LegalSatiri({
-    required this.no,
-    required this.baslik,
-    required this.aciklama,
-    required this.url,
-    required this.deger,
-    required this.onDegisti,
-    this.onLink,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final tema = Theme.of(context);
-    return Container(
-      decoration: BoxDecoration(
-        border: Border.all(color: tema.colorScheme.outlineVariant),
-        borderRadius: BorderRadius.circular(12),
-      ),
-      padding: const EdgeInsets.all(12),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Checkbox(
-            value: deger,
-            onChanged: (v) {
-              if (v != null) {
-                onDegisti(v);
-              }
-            },
-          ),
-          const SizedBox(width: 8),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  '$no. $baslik',
-                  style: tema.textTheme.titleMedium?.copyWith(
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-                const SizedBox(height: 4),
-                Text(
-                  aciklama,
-                  style: tema.textTheme.bodySmall,
-                ),
-                const SizedBox(height: 6),
-                Align(
-                  alignment: Alignment.centerLeft,
-                  child: TextButton.icon(
-                    onPressed: onLink,
-                    icon: const Icon(Icons.open_in_new),
-                    label: Text(
-                      onLink == null ? 'Bağlantı yok' : 'Görüntüle',
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ],
       ),
     );
   }

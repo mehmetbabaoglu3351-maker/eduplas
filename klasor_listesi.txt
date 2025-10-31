@@ -1,0 +1,3361 @@
+Folder PATH listing for volume DEPOMM D˜KKAT!!!!
+Volume serial number is F036-2A53
+C:.
+³   .flutter-plugins-dependencies
+³   .gitignore
+³   .metadata
+³   analysis_options.yaml
+³   dosya_yapisi.txt
+³   eduplas.iml
+³   firebase.json
+³   flutter_01.log
+³   klasor_listesi.txt
+³   l10n.yaml
+³   lib_tree.txt
+³   pubspec.lock
+³   pubspec.yaml
+³   README.md
+³   yapisi.txt
+³   __ROUTES.txt
+³   
+ÃÄÄÄ.dart_tool
+³   ³   package_config.json
+³   ³   package_graph.json
+³   ³   version
+³   ³   
+³   ÀÄÄÄdartpad
+³           web_plugin_registrant.dart
+³           
+ÃÄÄÄ.vscode
+³       extensions.json
+³       settings.json
+³       
+ÃÄÄÄandroid
+³   ³   .gitignore
+³   ³   build.gradle.kts
+³   ³   eduplas_android.iml
+³   ³   gradle.properties
+³   ³   gradlew
+³   ³   gradlew.bat
+³   ³   local.properties
+³   ³   settings.gradle.kts
+³   ³   
+³   ÃÄÄÄapp
+³   ³   ³   build.gradle.kts
+³   ³   ³   google-services.json
+³   ³   ³   
+³   ³   ÀÄÄÄsrc
+³   ³       ÃÄÄÄdebug
+³   ³       ³       AndroidManifest.xml
+³   ³       ³       
+³   ³       ÃÄÄÄmain
+³   ³       ³   ³   AndroidManifest.xml
+³   ³       ³   ³   
+³   ³       ³   ÃÄÄÄjava
+³   ³       ³   ³   ÀÄÄÄio
+³   ³       ³   ³       ÀÄÄÄflutter
+³   ³       ³   ³           ÀÄÄÄplugins
+³   ³       ³   ³                   GeneratedPluginRegistrant.java
+³   ³       ³   ³                   
+³   ³       ³   ÃÄÄÄkotlin
+³   ³       ³   ³   ÀÄÄÄcom
+³   ³       ³   ³       ÀÄÄÄexample
+³   ³       ³   ³           ÀÄÄÄeduplas
+³   ³       ³   ³                   MainActivity.kt
+³   ³       ³   ³                   
+³   ³       ³   ÀÄÄÄres
+³   ³       ³       ÃÄÄÄdrawable
+³   ³       ³       ³       launch_background.xml
+³   ³       ³       ³       
+³   ³       ³       ÃÄÄÄdrawable-v21
+³   ³       ³       ³       launch_background.xml
+³   ³       ³       ³       
+³   ³       ³       ÃÄÄÄmipmap-hdpi
+³   ³       ³       ³       ic_launcher.png
+³   ³       ³       ³       
+³   ³       ³       ÃÄÄÄmipmap-mdpi
+³   ³       ³       ³       ic_launcher.png
+³   ³       ³       ³       
+³   ³       ³       ÃÄÄÄmipmap-xhdpi
+³   ³       ³       ³       ic_launcher.png
+³   ³       ³       ³       
+³   ³       ³       ÃÄÄÄmipmap-xxhdpi
+³   ³       ³       ³       ic_launcher.png
+³   ³       ³       ³       
+³   ³       ³       ÃÄÄÄmipmap-xxxhdpi
+³   ³       ³       ³       ic_launcher.png
+³   ³       ³       ³       
+³   ³       ³       ÃÄÄÄvalues
+³   ³       ³       ³       styles.xml
+³   ³       ³       ³       
+³   ³       ³       ÀÄÄÄvalues-night
+³   ³       ³               styles.xml
+³   ³       ³               
+³   ³       ÀÄÄÄprofile
+³   ³               AndroidManifest.xml
+³   ³               
+³   ÀÄÄÄgradle
+³       ÀÄÄÄwrapper
+³               gradle-wrapper.jar
+³               gradle-wrapper.properties
+³               
+ÃÄÄÄassets
+³   ÃÄÄÄhukuk
+³   ³       eduplas_sozlesme_en.txt
+³   ³       eduplas_sozlesme_tr.txt
+³   ³       
+³   ÃÄÄÄimages
+³   ³       eduplas_logo.png
+³   ³       eduplas_logo_web.png
+³   ³       
+³   ÀÄÄÄveri
+³       ÀÄÄÄyerler
+³               tr.json
+³               
+ÃÄÄÄbuild
+³   ³   .last_build_id
+³   ³   892b637c16d52470fb7b14b9d9897587.cache.dill.track.dill
+³   ³   
+³   ÃÄÄÄ440fa301630048086d0fd19d052f76c7
+³   ³       gen_dart_plugin_registrant.stamp
+³   ³       gen_l10n_inputs_and_outputs.json
+³   ³       gen_localizations.d
+³   ³       gen_localizations.stamp
+³   ³       _composite.stamp
+³   ³       
+³   ÃÄÄÄdb49be3c5adde8120db7bc1a6da48e9d
+³   ³       .filecache
+³   ³       gen_l10n_inputs_and_outputs.json
+³   ³       gen_localizations.d
+³   ³       gen_localizations.stamp
+³   ³       outputs.json
+³   ³       
+³   ÀÄÄÄflutter_assets
+³       ³   AssetManifest.bin
+³       ³   AssetManifest.bin.json
+³       ³   AssetManifest.json
+³       ³   FontManifest.json
+³       ³   NOTICES
+³       ³   
+³       ÃÄÄÄassets
+³       ³   ÃÄÄÄhukuk
+³       ³   ³       eduplas_sozlesme_en.txt
+³       ³   ³       eduplas_sozlesme_tr.txt
+³       ³   ³       
+³       ³   ÃÄÄÄimages
+³       ³   ³       eduplas_logo.png
+³       ³   ³       eduplas_logo_web.png
+³       ³   ³       
+³       ³   ÀÄÄÄveri
+³       ³       ÀÄÄÄyerler
+³       ³               tr.json
+³       ³               
+³       ÃÄÄÄfonts
+³       ³       MaterialIcons-Regular.otf
+³       ³       
+³       ÀÄÄÄshaders
+³               ink_sparkle.frag
+³               
+ÃÄÄÄdocs
+³   ³   CHANGELOG.md
+³   ³   CONTRIBUTING.md
+³   ³   LEGAL.md
+³   ³   M1_BOOTSTRAP.md
+³   ³   M2_KONUM.md
+³   ³   M3_KAYIT.md
+³   ³   PLAYBOOK.md
+³   ³   README.md
+³   ³   ROADMAP.md
+³   ³   
+³   ÀÄÄÄADR
+³           ADR-001_BOOTSTRAP.md
+³           ADR-002_DEVICE_HASH.md
+³           ADR-003_ONAY_ZINCIRI.md
+³           ADR-004_KONUM_A1.md
+³           ADR-005_TELEFON_OTP.md
+³           ADR-006_HUKUK_UYUM.md
+³           ADR-007_CI_KALITE.md
+³           
+ÃÄÄÄfunctions
+³   ³   package.json
+³   ³   tsconfig.json
+³   ³   
+³   ÀÄÄÄsrc
+³           index.ts
+³           
+ÃÄÄÄios
+³   ³   .gitignore
+³   ³   
+³   ÃÄÄÄFlutter
+³   ³   ³   AppFrameworkInfo.plist
+³   ³   ³   Debug.xcconfig
+³   ³   ³   flutter_export_environment.sh
+³   ³   ³   Generated.xcconfig
+³   ³   ³   Release.xcconfig
+³   ³   ³   
+³   ³   ÀÄÄÄephemeral
+³   ³           flutter_lldbinit
+³   ³           flutter_lldb_helper.py
+³   ³           
+³   ÃÄÄÄRunner
+³   ³   ³   AppDelegate.swift
+³   ³   ³   GeneratedPluginRegistrant.h
+³   ³   ³   GeneratedPluginRegistrant.m
+³   ³   ³   Info.plist
+³   ³   ³   Runner-Bridging-Header.h
+³   ³   ³   
+³   ³   ÃÄÄÄAssets.xcassets
+³   ³   ³   ÃÄÄÄAppIcon.appiconset
+³   ³   ³   ³       Contents.json
+³   ³   ³   ³       Icon-App-1024x1024@1x.png
+³   ³   ³   ³       Icon-App-20x20@1x.png
+³   ³   ³   ³       Icon-App-20x20@2x.png
+³   ³   ³   ³       Icon-App-20x20@3x.png
+³   ³   ³   ³       Icon-App-29x29@1x.png
+³   ³   ³   ³       Icon-App-29x29@2x.png
+³   ³   ³   ³       Icon-App-29x29@3x.png
+³   ³   ³   ³       Icon-App-40x40@1x.png
+³   ³   ³   ³       Icon-App-40x40@2x.png
+³   ³   ³   ³       Icon-App-40x40@3x.png
+³   ³   ³   ³       Icon-App-60x60@2x.png
+³   ³   ³   ³       Icon-App-60x60@3x.png
+³   ³   ³   ³       Icon-App-76x76@1x.png
+³   ³   ³   ³       Icon-App-76x76@2x.png
+³   ³   ³   ³       Icon-App-83.5x83.5@2x.png
+³   ³   ³   ³       
+³   ³   ³   ÀÄÄÄLaunchImage.imageset
+³   ³   ³           Contents.json
+³   ³   ³           LaunchImage.png
+³   ³   ³           LaunchImage@2x.png
+³   ³   ³           LaunchImage@3x.png
+³   ³   ³           README.md
+³   ³   ³           
+³   ³   ÀÄÄÄBase.lproj
+³   ³           LaunchScreen.storyboard
+³   ³           Main.storyboard
+³   ³           
+³   ÃÄÄÄRunner.xcodeproj
+³   ³   ³   project.pbxproj
+³   ³   ³   
+³   ³   ÃÄÄÄproject.xcworkspace
+³   ³   ³   ³   contents.xcworkspacedata
+³   ³   ³   ³   
+³   ³   ³   ÀÄÄÄxcshareddata
+³   ³   ³           IDEWorkspaceChecks.plist
+³   ³   ³           WorkspaceSettings.xcsettings
+³   ³   ³           
+³   ³   ÀÄÄÄxcshareddata
+³   ³       ÀÄÄÄxcschemes
+³   ³               Runner.xcscheme
+³   ³               
+³   ÃÄÄÄRunner.xcworkspace
+³   ³   ³   contents.xcworkspacedata
+³   ³   ³   
+³   ³   ÀÄÄÄxcshareddata
+³   ³           IDEWorkspaceChecks.plist
+³   ³           WorkspaceSettings.xcsettings
+³   ³           
+³   ÀÄÄÄRunnerTests
+³           RunnerTests.swift
+³           
+ÃÄÄÄlib
+³   ³   firebase_options.dart
+³   ³   main.dart
+³   ³   
+³   ÃÄÄÄayarlar
+³   ³       dil_degistirici.dart
+³   ³       dil_secimi_sayfasi.dart
+³   ³       
+³   ÃÄÄÄcekirdek
+³   ³   ÃÄÄÄakis
+³   ³   ³       route_gate.dart
+³   ³   ³       
+³   ³   ÃÄÄÄarayuz
+³   ³   ³       app_logo.dart
+³   ³   ³       error_banner.dart
+³   ³   ³       input_decorations.dart
+³   ³   ³       loading_button.dart
+³   ³   ³       
+³   ³   ÃÄÄÄdil
+³   ³   ³       dil_yoneticisi.dart
+³   ³   ³       
+³   ³   ÃÄÄÄhukuk
+³   ³   ³       hukuk_servisi.dart
+³   ³   ³       legal_versiyonlar.dart
+³   ³   ³       
+³   ³   ÃÄÄÄkimlik
+³   ³   ³       bootstrap_claims.dart
+³   ³   ³       bootstrap_guard.dart
+³   ³   ³       device_hash.dart
+³   ³   ³       email_ureticisi.dart
+³   ³   ³       
+³   ³   ÃÄÄÄkonum
+³   ³   ³       konum_adres_secici.dart
+³   ³   ³       konum_secici.dart
+³   ³   ³       konum_servisi.dart
+³   ³   ³       
+³   ³   ÃÄÄÄvalidasyon
+³   ³   ³       validators.dart
+³   ³   ³       
+³   ³   ÀÄÄÄveri
+³   ³           yerveri_servisi.dart
+³   ³           yer_model.dart
+³   ³           
+³   ÃÄÄÄdiagnostics
+³   ³       asset_selftest.dart
+³   ³       
+³   ÃÄÄÄhizmetler
+³   ³       auth_servisi.dart
+³   ³       mock_sms_servisi.dart
+³   ³       
+³   ÃÄÄÄhukuk
+³   ³       sozlesme_okuma_sayfasi.dart
+³   ³       
+³   ÃÄÄÄl10n
+³   ³       app_en.arb
+³   ³       app_localizations.dart
+³   ³       app_localizations_en.dart
+³   ³       app_localizations_tr.dart
+³   ³       app_tr.arb
+³   ³       l10n_untranslated.txt
+³   ³       supported_locales.dart
+³   ³       untranslatable.txt
+³   ³       
+³   ÃÄÄÄozellikler
+³   ³   ÃÄÄÄadmin
+³   ³   ³       onay_kutusu_sayfasi.dart
+³   ³   ³       
+³   ³   ÃÄÄÄbeklemede
+³   ³   ³       beklemede_sayfasi.dart
+³   ³   ³       
+³   ³   ÃÄÄÄgecit
+³   ³   ³       kimlik_gecidi.dart
+³   ³   ³       
+³   ³   ÃÄÄÄgiris
+³   ³   ³       ana_sayfa.dart
+³   ³   ³       giris_sayfasi.dart
+³   ³   ³       
+³   ³   ÃÄÄÄkapigecit
+³   ³   ³       kapigecit.dart
+³   ³   ³       
+³   ³   ÃÄÄÄkayit
+³   ³   ³       ilgi_secimi_sayfasi.dart
+³   ³   ³       kayit_sayfasi.dart
+³   ³   ³       kayit_sihirbazi_sayfasi.dart
+³   ³   ³       rol_secimi_sayfasi.dart
+³   ³   ³       sms_kurtarma_sayfasi.dart
+³   ³   ³       telefon_dogrulama_sayfasi.dart
+³   ³   ³       
+³   ³   ÃÄÄÄkullanici
+³   ³   ³       kullanici_sayfasi.dart
+³   ³   ³       
+³   ³   ÃÄÄÄonay
+³   ³   ³       onay_karti.dart
+³   ³   ³       onay_mock_depo.dart
+³   ³   ³       onay_modeller.dart
+³   ³   ³       onay_sayfasi.dart
+³   ³   ³       onay_servisi.dart
+³   ³   ³       sozlesme_kabul_sayfasi.dart
+³   ³   ³       sozlesme_onay_sayfasi.dart
+³   ³   ³       
+³   ³   ÀÄÄÄrol_ana
+³   ³           bas_admin_paneli.dart
+³   ³           destekci_paneli.dart
+³   ³           ilce_admin_paneli.dart
+³   ³           il_admin_paneli.dart
+³   ³           isyeri_paneli.dart
+³   ³           koordinator_paneli.dart
+³   ³           ogrenci_anasayfasi.dart
+³   ³           ogretmen_paneli.dart
+³   ³           onaylarim_butonu.dart
+³   ³           
+³   ÃÄÄÄrouter
+³   ³       app_router.dart
+³   ³       route_names.dart
+³   ³       
+³   ÀÄÄÄtema
+³           app_tema.dart
+³           
+ÃÄÄÄlinux
+³   ³   .gitignore
+³   ³   CMakeLists.txt
+³   ³   
+³   ÃÄÄÄflutter
+³   ³   ³   CMakeLists.txt
+³   ³   ³   generated_plugins.cmake
+³   ³   ³   generated_plugin_registrant.cc
+³   ³   ³   generated_plugin_registrant.h
+³   ³   ³   
+³   ³   ÀÄÄÄephemeral
+³   ³       ÀÄÄÄ.plugin_symlinks
+³   ³           ÃÄÄÄdevice_info_plus
+³   ³           ³   ³   pubspec.yaml
+³   ³           ³   ³   README.md
+³   ³           ³   ³   CHANGELOG.md
+³   ³           ³   ³   LICENSE
+³   ³           ³   ³   
+³   ³           ³   ÃÄÄÄlib
+³   ³           ³   ³   ³   device_info_plus.dart
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÀÄÄÄsrc
+³   ³           ³   ³       ³   device_info_plus_web.dart
+³   ³           ³   ³       ³   device_info_plus_linux.dart
+³   ³           ³   ³       ³   device_info_plus_windows.dart
+³   ³           ³   ³       ³   device_info_plus_macos.dart
+³   ³           ³   ³       ³   
+³   ³           ³   ³       ÀÄÄÄmodel
+³   ³           ³   ³               web_browser_info.dart
+³   ³           ³   ³               ios_device_info.dart
+³   ³           ³   ³               windows_device_info.dart
+³   ³           ³   ³               android_device_info.dart
+³   ³           ³   ³               linux_device_info.dart
+³   ³           ³   ³               macos_device_info.dart
+³   ³           ³   ³               
+³   ³           ³   ÃÄÄÄandroid
+³   ³           ³   ³   ³   settings.gradle
+³   ³           ³   ³   ³   gradle.properties
+³   ³           ³   ³   ³   build.gradle
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÃÄÄÄsrc
+³   ³           ³   ³   ³   ÀÄÄÄmain
+³   ³           ³   ³   ³       ³   AndroidManifest.xml
+³   ³           ³   ³   ³       ³   
+³   ³           ³   ³   ³       ÀÄÄÄkotlin
+³   ³           ³   ³   ³           ÀÄÄÄdev
+³   ³           ³   ³   ³               ÀÄÄÄfluttercommunity
+³   ³           ³   ³   ³                   ÀÄÄÄplus
+³   ³           ³   ³   ³                       ÀÄÄÄdevice_info
+³   ³           ³   ³   ³                               MethodCallHandlerImpl.kt
+³   ³           ³   ³   ³                               DeviceInfoPlusPlugin.kt
+³   ³           ³   ³   ³                               
+³   ³           ³   ³   ÀÄÄÄgradle
+³   ³           ³   ³       ÀÄÄÄwrapper
+³   ³           ³   ³               gradle-wrapper.properties
+³   ³           ³   ³               
+³   ³           ³   ÃÄÄÄios
+³   ³           ³   ³   ³   PrivacyInfo.xcprivacy
+³   ³           ³   ³   ³   device_info_plus.podspec
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÀÄÄÄClasses
+³   ³           ³   ³           FPPDeviceInfoPlusPlugin.m
+³   ³           ³   ³           FPPDeviceInfoPlusPlugin.h
+³   ³           ³   ³           
+³   ³           ³   ÃÄÄÄexample
+³   ³           ³   ³   ³   pubspec.yaml
+³   ³           ³   ³   ³   README.md
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÃÄÄÄwindows
+³   ³           ³   ³   ³   ³   CMakeLists.txt
+³   ³           ³   ³   ³   ³   
+³   ³           ³   ³   ³   ÃÄÄÄflutter
+³   ³           ³   ³   ³   ³       CMakeLists.txt
+³   ³           ³   ³   ³   ³       
+³   ³           ³   ³   ³   ÀÄÄÄrunner
+³   ³           ³   ³   ³       ³   flutter_window.h
+³   ³           ³   ³   ³       ³   main.cpp
+³   ³           ³   ³   ³       ³   Runner.rc
+³   ³           ³   ³   ³       ³   run_loop.cpp
+³   ³           ³   ³   ³       ³   resource.h
+³   ³           ³   ³   ³       ³   win32_window.cpp
+³   ³           ³   ³   ³       ³   win32_window.h
+³   ³           ³   ³   ³       ³   CMakeLists.txt
+³   ³           ³   ³   ³       ³   runner.exe.manifest
+³   ³           ³   ³   ³       ³   utils.cpp
+³   ³           ³   ³   ³       ³   run_loop.h
+³   ³           ³   ³   ³       ³   utils.h
+³   ³           ³   ³   ³       ³   flutter_window.cpp
+³   ³           ³   ³   ³       ³   
+³   ³           ³   ³   ³       ÀÄÄÄresources
+³   ³           ³   ³   ³               app_icon.ico
+³   ³           ³   ³   ³               
+³   ³           ³   ³   ÃÄÄÄlib
+³   ³           ³   ³   ³       main.dart
+³   ³           ³   ³   ³       
+³   ³           ³   ³   ÃÄÄÄandroid
+³   ³           ³   ³   ³   ³   settings.gradle
+³   ³           ³   ³   ³   ³   gradle.properties
+³   ³           ³   ³   ³   ³   build.gradle
+³   ³           ³   ³   ³   ³   
+³   ³           ³   ³   ³   ÃÄÄÄgradle
+³   ³           ³   ³   ³   ³   ÀÄÄÄwrapper
+³   ³           ³   ³   ³   ³           gradle-wrapper.properties
+³   ³           ³   ³   ³   ³           
+³   ³           ³   ³   ³   ÀÄÄÄapp
+³   ³           ³   ³   ³       ³   build.gradle
+³   ³           ³   ³   ³       ³   
+³   ³           ³   ³   ³       ÀÄÄÄsrc
+³   ³           ³   ³   ³           ÃÄÄÄdebug
+³   ³           ³   ³   ³           ³       AndroidManifest.xml
+³   ³           ³   ³   ³           ³       
+³   ³           ³   ³   ³           ÃÄÄÄmain
+³   ³           ³   ³   ³           ³   ³   AndroidManifest.xml
+³   ³           ³   ³   ³           ³   ³   
+³   ³           ³   ³   ³           ³   ÃÄÄÄkotlin
+³   ³           ³   ³   ³           ³   ³   ÀÄÄÄio
+³   ³           ³   ³   ³           ³   ³       ÀÄÄÄflutter
+³   ³           ³   ³   ³           ³   ³           ÀÄÄÄplugins
+³   ³           ³   ³   ³           ³   ³               ÀÄÄÄdeviceinfoexample
+³   ³           ³   ³   ³           ³   ³                   ÀÄÄÄexample
+³   ³           ³   ³   ³           ³   ³                           MainActivity.kt
+³   ³           ³   ³   ³           ³   ³                           
+³   ³           ³   ³   ³           ³   ÀÄÄÄres
+³   ³           ³   ³   ³           ³       ÃÄÄÄmipmap-xhdpi
+³   ³           ³   ³   ³           ³       ³       ic_launcher.png
+³   ³           ³   ³   ³           ³       ³       
+³   ³           ³   ³   ³           ³       ÃÄÄÄvalues
+³   ³           ³   ³   ³           ³       ³       styles.xml
+³   ³           ³   ³   ³           ³       ³       
+³   ³           ³   ³   ³           ³       ÃÄÄÄmipmap-xxhdpi
+³   ³           ³   ³   ³           ³       ³       ic_launcher.png
+³   ³           ³   ³   ³           ³       ³       
+³   ³           ³   ³   ³           ³       ÃÄÄÄmipmap-xxxhdpi
+³   ³           ³   ³   ³           ³       ³       ic_launcher.png
+³   ³           ³   ³   ³           ³       ³       
+³   ³           ³   ³   ³           ³       ÃÄÄÄdrawable
+³   ³           ³   ³   ³           ³       ³       launch_background.xml
+³   ³           ³   ³   ³           ³       ³       
+³   ³           ³   ³   ³           ³       ÃÄÄÄmipmap-hdpi
+³   ³           ³   ³   ³           ³       ³       ic_launcher.png
+³   ³           ³   ³   ³           ³       ³       
+³   ³           ³   ³   ³           ³       ÀÄÄÄmipmap-mdpi
+³   ³           ³   ³   ³           ³               ic_launcher.png
+³   ³           ³   ³   ³           ³               
+³   ³           ³   ³   ³           ÀÄÄÄprofile
+³   ³           ³   ³   ³                   AndroidManifest.xml
+³   ³           ³   ³   ³                   
+³   ³           ³   ³   ÃÄÄÄlinux
+³   ³           ³   ³   ³   ³   my_application.cc
+³   ³           ³   ³   ³   ³   my_application.h
+³   ³           ³   ³   ³   ³   CMakeLists.txt
+³   ³           ³   ³   ³   ³   main.cc
+³   ³           ³   ³   ³   ³   
+³   ³           ³   ³   ³   ÀÄÄÄflutter
+³   ³           ³   ³   ³           CMakeLists.txt
+³   ³           ³   ³   ³           
+³   ³           ³   ³   ÃÄÄÄios
+³   ³           ³   ³   ³   ÃÄÄÄFlutter
+³   ³           ³   ³   ³   ³       AppFrameworkInfo.plist
+³   ³           ³   ³   ³   ³       Release.xcconfig
+³   ³           ³   ³   ³   ³       Debug.xcconfig
+³   ³           ³   ³   ³   ³       
+³   ³           ³   ³   ³   ÃÄÄÄRunner.xcodeproj
+³   ³           ³   ³   ³   ³   ³   project.pbxproj
+³   ³           ³   ³   ³   ³   ³   
+³   ³           ³   ³   ³   ³   ÃÄÄÄxcshareddata
+³   ³           ³   ³   ³   ³   ³   ÀÄÄÄxcschemes
+³   ³           ³   ³   ³   ³   ³           Runner.xcscheme
+³   ³           ³   ³   ³   ³   ³           
+³   ³           ³   ³   ³   ³   ÀÄÄÄproject.xcworkspace
+³   ³           ³   ³   ³   ³       ³   contents.xcworkspacedata
+³   ³           ³   ³   ³   ³       ³   
+³   ³           ³   ³   ³   ³       ÀÄÄÄxcshareddata
+³   ³           ³   ³   ³   ³               WorkspaceSettings.xcsettings
+³   ³           ³   ³   ³   ³               IDEWorkspaceChecks.plist
+³   ³           ³   ³   ³   ³               
+³   ³           ³   ³   ³   ÃÄÄÄRunner
+³   ³           ³   ³   ³   ³   ³   Info.plist
+³   ³           ³   ³   ³   ³   ³   AppDelegate.swift
+³   ³           ³   ³   ³   ³   ³   Runner-Bridging-Header.h
+³   ³           ³   ³   ³   ³   ³   
+³   ³           ³   ³   ³   ³   ÃÄÄÄBase.lproj
+³   ³           ³   ³   ³   ³   ³       Main.storyboard
+³   ³           ³   ³   ³   ³   ³       LaunchScreen.storyboard
+³   ³           ³   ³   ³   ³   ³       
+³   ³           ³   ³   ³   ³   ÀÄÄÄAssets.xcassets
+³   ³           ³   ³   ³   ³       ÃÄÄÄAppIcon.appiconset
+³   ³           ³   ³   ³   ³       ³       Icon-App-29x29@2x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-40x40@3x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-76x76@1x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-60x60@2x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-60x60@3x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-40x40@2x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-29x29@3x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-20x20@2x.png
+³   ³           ³   ³   ³   ³       ³       Contents.json
+³   ³           ³   ³   ³   ³       ³       Icon-App-20x20@3x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-83.5x83.5@2x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-1024x1024@1x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-20x20@1x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-40x40@1x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-29x29@1x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-76x76@2x.png
+³   ³           ³   ³   ³   ³       ³       
+³   ³           ³   ³   ³   ³       ÀÄÄÄLaunchImage.imageset
+³   ³           ³   ³   ³   ³               LaunchImage.png
+³   ³           ³   ³   ³   ³               Contents.json
+³   ³           ³   ³   ³   ³               README.md
+³   ³           ³   ³   ³   ³               LaunchImage@3x.png
+³   ³           ³   ³   ³   ³               LaunchImage@2x.png
+³   ³           ³   ³   ³   ³               
+³   ³           ³   ³   ³   ÃÄÄÄRunnerTests
+³   ³           ³   ³   ³   ³       RunnerTests.swift
+³   ³           ³   ³   ³   ³       
+³   ³           ³   ³   ³   ÀÄÄÄRunner.xcworkspace
+³   ³           ³   ³   ³       ³   contents.xcworkspacedata
+³   ³           ³   ³   ³       ³   
+³   ³           ³   ³   ³       ÀÄÄÄxcshareddata
+³   ³           ³   ³   ³               WorkspaceSettings.xcsettings
+³   ³           ³   ³   ³               IDEWorkspaceChecks.plist
+³   ³           ³   ³   ³               
+³   ³           ³   ³   ÃÄÄÄweb
+³   ³           ³   ³   ³   ³   manifest.json
+³   ³           ³   ³   ³   ³   favicon.png
+³   ³           ³   ³   ³   ³   index.html
+³   ³           ³   ³   ³   ³   
+³   ³           ³   ³   ³   ÀÄÄÄicons
+³   ³           ³   ³   ³           Icon-512.png
+³   ³           ³   ³   ³           Icon-192.png
+³   ³           ³   ³   ³           
+³   ³           ³   ³   ÃÄÄÄmacos
+³   ³           ³   ³   ³   ÃÄÄÄFlutter
+³   ³           ³   ³   ³   ³       Flutter-Release.xcconfig
+³   ³           ³   ³   ³   ³       Flutter-Debug.xcconfig
+³   ³           ³   ³   ³   ³       
+³   ³           ³   ³   ³   ÃÄÄÄRunner.xcodeproj
+³   ³           ³   ³   ³   ³   ³   project.pbxproj
+³   ³           ³   ³   ³   ³   ³   
+³   ³           ³   ³   ³   ³   ÃÄÄÄxcshareddata
+³   ³           ³   ³   ³   ³   ³   ÀÄÄÄxcschemes
+³   ³           ³   ³   ³   ³   ³           Runner.xcscheme
+³   ³           ³   ³   ³   ³   ³           
+³   ³           ³   ³   ³   ³   ÀÄÄÄproject.xcworkspace
+³   ³           ³   ³   ³   ³       ÀÄÄÄxcshareddata
+³   ³           ³   ³   ³   ³               IDEWorkspaceChecks.plist
+³   ³           ³   ³   ³   ³               
+³   ³           ³   ³   ³   ÃÄÄÄRunner
+³   ³           ³   ³   ³   ³   ³   Release.entitlements
+³   ³           ³   ³   ³   ³   ³   Info.plist
+³   ³           ³   ³   ³   ³   ³   AppDelegate.swift
+³   ³           ³   ³   ³   ³   ³   MainFlutterWindow.swift
+³   ³           ³   ³   ³   ³   ³   DebugProfile.entitlements
+³   ³           ³   ³   ³   ³   ³   
+³   ³           ³   ³   ³   ³   ÃÄÄÄConfigs
+³   ³           ³   ³   ³   ³   ³       Warnings.xcconfig
+³   ³           ³   ³   ³   ³   ³       Release.xcconfig
+³   ³           ³   ³   ³   ³   ³       Debug.xcconfig
+³   ³           ³   ³   ³   ³   ³       AppInfo.xcconfig
+³   ³           ³   ³   ³   ³   ³       
+³   ³           ³   ³   ³   ³   ÃÄÄÄBase.lproj
+³   ³           ³   ³   ³   ³   ³       MainMenu.xib
+³   ³           ³   ³   ³   ³   ³       
+³   ³           ³   ³   ³   ³   ÀÄÄÄAssets.xcassets
+³   ³           ³   ³   ³   ³       ÀÄÄÄAppIcon.appiconset
+³   ³           ³   ³   ³   ³               app_icon_32.png
+³   ³           ³   ³   ³   ³               Contents.json
+³   ³           ³   ³   ³   ³               app_icon_128.png
+³   ³           ³   ³   ³   ³               app_icon_512.png
+³   ³           ³   ³   ³   ³               app_icon_64.png
+³   ³           ³   ³   ³   ³               app_icon_256.png
+³   ³           ³   ³   ³   ³               app_icon_1024.png
+³   ³           ³   ³   ³   ³               app_icon_16.png
+³   ³           ³   ³   ³   ³               
+³   ³           ³   ³   ³   ÃÄÄÄRunnerTests
+³   ³           ³   ³   ³   ³       RunnerTests.swift
+³   ³           ³   ³   ³   ³       
+³   ³           ³   ³   ³   ÀÄÄÄRunner.xcworkspace
+³   ³           ³   ³   ³       ³   contents.xcworkspacedata
+³   ³           ³   ³   ³       ³   
+³   ³           ³   ³   ³       ÀÄÄÄxcshareddata
+³   ³           ³   ³   ³               IDEWorkspaceChecks.plist
+³   ³           ³   ³   ³               
+³   ³           ³   ³   ÀÄÄÄintegration_test
+³   ³           ³   ³           device_info_plus_test.dart
+³   ³           ³   ³           
+³   ³           ³   ÃÄÄÄtest
+³   ³           ³   ³   ³   device_info_plus_linux_test.dart
+³   ³           ³   ³   ³   device_info_plus_web_test.dart
+³   ³           ³   ³   ³   device_info_plus_windows_test.dart
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÀÄÄÄmodel
+³   ³           ³   ³           ios_device_info_test.dart
+³   ³           ³   ³           web_browser_info_test.dart
+³   ³           ³   ³           android_device_info_fake.dart
+³   ³           ³   ³           android_device_info_test.dart
+³   ³           ³   ³           windows_device_info_test.dart
+³   ³           ³   ³           macos_device_info_test.dart
+³   ³           ³   ³           linux_device_info_test.dart
+³   ³           ³   ³           
+³   ³           ³   ÀÄÄÄmacos
+³   ³           ³       ³   device_info_plus.podspec
+³   ³           ³       ³   
+³   ³           ³       ÀÄÄÄClasses
+³   ³           ³               CwlSysctl.swift
+³   ³           ³               DeviceInfoPlusMacosPlugin.swift
+³   ³           ³               SystemUUID.swift
+³   ³           ³               
+³   ³           ÃÄÄÄflutter_secure_storage_linux
+³   ³           ³   ³   pubspec.yaml
+³   ³           ³   ³   README.md
+³   ³           ³   ³   CHANGELOG.md
+³   ³           ³   ³   LICENSE
+³   ³           ³   ³   
+³   ³           ³   ÀÄÄÄlinux
+³   ³           ³       ³   flutter_secure_storage_linux_plugin.cc
+³   ³           ³       ³   CMakeLists.txt
+³   ³           ³       ³   
+³   ³           ³       ÀÄÄÄinclude
+³   ³           ³           ³   Secret.hpp
+³   ³           ³           ³   FHashTable.hpp
+³   ³           ³           ³   json.hpp
+³   ³           ³           ³   
+³   ³           ³           ÀÄÄÄflutter_secure_storage_linux
+³   ³           ³                   flutter_secure_storage_linux_plugin.h
+³   ³           ³                   
+³   ³           ÃÄÄÄgeolocator_linux
+³   ³           ³   ³   analysis_options.yaml
+³   ³           ³   ³   pubspec.yaml
+³   ³           ³   ³   README.md
+³   ³           ³   ³   AUTHORS
+³   ³           ³   ³   CHANGELOG.md
+³   ³           ³   ³   LICENSE
+³   ³           ³   ³   
+³   ³           ³   ÃÄÄÄlib
+³   ³           ³   ³   ³   geolocator_linux.dart
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÀÄÄÄsrc
+³   ³           ³   ³           geolocator_linux.dart
+³   ³           ³   ³           geoclue_x.dart
+³   ³           ³   ³           geolocator_gnome.dart
+³   ³           ³   ³           
+³   ³           ³   ÃÄÄÄexample
+³   ³           ³   ³   ³   analysis_options.yaml
+³   ³           ³   ³   ³   pubspec.yaml
+³   ³           ³   ³   ³   README.md
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÃÄÄÄlib
+³   ³           ³   ³   ³       main.dart
+³   ³           ³   ³   ³       
+³   ³           ³   ³   ÃÄÄÄlinux
+³   ³           ³   ³   ³   ³   my_application.cc
+³   ³           ³   ³   ³   ³   my_application.h
+³   ³           ³   ³   ³   ³   CMakeLists.txt
+³   ³           ³   ³   ³   ³   main.cc
+³   ³           ³   ³   ³   ³   
+³   ³           ³   ³   ³   ÀÄÄÄflutter
+³   ³           ³   ³   ³           generated_plugin_registrant.h
+³   ³           ³   ³   ³           generated_plugins.cmake
+³   ³           ³   ³   ³           CMakeLists.txt
+³   ³           ³   ³   ³           generated_plugin_registrant.cc
+³   ³           ³   ³   ³           
+³   ³           ³   ³   ÀÄÄÄres
+³   ³           ³   ³       ÀÄÄÄimages
+³   ³           ³   ³               poweredByBaseflowLogoLight@3x.png
+³   ³           ³   ³               poweredByBaseflowLogoLight@2x.png
+³   ³           ³   ³               poweredByBaseflowLogoLight_2020-06-23.zip
+³   ³           ³   ³               poweredByBaseflowLogoLight.png
+³   ³           ³   ³               baseflow_logo_def_light-02.png
+³   ³           ³   ³               
+³   ³           ³   ÀÄÄÄtest
+³   ³           ³           geolocator_gnome_test.dart
+³   ³           ³           geolocator_linux_test.dart
+³   ³           ³           geoclue_x_test.dart
+³   ³           ³           geolocator_gnome_test.mocks.dart
+³   ³           ³           geolocator_linux_test.mocks.dart
+³   ³           ³           
+³   ³           ÃÄÄÄpackage_info_plus
+³   ³           ³   ³   pubspec.yaml
+³   ³           ³   ³   README.md
+³   ³           ³   ³   CHANGELOG.md
+³   ³           ³   ³   LICENSE
+³   ³           ³   ³   
+³   ³           ³   ÃÄÄÄlib
+³   ³           ³   ³   ³   package_info_plus.dart
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÀÄÄÄsrc
+³   ³           ³   ³           file_version_info.dart
+³   ³           ³   ³           file_attribute.dart
+³   ³           ³   ³           package_info_plus_linux.dart
+³   ³           ³   ³           package_info_plus_web.dart
+³   ³           ³   ³           package_info_plus_macos.dart
+³   ³           ³   ³           package_info_plus_windows.dart
+³   ³           ³   ³           
+³   ³           ³   ÃÄÄÄandroid
+³   ³           ³   ³   ³   settings.gradle
+³   ³           ³   ³   ³   gradle.properties
+³   ³           ³   ³   ³   build.gradle
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÃÄÄÄsrc
+³   ³           ³   ³   ³   ÀÄÄÄmain
+³   ³           ³   ³   ³       ³   AndroidManifest.xml
+³   ³           ³   ³   ³       ³   
+³   ³           ³   ³   ³       ÀÄÄÄkotlin
+³   ³           ³   ³   ³           ÀÄÄÄdev
+³   ³           ³   ³   ³               ÀÄÄÄfluttercommunity
+³   ³           ³   ³   ³                   ÀÄÄÄplus
+³   ³           ³   ³   ³                       ÀÄÄÄpackageinfo
+³   ³           ³   ³   ³                               PackageInfoPlugin.kt
+³   ³           ³   ³   ³                               
+³   ³           ³   ³   ÀÄÄÄgradle
+³   ³           ³   ³       ÀÄÄÄwrapper
+³   ³           ³   ³               gradle-wrapper.properties
+³   ³           ³   ³               
+³   ³           ³   ÃÄÄÄios
+³   ³           ³   ³   ³   package_info_plus.podspec
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÀÄÄÄpackage_info_plus
+³   ³           ³   ³       ³   Package.swift
+³   ³           ³   ³       ³   
+³   ³           ³   ³       ÀÄÄÄSources
+³   ³           ³   ³           ÀÄÄÄpackage_info_plus
+³   ³           ³   ³               ³   FPPPackageInfoPlusPlugin.m
+³   ³           ³   ³               ³   PrivacyInfo.xcprivacy
+³   ³           ³   ³               ³   
+³   ³           ³   ³               ÀÄÄÄinclude
+³   ³           ³   ³                   ÀÄÄÄpackage_info_plus
+³   ³           ³   ³                           FPPPackageInfoPlusPlugin.h
+³   ³           ³   ³                           
+³   ³           ³   ÃÄÄÄexample
+³   ³           ³   ³   ³   build.yaml
+³   ³           ³   ³   ³   analysis_options.yaml
+³   ³           ³   ³   ³   pubspec.yaml
+³   ³           ³   ³   ³   README.md
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÃÄÄÄwindows
+³   ³           ³   ³   ³   ³   CMakeLists.txt
+³   ³           ³   ³   ³   ³   
+³   ³           ³   ³   ³   ÃÄÄÄflutter
+³   ³           ³   ³   ³   ³       CMakeLists.txt
+³   ³           ³   ³   ³   ³       
+³   ³           ³   ³   ³   ÀÄÄÄrunner
+³   ³           ³   ³   ³       ³   flutter_window.h
+³   ³           ³   ³   ³       ³   main.cpp
+³   ³           ³   ³   ³       ³   Runner.rc
+³   ³           ³   ³   ³       ³   resource.h
+³   ³           ³   ³   ³       ³   win32_window.cpp
+³   ³           ³   ³   ³       ³   win32_window.h
+³   ³           ³   ³   ³       ³   CMakeLists.txt
+³   ³           ³   ³   ³       ³   runner.exe.manifest
+³   ³           ³   ³   ³       ³   utils.cpp
+³   ³           ³   ³   ³       ³   utils.h
+³   ³           ³   ³   ³       ³   flutter_window.cpp
+³   ³           ³   ³   ³       ³   
+³   ³           ³   ³   ³       ÀÄÄÄresources
+³   ³           ³   ³   ³               app_icon.ico
+³   ³           ³   ³   ³               
+³   ³           ³   ³   ÃÄÄÄlib
+³   ³           ³   ³   ³       main.dart
+³   ³           ³   ³   ³       
+³   ³           ³   ³   ÃÄÄÄandroid
+³   ³           ³   ³   ³   ³   settings.gradle
+³   ³           ³   ³   ³   ³   gradle.properties
+³   ³           ³   ³   ³   ³   build.gradle
+³   ³           ³   ³   ³   ³   
+³   ³           ³   ³   ³   ÃÄÄÄgradle
+³   ³           ³   ³   ³   ³   ÀÄÄÄwrapper
+³   ³           ³   ³   ³   ³           gradle-wrapper.properties
+³   ³           ³   ³   ³   ³           
+³   ³           ³   ³   ³   ÀÄÄÄapp
+³   ³           ³   ³   ³       ³   build.gradle
+³   ³           ³   ³   ³       ³   
+³   ³           ³   ³   ³       ÃÄÄÄsrc
+³   ³           ³   ³   ³       ³   ÃÄÄÄmain
+³   ³           ³   ³   ³       ³   ³   ³   AndroidManifest.xml
+³   ³           ³   ³   ³       ³   ³   ³   
+³   ³           ³   ³   ³       ³   ³   ÃÄÄÄjava
+³   ³           ³   ³   ³       ³   ³   ³   ÀÄÄÄio
+³   ³           ³   ³   ³       ³   ³   ³       ÀÄÄÄflutter
+³   ³           ³   ³   ³       ³   ³   ³           ÀÄÄÄplugins
+³   ³           ³   ³   ³       ³   ³   ÀÄÄÄres
+³   ³           ³   ³   ³       ³   ³       ÃÄÄÄmipmap-xhdpi
+³   ³           ³   ³   ³       ³   ³       ³       ic_launcher.png
+³   ³           ³   ³   ³       ³   ³       ³       
+³   ³           ³   ³   ³       ³   ³       ÃÄÄÄmipmap-xxhdpi
+³   ³           ³   ³   ³       ³   ³       ³       ic_launcher.png
+³   ³           ³   ³   ³       ³   ³       ³       
+³   ³           ³   ³   ³       ³   ³       ÃÄÄÄmipmap-xxxhdpi
+³   ³           ³   ³   ³       ³   ³       ³       ic_launcher.png
+³   ³           ³   ³   ³       ³   ³       ³       
+³   ³           ³   ³   ³       ³   ³       ÃÄÄÄmipmap-hdpi
+³   ³           ³   ³   ³       ³   ³       ³       ic_launcher.png
+³   ³           ³   ³   ³       ³   ³       ³       
+³   ³           ³   ³   ³       ³   ³       ÀÄÄÄmipmap-mdpi
+³   ³           ³   ³   ³       ³   ³               ic_launcher.png
+³   ³           ³   ³   ³       ³   ³               
+³   ³           ³   ³   ³       ³   ÀÄÄÄandroidTest
+³   ³           ³   ³   ³       ³       ÀÄÄÄjava
+³   ³           ³   ³   ³       ³           ÀÄÄÄio
+³   ³           ³   ³   ³       ³               ÀÄÄÄflutter
+³   ³           ³   ³   ³       ³                   ÀÄÄÄplugins
+³   ³           ³   ³   ³       ³                       ÀÄÄÄpackageinfoexample
+³   ³           ³   ³   ³       ³                               EmbedderV1ActivityTest.java
+³   ³           ³   ³   ³       ³                               MainActivityTest.java
+³   ³           ³   ³   ³       ³                               
+³   ³           ³   ³   ³       ÀÄÄÄgradle
+³   ³           ³   ³   ³           ÀÄÄÄwrapper
+³   ³           ³   ³   ³                   gradle-wrapper.properties
+³   ³           ³   ³   ³                   
+³   ³           ³   ³   ÃÄÄÄlinux
+³   ³           ³   ³   ³   ³   my_application.cc
+³   ³           ³   ³   ³   ³   my_application.h
+³   ³           ³   ³   ³   ³   CMakeLists.txt
+³   ³           ³   ³   ³   ³   main.cc
+³   ³           ³   ³   ³   ³   
+³   ³           ³   ³   ³   ÀÄÄÄflutter
+³   ³           ³   ³   ³           CMakeLists.txt
+³   ³           ³   ³   ³           
+³   ³           ³   ³   ÃÄÄÄios
+³   ³           ³   ³   ³   ÃÄÄÄFlutter
+³   ³           ³   ³   ³   ³       AppFrameworkInfo.plist
+³   ³           ³   ³   ³   ³       Release.xcconfig
+³   ³           ³   ³   ³   ³       Debug.xcconfig
+³   ³           ³   ³   ³   ³       
+³   ³           ³   ³   ³   ÃÄÄÄRunner.xcodeproj
+³   ³           ³   ³   ³   ³   ³   project.pbxproj
+³   ³           ³   ³   ³   ³   ³   
+³   ³           ³   ³   ³   ³   ÃÄÄÄxcshareddata
+³   ³           ³   ³   ³   ³   ³   ÀÄÄÄxcschemes
+³   ³           ³   ³   ³   ³   ³           Runner.xcscheme
+³   ³           ³   ³   ³   ³   ³           
+³   ³           ³   ³   ³   ³   ÀÄÄÄproject.xcworkspace
+³   ³           ³   ³   ³   ³       ³   contents.xcworkspacedata
+³   ³           ³   ³   ³   ³       ³   
+³   ³           ³   ³   ³   ³       ÀÄÄÄxcshareddata
+³   ³           ³   ³   ³   ³           ³   WorkspaceSettings.xcsettings
+³   ³           ³   ³   ³   ³           ³   IDEWorkspaceChecks.plist
+³   ³           ³   ³   ³   ³           ³   
+³   ³           ³   ³   ³   ³           ÀÄÄÄswiftpm
+³   ³           ³   ³   ³   ³               ÀÄÄÄconfiguration
+³   ³           ³   ³   ³   ÃÄÄÄRunner
+³   ³           ³   ³   ³   ³   ³   Info.plist
+³   ³           ³   ³   ³   ³   ³   AppDelegate.swift
+³   ³           ³   ³   ³   ³   ³   Runner-Bridging-Header.h
+³   ³           ³   ³   ³   ³   ³   
+³   ³           ³   ³   ³   ³   ÃÄÄÄBase.lproj
+³   ³           ³   ³   ³   ³   ³       Main.storyboard
+³   ³           ³   ³   ³   ³   ³       LaunchScreen.storyboard
+³   ³           ³   ³   ³   ³   ³       
+³   ³           ³   ³   ³   ³   ÀÄÄÄAssets.xcassets
+³   ³           ³   ³   ³   ³       ÃÄÄÄAppIcon.appiconset
+³   ³           ³   ³   ³   ³       ³       Icon-App-29x29@2x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-40x40@3x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-76x76@1x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-60x60@2x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-60x60@3x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-40x40@2x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-29x29@3x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-20x20@2x.png
+³   ³           ³   ³   ³   ³       ³       Contents.json
+³   ³           ³   ³   ³   ³       ³       Icon-App-20x20@3x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-83.5x83.5@2x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-1024x1024@1x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-20x20@1x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-40x40@1x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-29x29@1x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-76x76@2x.png
+³   ³           ³   ³   ³   ³       ³       
+³   ³           ³   ³   ³   ³       ÀÄÄÄLaunchImage.imageset
+³   ³           ³   ³   ³   ³               LaunchImage.png
+³   ³           ³   ³   ³   ³               Contents.json
+³   ³           ³   ³   ³   ³               README.md
+³   ³           ³   ³   ³   ³               LaunchImage@3x.png
+³   ³           ³   ³   ³   ³               LaunchImage@2x.png
+³   ³           ³   ³   ³   ³               
+³   ³           ³   ³   ³   ÃÄÄÄRunnerTests
+³   ³           ³   ³   ³   ³       RunnerTests.swift
+³   ³           ³   ³   ³   ³       
+³   ³           ³   ³   ³   ÀÄÄÄRunner.xcworkspace
+³   ³           ³   ³   ³       ³   contents.xcworkspacedata
+³   ³           ³   ³   ³       ³   
+³   ³           ³   ³   ³       ÀÄÄÄxcshareddata
+³   ³           ³   ³   ³           ³   WorkspaceSettings.xcsettings
+³   ³           ³   ³   ³           ³   IDEWorkspaceChecks.plist
+³   ³           ³   ³   ³           ³   
+³   ³           ³   ³   ³           ÀÄÄÄswiftpm
+³   ³           ³   ³   ³               ÀÄÄÄconfiguration
+³   ³           ³   ³   ÃÄÄÄweb
+³   ³           ³   ³   ³   ³   manifest.json
+³   ³           ³   ³   ³   ³   favicon.png
+³   ³           ³   ³   ³   ³   index.html
+³   ³           ³   ³   ³   ³   
+³   ³           ³   ³   ³   ÀÄÄÄicons
+³   ³           ³   ³   ³           Icon-512.png
+³   ³           ³   ³   ³           Icon-maskable-512.png
+³   ³           ³   ³   ³           Icon-maskable-192.png
+³   ³           ³   ³   ³           Icon-192.png
+³   ³           ³   ³   ³           
+³   ³           ³   ³   ÃÄÄÄmacos
+³   ³           ³   ³   ³   ÃÄÄÄFlutter
+³   ³           ³   ³   ³   ³       Flutter-Release.xcconfig
+³   ³           ³   ³   ³   ³       Flutter-Debug.xcconfig
+³   ³           ³   ³   ³   ³       
+³   ³           ³   ³   ³   ÃÄÄÄRunner.xcodeproj
+³   ³           ³   ³   ³   ³   ³   project.pbxproj
+³   ³           ³   ³   ³   ³   ³   
+³   ³           ³   ³   ³   ³   ÃÄÄÄxcshareddata
+³   ³           ³   ³   ³   ³   ³   ÀÄÄÄxcschemes
+³   ³           ³   ³   ³   ³   ³           Runner.xcscheme
+³   ³           ³   ³   ³   ³   ³           
+³   ³           ³   ³   ³   ³   ÀÄÄÄproject.xcworkspace
+³   ³           ³   ³   ³   ³       ÀÄÄÄxcshareddata
+³   ³           ³   ³   ³   ³           ³   IDEWorkspaceChecks.plist
+³   ³           ³   ³   ³   ³           ³   
+³   ³           ³   ³   ³   ³           ÀÄÄÄswiftpm
+³   ³           ³   ³   ³   ³               ÀÄÄÄconfiguration
+³   ³           ³   ³   ³   ÃÄÄÄRunner
+³   ³           ³   ³   ³   ³   ³   Release.entitlements
+³   ³           ³   ³   ³   ³   ³   Info.plist
+³   ³           ³   ³   ³   ³   ³   AppDelegate.swift
+³   ³           ³   ³   ³   ³   ³   MainFlutterWindow.swift
+³   ³           ³   ³   ³   ³   ³   DebugProfile.entitlements
+³   ³           ³   ³   ³   ³   ³   
+³   ³           ³   ³   ³   ³   ÃÄÄÄConfigs
+³   ³           ³   ³   ³   ³   ³       Warnings.xcconfig
+³   ³           ³   ³   ³   ³   ³       Release.xcconfig
+³   ³           ³   ³   ³   ³   ³       Debug.xcconfig
+³   ³           ³   ³   ³   ³   ³       AppInfo.xcconfig
+³   ³           ³   ³   ³   ³   ³       
+³   ³           ³   ³   ³   ³   ÃÄÄÄBase.lproj
+³   ³           ³   ³   ³   ³   ³       MainMenu.xib
+³   ³           ³   ³   ³   ³   ³       
+³   ³           ³   ³   ³   ³   ÀÄÄÄAssets.xcassets
+³   ³           ³   ³   ³   ³       ÀÄÄÄAppIcon.appiconset
+³   ³           ³   ³   ³   ³               app_icon_32.png
+³   ³           ³   ³   ³   ³               Contents.json
+³   ³           ³   ³   ³   ³               app_icon_128.png
+³   ³           ³   ³   ³   ³               app_icon_512.png
+³   ³           ³   ³   ³   ³               app_icon_64.png
+³   ³           ³   ³   ³   ³               app_icon_256.png
+³   ³           ³   ³   ³   ³               app_icon_1024.png
+³   ³           ³   ³   ³   ³               app_icon_16.png
+³   ³           ³   ³   ³   ³               
+³   ³           ³   ³   ³   ÃÄÄÄRunnerTests
+³   ³           ³   ³   ³   ³       RunnerTests.swift
+³   ³           ³   ³   ³   ³       
+³   ³           ³   ³   ³   ÀÄÄÄRunner.xcworkspace
+³   ³           ³   ³   ³       ³   contents.xcworkspacedata
+³   ³           ³   ³   ³       ³   
+³   ³           ³   ³   ³       ÀÄÄÄxcshareddata
+³   ³           ³   ³   ³           ³   IDEWorkspaceChecks.plist
+³   ³           ³   ³   ³           ³   
+³   ³           ³   ³   ³           ÀÄÄÄswiftpm
+³   ³           ³   ³   ³               ÀÄÄÄconfiguration
+³   ³           ³   ³   ÀÄÄÄintegration_test
+³   ³           ³   ³           package_info_plus_test.dart
+³   ³           ³   ³           package_info_plus_web_test.mocks.dart
+³   ³           ³   ³           driver.dart
+³   ³           ³   ³           package_info_plus_web_test.dart
+³   ³           ³   ³           
+³   ³           ³   ÃÄÄÄtest
+³   ³           ³   ³       package_info_test.dart
+³   ³           ³   ³       package_info_plus_linux_test.dart
+³   ³           ³   ³       package_info_plus_windows_test.dart
+³   ³           ³   ³       
+³   ³           ³   ÀÄÄÄmacos
+³   ³           ³       ³   package_info_plus.podspec
+³   ³           ³       ³   
+³   ³           ³       ÀÄÄÄpackage_info_plus
+³   ³           ³           ³   Package.swift
+³   ³           ³           ³   
+³   ³           ³           ÀÄÄÄSources
+³   ³           ³               ÀÄÄÄpackage_info_plus
+³   ³           ³                   ³   FPPPackageInfoPlusPlugin.m
+³   ³           ³                   ³   PrivacyInfo.xcprivacy
+³   ³           ³                   ³   
+³   ³           ³                   ÀÄÄÄinclude
+³   ³           ³                       ÀÄÄÄpackage_info_plus
+³   ³           ³                               FPPPackageInfoPlusPlugin.h
+³   ³           ³                               
+³   ³           ÃÄÄÄpath_provider_linux
+³   ³           ³   ³   LICENSE
+³   ³           ³   ³   CHANGELOG.md
+³   ³           ³   ³   AUTHORS
+³   ³           ³   ³   README.md
+³   ³           ³   ³   pubspec.yaml
+³   ³           ³   ³   
+³   ³           ³   ÃÄÄÄexample
+³   ³           ³   ³   ³   README.md
+³   ³           ³   ³   ³   pubspec.yaml
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÃÄÄÄtest_driver
+³   ³           ³   ³   ³       integration_test.dart
+³   ³           ³   ³   ³       
+³   ³           ³   ³   ÃÄÄÄlib
+³   ³           ³   ³   ³       main.dart
+³   ³           ³   ³   ³       
+³   ³           ³   ³   ÃÄÄÄintegration_test
+³   ³           ³   ³   ³       path_provider_test.dart
+³   ³           ³   ³   ³       
+³   ³           ³   ³   ÀÄÄÄlinux
+³   ³           ³   ³       ³   my_application.h
+³   ³           ³   ³       ³   main.cc
+³   ³           ³   ³       ³   CMakeLists.txt
+³   ³           ³   ³       ³   my_application.cc
+³   ³           ³   ³       ³   
+³   ³           ³   ³       ÀÄÄÄflutter
+³   ³           ³   ³               generated_plugins.cmake
+³   ³           ³   ³               CMakeLists.txt
+³   ³           ³   ³               
+³   ³           ³   ÃÄÄÄtest
+³   ³           ³   ³       path_provider_linux_test.dart
+³   ³           ³   ³       get_application_id_test.dart
+³   ³           ³   ³       
+³   ³           ³   ÀÄÄÄlib
+³   ³           ³       ³   path_provider_linux.dart
+³   ³           ³       ³   
+³   ³           ³       ÀÄÄÄsrc
+³   ³           ³               get_application_id.dart
+³   ³           ³               get_application_id_real.dart
+³   ³           ³               path_provider_linux.dart
+³   ³           ³               get_application_id_stub.dart
+³   ³           ³               
+³   ³           ÃÄÄÄshared_preferences_linux
+³   ³           ³   ³   AUTHORS
+³   ³           ³   ³   CHANGELOG.md
+³   ³           ³   ³   README.md
+³   ³           ³   ³   LICENSE
+³   ³           ³   ³   pubspec.yaml
+³   ³           ³   ³   
+³   ³           ³   ÃÄÄÄexample
+³   ³           ³   ³   ³   README.md
+³   ³           ³   ³   ³   pubspec.yaml
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÃÄÄÄintegration_test
+³   ³           ³   ³   ³       shared_preferences_test.dart
+³   ³           ³   ³   ³       
+³   ³           ³   ³   ÃÄÄÄlinux
+³   ³           ³   ³   ³   ³   my_application.h
+³   ³           ³   ³   ³   ³   main.cc
+³   ³           ³   ³   ³   ³   CMakeLists.txt
+³   ³           ³   ³   ³   ³   my_application.cc
+³   ³           ³   ³   ³   ³   
+³   ³           ³   ³   ³   ÀÄÄÄflutter
+³   ³           ³   ³   ³           CMakeLists.txt
+³   ³           ³   ³   ³           generated_plugins.cmake
+³   ³           ³   ³   ³           
+³   ³           ³   ³   ÃÄÄÄtest_driver
+³   ³           ³   ³   ³       integration_test.dart
+³   ³           ³   ³   ³       
+³   ³           ³   ³   ÀÄÄÄlib
+³   ³           ³   ³           main.dart
+³   ³           ³   ³           
+³   ³           ³   ÃÄÄÄlib
+³   ³           ³   ³       shared_preferences_linux.dart
+³   ³           ³   ³       
+³   ³           ³   ÀÄÄÄtest
+³   ³           ³           legacy_shared_preferences_linux_test.dart
+³   ³           ³           shared_preferences_linux_async_test.dart
+³   ³           ³           fake_path_provider_linux.dart
+³   ³           ³           
+³   ³           ÀÄÄÄurl_launcher_linux
+³   ³               ³   AUTHORS
+³   ³               ³   README.md
+³   ³               ³   pubspec.yaml
+³   ³               ³   CHANGELOG.md
+³   ³               ³   LICENSE
+³   ³               ³   
+³   ³               ÃÄÄÄlinux
+³   ³               ³   ³   messages.g.h
+³   ³               ³   ³   CMakeLists.txt
+³   ³               ³   ³   url_launcher_plugin_private.h
+³   ³               ³   ³   url_launcher_plugin.cc
+³   ³               ³   ³   messages.g.cc
+³   ³               ³   ³   
+³   ³               ³   ÃÄÄÄinclude
+³   ³               ³   ³   ÀÄÄÄurl_launcher_linux
+³   ³               ³   ³           url_launcher_plugin.h
+³   ³               ³   ³           
+³   ³               ³   ÀÄÄÄtest
+³   ³               ³           url_launcher_linux_test.cc
+³   ³               ³           
+³   ³               ÃÄÄÄexample
+³   ³               ³   ³   README.md
+³   ³               ³   ³   pubspec.yaml
+³   ³               ³   ³   
+³   ³               ³   ÃÄÄÄtest_driver
+³   ³               ³   ³       integration_test.dart
+³   ³               ³   ³       
+³   ³               ³   ÃÄÄÄlinux
+³   ³               ³   ³   ³   my_application.cc
+³   ³               ³   ³   ³   CMakeLists.txt
+³   ³               ³   ³   ³   my_application.h
+³   ³               ³   ³   ³   main.cc
+³   ³               ³   ³   ³   
+³   ³               ³   ³   ÀÄÄÄflutter
+³   ³               ³   ³           CMakeLists.txt
+³   ³               ³   ³           generated_plugins.cmake
+³   ³               ³   ³           
+³   ³               ³   ÃÄÄÄlib
+³   ³               ³   ³       main.dart
+³   ³               ³   ³       
+³   ³               ³   ÀÄÄÄintegration_test
+³   ³               ³           url_launcher_test.dart
+³   ³               ³           
+³   ³               ÃÄÄÄlib
+³   ³               ³   ³   url_launcher_linux.dart
+³   ³               ³   ³   
+³   ³               ³   ÀÄÄÄsrc
+³   ³               ³           messages.g.dart
+³   ³               ³           
+³   ³               ÃÄÄÄpigeons
+³   ³               ³       messages.dart
+³   ³               ³       copyright.txt
+³   ³               ³       
+³   ³               ÀÄÄÄtest
+³   ³                       url_launcher_linux_test.dart
+³   ³                       
+³   ÀÄÄÄrunner
+³           CMakeLists.txt
+³           main.cc
+³           my_application.cc
+³           my_application.h
+³           
+ÃÄÄÄmacos
+³   ³   .gitignore
+³   ³   
+³   ÃÄÄÄFlutter
+³   ³   ³   Flutter-Debug.xcconfig
+³   ³   ³   Flutter-Release.xcconfig
+³   ³   ³   GeneratedPluginRegistrant.swift
+³   ³   ³   
+³   ³   ÀÄÄÄephemeral
+³   ³           Flutter-Generated.xcconfig
+³   ³           flutter_export_environment.sh
+³   ³           
+³   ÃÄÄÄRunner
+³   ³   ³   AppDelegate.swift
+³   ³   ³   DebugProfile.entitlements
+³   ³   ³   Info.plist
+³   ³   ³   MainFlutterWindow.swift
+³   ³   ³   Release.entitlements
+³   ³   ³   
+³   ³   ÃÄÄÄAssets.xcassets
+³   ³   ³   ÀÄÄÄAppIcon.appiconset
+³   ³   ³           app_icon_1024.png
+³   ³   ³           app_icon_128.png
+³   ³   ³           app_icon_16.png
+³   ³   ³           app_icon_256.png
+³   ³   ³           app_icon_32.png
+³   ³   ³           app_icon_512.png
+³   ³   ³           app_icon_64.png
+³   ³   ³           Contents.json
+³   ³   ³           
+³   ³   ÃÄÄÄBase.lproj
+³   ³   ³       MainMenu.xib
+³   ³   ³       
+³   ³   ÀÄÄÄConfigs
+³   ³           AppInfo.xcconfig
+³   ³           Debug.xcconfig
+³   ³           Release.xcconfig
+³   ³           Warnings.xcconfig
+³   ³           
+³   ÃÄÄÄRunner.xcodeproj
+³   ³   ³   project.pbxproj
+³   ³   ³   
+³   ³   ÃÄÄÄproject.xcworkspace
+³   ³   ³   ÀÄÄÄxcshareddata
+³   ³   ³           IDEWorkspaceChecks.plist
+³   ³   ³           
+³   ³   ÀÄÄÄxcshareddata
+³   ³       ÀÄÄÄxcschemes
+³   ³               Runner.xcscheme
+³   ³               
+³   ÃÄÄÄRunner.xcworkspace
+³   ³   ³   contents.xcworkspacedata
+³   ³   ³   
+³   ³   ÀÄÄÄxcshareddata
+³   ³           IDEWorkspaceChecks.plist
+³   ³           
+³   ÀÄÄÄRunnerTests
+³           RunnerTests.swift
+³           
+ÃÄÄÄscripts
+³       senaryo_kilidi.ps1
+³       
+ÃÄÄÄtest
+³       ci_local.ps1
+³       legal_versiyonlar_test.dart
+³       route_gate_test.dart
+³       widget_test.dart
+³       
+ÃÄÄÄtools
+³   ÀÄÄÄureticiler
+³           yerler_olustur.js
+³           yerler_olustur.ps1
+³           
+ÃÄÄÄweb
+³   ³   favicon.png
+³   ³   index.html
+³   ³   manifest.json
+³   ³   
+³   ÀÄÄÄicons
+³           Icon-192.png
+³           Icon-512.png
+³           Icon-maskable-192.png
+³           Icon-maskable-512.png
+³           
+ÃÄÄÄwindows
+³   ³   .gitignore
+³   ³   CMakeLists.txt
+³   ³   
+³   ÃÄÄÄflutter
+³   ³   ³   CMakeLists.txt
+³   ³   ³   generated_plugins.cmake
+³   ³   ³   generated_plugin_registrant.cc
+³   ³   ³   generated_plugin_registrant.h
+³   ³   ³   
+³   ³   ÀÄÄÄephemeral
+³   ³       ÀÄÄÄ.plugin_symlinks
+³   ³           ÃÄÄÄcloud_firestore
+³   ³           ³   ³   pubspec.yaml
+³   ³           ³   ³   README.md
+³   ³           ³   ³   CHANGELOG.md
+³   ³           ³   ³   LICENSE
+³   ³           ³   ³   
+³   ³           ³   ÃÄÄÄwindows
+³   ³           ³   ³   ³   firestore_codec.cpp
+³   ³           ³   ³   ³   cloud_firestore_plugin.cpp
+³   ³           ³   ³   ³   plugin_version.h.in
+³   ³           ³   ³   ³   messages.g.cpp
+³   ³           ³   ³   ³   cloud_firestore_plugin_c_api.cpp
+³   ³           ³   ³   ³   cloud_firestore_plugin.h
+³   ³           ³   ³   ³   CMakeLists.txt
+³   ³           ³   ³   ³   firestore_codec.h
+³   ³           ³   ³   ³   messages.g.h
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÃÄÄÄinclude
+³   ³           ³   ³   ³   ÀÄÄÄcloud_firestore
+³   ³           ³   ³   ³           cloud_firestore_plugin_c_api.h
+³   ³           ³   ³   ³           
+³   ³           ³   ³   ÀÄÄÄtest
+³   ³           ³   ³           cloud_firestore_plugin_test.cpp
+³   ³           ³   ³           
+³   ³           ³   ÃÄÄÄlib
+³   ³           ³   ³   ³   cloud_firestore.dart
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÀÄÄÄsrc
+³   ³           ³   ³       ³   field_value.dart
+³   ³           ³   ³       ³   collection_reference.dart
+³   ³           ³   ³       ³   load_bundle_task_snapshot.dart
+³   ³           ³   ³       ³   firestore.dart
+³   ³           ³   ³       ³   query_document_snapshot.dart
+³   ³           ³   ³       ³   snapshot_metadata.dart
+³   ³           ³   ³       ³   transaction.dart
+³   ³           ³   ³       ³   load_bundle_task.dart
+³   ³           ³   ³       ³   write_batch.dart
+³   ³           ³   ³       ³   document_reference.dart
+³   ³           ³   ³       ³   aggregate_query.dart
+³   ³           ³   ³       ³   query.dart
+³   ³           ³   ³       ³   document_snapshot.dart
+³   ³           ³   ³       ³   filters.dart
+³   ³           ³   ³       ³   persistent_cache_index_manager.dart
+³   ³           ³   ³       ³   document_change.dart
+³   ³           ³   ³       ³   aggregate_query_snapshot.dart
+³   ³           ³   ³       ³   query_snapshot.dart
+³   ³           ³   ³       ³   
+³   ³           ³   ³       ÀÄÄÄutils
+³   ³           ³   ³               codec_utility.dart
+³   ³           ³   ³               
+³   ³           ³   ÃÄÄÄandroid
+³   ³           ³   ³   ³   settings.gradle
+³   ³           ³   ³   ³   user-agent.gradle
+³   ³           ³   ³   ³   build.gradle
+³   ³           ³   ³   ³   local-config.gradle
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÀÄÄÄsrc
+³   ³           ³   ³       ÀÄÄÄmain
+³   ³           ³   ³           ³   AndroidManifest.xml
+³   ³           ³   ³           ³   
+³   ³           ³   ³           ÀÄÄÄjava
+³   ³           ³   ³               ÀÄÄÄio
+³   ³           ³   ³                   ÀÄÄÄflutter
+³   ³           ³   ³                       ÀÄÄÄplugins
+³   ³           ³   ³                           ÀÄÄÄfirebase
+³   ³           ³   ³                               ÀÄÄÄfirestore
+³   ³           ³   ³                                   ³   FlutterFirebaseFirestoreMessageCodec.java
+³   ³           ³   ³                                   ³   FlutterFirebaseFirestoreRegistrar.java
+³   ³           ³   ³                                   ³   GeneratedAndroidFirebaseFirestore.java
+³   ³           ³   ³                                   ³   FlutterFirebaseFirestoreTransactionResult.java
+³   ³           ³   ³                                   ³   FlutterFirebaseFirestorePlugin.java
+³   ³           ³   ³                                   ³   FlutterFirebaseFirestoreException.java
+³   ³           ³   ³                                   ³   FlutterFirebaseFirestoreExtension.java
+³   ³           ³   ³                                   ³   
+³   ³           ³   ³                                   ÃÄÄÄstreamhandler
+³   ³           ³   ³                                   ³       OnTransactionResultListener.java
+³   ³           ³   ³                                   ³       SnapshotsInSyncStreamHandler.java
+³   ³           ³   ³                                   ³       TransactionStreamHandler.java
+³   ³           ³   ³                                   ³       LoadBundleStreamHandler.java
+³   ³           ³   ³                                   ³       QuerySnapshotsStreamHandler.java
+³   ³           ³   ³                                   ³       DocumentSnapshotsStreamHandler.java
+³   ³           ³   ³                                   ³       
+³   ³           ³   ³                                   ÀÄÄÄutils
+³   ³           ³   ³                                           PigeonParser.java
+³   ³           ³   ³                                           ExceptionConverter.java
+³   ³           ³   ³                                           ServerTimestampBehaviorConverter.java
+³   ³           ³   ³                                           
+³   ³           ³   ÃÄÄÄios
+³   ³           ³   ³   ³   cloud_firestore.podspec
+³   ³           ³   ³   ³   generated_firebase_sdk_version.txt
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÀÄÄÄcloud_firestore
+³   ³           ³   ³       ³   Package.swift
+³   ³           ³   ³       ³   
+³   ³           ³   ³       ÀÄÄÄSources
+³   ³           ³   ³           ÀÄÄÄcloud_firestore
+³   ³           ³   ³               ³   FLTFirebaseFirestorePlugin.m
+³   ³           ³   ³               ³   FLTFirebaseFirestoreReader.m
+³   ³           ³   ³               ³   FLTFirebaseFirestoreExtension.m
+³   ³           ³   ³               ³   FLTDocumentSnapshotStreamHandler.m
+³   ³           ³   ³               ³   FLTQuerySnapshotStreamHandler.m
+³   ³           ³   ³               ³   FLTSnapshotsInSyncStreamHandler.m
+³   ³           ³   ³               ³   FLTFirebaseFirestoreWriter.m
+³   ³           ³   ³               ³   FLTTransactionStreamHandler.m
+³   ³           ³   ³               ³   FirestorePigeonParser.m
+³   ³           ³   ³               ³   FLTLoadBundleStreamHandler.m
+³   ³           ³   ³               ³   FirestoreMessages.g.m
+³   ³           ³   ³               ³   FLTFirebaseFirestoreUtils.m
+³   ³           ³   ³               ³   
+³   ³           ³   ³               ÃÄÄÄResources
+³   ³           ³   ³               ÀÄÄÄinclude
+³   ³           ³   ³                   ÀÄÄÄcloud_firestore
+³   ³           ³   ³                       ÃÄÄÄPrivate
+³   ³           ³   ³                       ³       FirestorePigeonParser.h
+³   ³           ³   ³                       ³       FLTTransactionStreamHandler.h
+³   ³           ³   ³                       ³       FLTFirebaseFirestoreWriter.h
+³   ³           ³   ³                       ³       FLTSnapshotsInSyncStreamHandler.h
+³   ³           ³   ³                       ³       FLTLoadBundleStreamHandler.h
+³   ³           ³   ³                       ³       FLTFirebaseFirestoreUtils.h
+³   ³           ³   ³                       ³       FLTFirebaseFirestoreReader.h
+³   ³           ³   ³                       ³       FLTDocumentSnapshotStreamHandler.h
+³   ³           ³   ³                       ³       FLTFirebaseFirestoreExtension.h
+³   ³           ³   ³                       ³       FLTQuerySnapshotStreamHandler.h
+³   ³           ³   ³                       ³       
+³   ³           ³   ³                       ÀÄÄÄPublic
+³   ³           ³   ³                               CustomPigeonHeaderFirestore.h
+³   ³           ³   ³                               FirestoreMessages.g.h
+³   ³           ³   ³                               FLTFirebaseFirestorePlugin.h
+³   ³           ³   ³                               
+³   ³           ³   ÃÄÄÄdartpad
+³   ³           ³   ³   ³   dartpad_metadata.yaml
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÀÄÄÄlib
+³   ³           ³   ³           main.dart
+³   ³           ³   ³           
+³   ³           ³   ÃÄÄÄexample
+³   ³           ³   ³   ³   analysis_options.yaml
+³   ³           ³   ³   ³   firebase.json
+³   ³           ³   ³   ³   pubspec.yaml
+³   ³           ³   ³   ³   README.md
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÃÄÄÄwindows
+³   ³           ³   ³   ³   ³   CMakeLists.txt
+³   ³           ³   ³   ³   ³   
+³   ³           ³   ³   ³   ÃÄÄÄflutter
+³   ³           ³   ³   ³   ³       CMakeLists.txt
+³   ³           ³   ³   ³   ³       
+³   ³           ³   ³   ³   ÀÄÄÄrunner
+³   ³           ³   ³   ³       ³   flutter_window.h
+³   ³           ³   ³   ³       ³   main.cpp
+³   ³           ³   ³   ³       ³   Runner.rc
+³   ³           ³   ³   ³       ³   resource.h
+³   ³           ³   ³   ³       ³   win32_window.cpp
+³   ³           ³   ³   ³       ³   win32_window.h
+³   ³           ³   ³   ³       ³   CMakeLists.txt
+³   ³           ³   ³   ³       ³   runner.exe.manifest
+³   ³           ³   ³   ³       ³   utils.cpp
+³   ³           ³   ³   ³       ³   utils.h
+³   ³           ³   ³   ³       ³   flutter_window.cpp
+³   ³           ³   ³   ³       ³   
+³   ³           ³   ³   ³       ÀÄÄÄresources
+³   ³           ³   ³   ³               app_icon.ico
+³   ³           ³   ³   ³               
+³   ³           ³   ³   ÃÄÄÄlib
+³   ³           ³   ³   ³       main.dart
+³   ³           ³   ³   ³       firebase_options.dart
+³   ³           ³   ³   ³       
+³   ³           ³   ³   ÃÄÄÄandroid
+³   ³           ³   ³   ³   ³   settings.gradle
+³   ³           ³   ³   ³   ³   gradle.properties
+³   ³           ³   ³   ³   ³   build.gradle
+³   ³           ³   ³   ³   ³   
+³   ³           ³   ³   ³   ÃÄÄÄgradle
+³   ³           ³   ³   ³   ³   ÀÄÄÄwrapper
+³   ³           ³   ³   ³   ³           gradle-wrapper.properties
+³   ³           ³   ³   ³   ³           
+³   ³           ³   ³   ³   ÀÄÄÄapp
+³   ³           ³   ³   ³       ³   google-services.json
+³   ³           ³   ³   ³       ³   build.gradle
+³   ³           ³   ³   ³       ³   
+³   ³           ³   ³   ³       ÀÄÄÄsrc
+³   ³           ³   ³   ³           ÃÄÄÄdebug
+³   ³           ³   ³   ³           ³       AndroidManifest.xml
+³   ³           ³   ³   ³           ³       
+³   ³           ³   ³   ³           ÃÄÄÄmain
+³   ³           ³   ³   ³           ³   ³   AndroidManifest.xml
+³   ³           ³   ³   ³           ³   ³   
+³   ³           ³   ³   ³           ³   ÃÄÄÄkotlin
+³   ³           ³   ³   ³           ³   ³   ÀÄÄÄio
+³   ³           ³   ³   ³           ³   ³       ÀÄÄÄflutter
+³   ³           ³   ³   ³           ³   ³           ÀÄÄÄplugins
+³   ³           ³   ³   ³           ³   ³               ÀÄÄÄfirebase
+³   ³           ³   ³   ³           ³   ³                   ÀÄÄÄfirestore
+³   ³           ³   ³   ³           ³   ³                       ÀÄÄÄexample
+³   ³           ³   ³   ³           ³   ³                               MainActivity.kt
+³   ³           ³   ³   ³           ³   ³                               
+³   ³           ³   ³   ³           ³   ÃÄÄÄjava
+³   ³           ³   ³   ³           ³   ³   ÀÄÄÄio
+³   ³           ³   ³   ³           ³   ³       ÀÄÄÄflutter
+³   ³           ³   ³   ³           ³   ³           ÀÄÄÄplugins
+³   ³           ³   ³   ³           ³   ÀÄÄÄres
+³   ³           ³   ³   ³           ³       ÃÄÄÄmipmap-xhdpi
+³   ³           ³   ³   ³           ³       ³       ic_launcher.png
+³   ³           ³   ³   ³           ³       ³       
+³   ³           ³   ³   ³           ³       ÃÄÄÄdrawable-v21
+³   ³           ³   ³   ³           ³       ³       launch_background.xml
+³   ³           ³   ³   ³           ³       ³       
+³   ³           ³   ³   ³           ³       ÃÄÄÄvalues
+³   ³           ³   ³   ³           ³       ³       styles.xml
+³   ³           ³   ³   ³           ³       ³       
+³   ³           ³   ³   ³           ³       ÃÄÄÄvalues-night
+³   ³           ³   ³   ³           ³       ³       styles.xml
+³   ³           ³   ³   ³           ³       ³       
+³   ³           ³   ³   ³           ³       ÃÄÄÄmipmap-xxhdpi
+³   ³           ³   ³   ³           ³       ³       ic_launcher.png
+³   ³           ³   ³   ³           ³       ³       
+³   ³           ³   ³   ³           ³       ÃÄÄÄmipmap-xxxhdpi
+³   ³           ³   ³   ³           ³       ³       ic_launcher.png
+³   ³           ³   ³   ³           ³       ³       
+³   ³           ³   ³   ³           ³       ÃÄÄÄdrawable
+³   ³           ³   ³   ³           ³       ³       launch_background.xml
+³   ³           ³   ³   ³           ³       ³       
+³   ³           ³   ³   ³           ³       ÃÄÄÄmipmap-hdpi
+³   ³           ³   ³   ³           ³       ³       ic_launcher.png
+³   ³           ³   ³   ³           ³       ³       
+³   ³           ³   ³   ³           ³       ÀÄÄÄmipmap-mdpi
+³   ³           ³   ³   ³           ³               ic_launcher.png
+³   ³           ³   ³   ³           ³               
+³   ³           ³   ³   ³           ÀÄÄÄprofile
+³   ³           ³   ³   ³                   AndroidManifest.xml
+³   ³           ³   ³   ³                   
+³   ³           ³   ³   ÃÄÄÄios
+³   ³           ³   ³   ³   ³   Podfile
+³   ³           ³   ³   ³   ³   firebase_app_id_file.json
+³   ³           ³   ³   ³   ³   
+³   ³           ³   ³   ³   ÃÄÄÄFlutter
+³   ³           ³   ³   ³   ³       AppFrameworkInfo.plist
+³   ³           ³   ³   ³   ³       Release.xcconfig
+³   ³           ³   ³   ³   ³       Debug.xcconfig
+³   ³           ³   ³   ³   ³       
+³   ³           ³   ³   ³   ÃÄÄÄRunner.xcodeproj
+³   ³           ³   ³   ³   ³   ³   project.pbxproj
+³   ³           ³   ³   ³   ³   ³   
+³   ³           ³   ³   ³   ³   ÃÄÄÄxcshareddata
+³   ³           ³   ³   ³   ³   ³   ÀÄÄÄxcschemes
+³   ³           ³   ³   ³   ³   ³           Runner.xcscheme
+³   ³           ³   ³   ³   ³   ³           
+³   ³           ³   ³   ³   ³   ÀÄÄÄproject.xcworkspace
+³   ³           ³   ³   ³   ³       ³   contents.xcworkspacedata
+³   ³           ³   ³   ³   ³       ³   
+³   ³           ³   ³   ³   ³       ÀÄÄÄxcshareddata
+³   ³           ³   ³   ³   ³           ³   WorkspaceSettings.xcsettings
+³   ³           ³   ³   ³   ³           ³   IDEWorkspaceChecks.plist
+³   ³           ³   ³   ³   ³           ³   
+³   ³           ³   ³   ³   ³           ÀÄÄÄswiftpm
+³   ³           ³   ³   ³   ³               ÀÄÄÄconfiguration
+³   ³           ³   ³   ³   ÃÄÄÄRunner
+³   ³           ³   ³   ³   ³   ³   Info.plist
+³   ³           ³   ³   ³   ³   ³   AppDelegate.swift
+³   ³           ³   ³   ³   ³   ³   GoogleService-Info.plist
+³   ³           ³   ³   ³   ³   ³   Runner-Bridging-Header.h
+³   ³           ³   ³   ³   ³   ³   
+³   ³           ³   ³   ³   ³   ÃÄÄÄBase.lproj
+³   ³           ³   ³   ³   ³   ³       Main.storyboard
+³   ³           ³   ³   ³   ³   ³       LaunchScreen.storyboard
+³   ³           ³   ³   ³   ³   ³       
+³   ³           ³   ³   ³   ³   ÀÄÄÄAssets.xcassets
+³   ³           ³   ³   ³   ³       ÃÄÄÄAppIcon.appiconset
+³   ³           ³   ³   ³   ³       ³       Icon-App-29x29@2x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-40x40@3x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-76x76@1x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-60x60@2x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-60x60@3x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-40x40@2x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-29x29@3x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-20x20@2x.png
+³   ³           ³   ³   ³   ³       ³       Contents.json
+³   ³           ³   ³   ³   ³       ³       Icon-App-20x20@3x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-83.5x83.5@2x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-1024x1024@1x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-20x20@1x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-40x40@1x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-29x29@1x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-76x76@2x.png
+³   ³           ³   ³   ³   ³       ³       
+³   ³           ³   ³   ³   ³       ÀÄÄÄLaunchImage.imageset
+³   ³           ³   ³   ³   ³               LaunchImage.png
+³   ³           ³   ³   ³   ³               Contents.json
+³   ³           ³   ³   ³   ³               README.md
+³   ³           ³   ³   ³   ³               LaunchImage@3x.png
+³   ³           ³   ³   ³   ³               LaunchImage@2x.png
+³   ³           ³   ³   ³   ³               
+³   ³           ³   ³   ³   ÀÄÄÄRunner.xcworkspace
+³   ³           ³   ³   ³       ³   contents.xcworkspacedata
+³   ³           ³   ³   ³       ³   
+³   ³           ³   ³   ³       ÀÄÄÄxcshareddata
+³   ³           ³   ³   ³           ³   WorkspaceSettings.xcsettings
+³   ³           ³   ³   ³           ³   IDEWorkspaceChecks.plist
+³   ³           ³   ³   ³           ³   
+³   ³           ³   ³   ³           ÀÄÄÄswiftpm
+³   ³           ³   ³   ³               ÀÄÄÄconfiguration
+³   ³           ³   ³   ÃÄÄÄweb
+³   ³           ³   ³   ³   ³   manifest.json
+³   ³           ³   ³   ³   ³   favicon.png
+³   ³           ³   ³   ³   ³   wasm_index.html
+³   ³           ³   ³   ³   ³   index.html
+³   ³           ³   ³   ³   ³   
+³   ³           ³   ³   ³   ÀÄÄÄicons
+³   ³           ³   ³   ³           Icon-512.png
+³   ³           ³   ³   ³           Icon-maskable-512.png
+³   ³           ³   ³   ³           Icon-maskable-192.png
+³   ³           ³   ³   ³           Icon-192.png
+³   ³           ³   ³   ³           
+³   ³           ³   ³   ÃÄÄÄmacos
+³   ³           ³   ³   ³   ³   Podfile
+³   ³           ³   ³   ³   ³   firebase_app_id_file.json
+³   ³           ³   ³   ³   ³   
+³   ³           ³   ³   ³   ÃÄÄÄFlutter
+³   ³           ³   ³   ³   ³       Flutter-Release.xcconfig
+³   ³           ³   ³   ³   ³       Flutter-Debug.xcconfig
+³   ³           ³   ³   ³   ³       
+³   ³           ³   ³   ³   ÃÄÄÄRunner.xcodeproj
+³   ³           ³   ³   ³   ³   ³   project.pbxproj
+³   ³           ³   ³   ³   ³   ³   
+³   ³           ³   ³   ³   ³   ÃÄÄÄxcshareddata
+³   ³           ³   ³   ³   ³   ³   ÀÄÄÄxcschemes
+³   ³           ³   ³   ³   ³   ³           Runner.xcscheme
+³   ³           ³   ³   ³   ³   ³           
+³   ³           ³   ³   ³   ³   ÀÄÄÄproject.xcworkspace
+³   ³           ³   ³   ³   ³       ÀÄÄÄxcshareddata
+³   ³           ³   ³   ³   ³           ³   IDEWorkspaceChecks.plist
+³   ³           ³   ³   ³   ³           ³   
+³   ³           ³   ³   ³   ³           ÀÄÄÄswiftpm
+³   ³           ³   ³   ³   ³               ÀÄÄÄconfiguration
+³   ³           ³   ³   ³   ÃÄÄÄRunner
+³   ³           ³   ³   ³   ³   ³   Release.entitlements
+³   ³           ³   ³   ³   ³   ³   Info.plist
+³   ³           ³   ³   ³   ³   ³   AppDelegate.swift
+³   ³           ³   ³   ³   ³   ³   MainFlutterWindow.swift
+³   ³           ³   ³   ³   ³   ³   GoogleService-Info.plist
+³   ³           ³   ³   ³   ³   ³   DebugProfile.entitlements
+³   ³           ³   ³   ³   ³   ³   
+³   ³           ³   ³   ³   ³   ÃÄÄÄConfigs
+³   ³           ³   ³   ³   ³   ³       Warnings.xcconfig
+³   ³           ³   ³   ³   ³   ³       Release.xcconfig
+³   ³           ³   ³   ³   ³   ³       Debug.xcconfig
+³   ³           ³   ³   ³   ³   ³       AppInfo.xcconfig
+³   ³           ³   ³   ³   ³   ³       
+³   ³           ³   ³   ³   ³   ÃÄÄÄBase.lproj
+³   ³           ³   ³   ³   ³   ³       MainMenu.xib
+³   ³           ³   ³   ³   ³   ³       
+³   ³           ³   ³   ³   ³   ÀÄÄÄAssets.xcassets
+³   ³           ³   ³   ³   ³       ÀÄÄÄAppIcon.appiconset
+³   ³           ³   ³   ³   ³               app_icon_32.png
+³   ³           ³   ³   ³   ³               Contents.json
+³   ³           ³   ³   ³   ³               app_icon_128.png
+³   ³           ³   ³   ³   ³               app_icon_512.png
+³   ³           ³   ³   ³   ³               app_icon_64.png
+³   ³           ³   ³   ³   ³               app_icon_256.png
+³   ³           ³   ³   ³   ³               app_icon_1024.png
+³   ³           ³   ³   ³   ³               app_icon_16.png
+³   ³           ³   ³   ³   ³               
+³   ³           ³   ³   ³   ÃÄÄÄRunnerTests
+³   ³           ³   ³   ³   ³       RunnerTests.swift
+³   ³           ³   ³   ³   ³       
+³   ³           ³   ³   ³   ÀÄÄÄRunner.xcworkspace
+³   ³           ³   ³   ³       ³   contents.xcworkspacedata
+³   ³           ³   ³   ³       ³   
+³   ³           ³   ³   ³       ÀÄÄÄxcshareddata
+³   ³           ³   ³   ³           ³   IDEWorkspaceChecks.plist
+³   ³           ³   ³   ³           ³   
+³   ³           ³   ³   ³           ÀÄÄÄswiftpm
+³   ³           ³   ³   ³               ÀÄÄÄconfiguration
+³   ³           ³   ³   ÃÄÄÄintegration_test
+³   ³           ³   ³   ³       field_value_e2e.dart
+³   ³           ³   ³   ³       document_change_e2e.dart
+³   ³           ³   ³   ³       snapshot_metadata_e2e.dart
+³   ³           ³   ³   ³       settings_e2e.dart
+³   ³           ³   ³   ³       query_e2e.dart
+³   ³           ³   ³   ³       vector_value_e2e.dart
+³   ³           ³   ³   ³       web_snapshot_listeners.dart
+³   ³           ³   ³   ³       e2e_test.dart
+³   ³           ³   ³   ³       write_batch_e2e.dart
+³   ³           ³   ³   ³       geo_point_e2e.dart
+³   ³           ³   ³   ³       firebase_options.dart
+³   ³           ³   ³   ³       timestamp_e2e.dart
+³   ³           ³   ³   ³       second_database.dart
+³   ³           ³   ³   ³       document_reference_e2e.dart
+³   ³           ³   ³   ³       transaction_e2e.dart
+³   ³           ³   ³   ³       firebase_options_secondary.dart
+³   ³           ³   ³   ³       collection_reference_e2e.dart
+³   ³           ³   ³   ³       instance_e2e.dart
+³   ³           ³   ³   ³       load_bundle_e2e.dart
+³   ³           ³   ³   ³       
+³   ³           ³   ³   ÀÄÄÄtest_driver
+³   ³           ³   ³           integration_test.dart
+³   ³           ³   ³           
+³   ³           ³   ÃÄÄÄtest
+³   ³           ³   ³       field_value_test.dart
+³   ³           ³   ³       cloud_firestore_test.dart
+³   ³           ³   ³       mock.dart
+³   ³           ³   ³       collection_reference_test.dart
+³   ³           ³   ³       test_firestore_message_codec.dart
+³   ³           ³   ³       query_test.dart
+³   ³           ³   ³       
+³   ³           ³   ÀÄÄÄmacos
+³   ³           ³       ³   cloud_firestore.podspec
+³   ³           ³       ³   
+³   ³           ³       ÀÄÄÄcloud_firestore
+³   ³           ³           ³   Package.swift
+³   ³           ³           ³   
+³   ³           ³           ÀÄÄÄSources
+³   ³           ³               ÀÄÄÄcloud_firestore
+³   ³           ³                   ³   FLTFirebaseFirestorePlugin.m
+³   ³           ³                   ³   FLTFirebaseFirestoreReader.m
+³   ³           ³                   ³   FLTFirebaseFirestoreExtension.m
+³   ³           ³                   ³   FLTDocumentSnapshotStreamHandler.m
+³   ³           ³                   ³   FLTQuerySnapshotStreamHandler.m
+³   ³           ³                   ³   FLTSnapshotsInSyncStreamHandler.m
+³   ³           ³                   ³   FLTFirebaseFirestoreWriter.m
+³   ³           ³                   ³   FLTTransactionStreamHandler.m
+³   ³           ³                   ³   FirestorePigeonParser.m
+³   ³           ³                   ³   FLTLoadBundleStreamHandler.m
+³   ³           ³                   ³   FirestoreMessages.g.m
+³   ³           ³                   ³   FLTFirebaseFirestoreUtils.m
+³   ³           ³                   ³   
+³   ³           ³                   ÃÄÄÄResources
+³   ³           ³                   ÀÄÄÄinclude
+³   ³           ³                       ÀÄÄÄcloud_firestore
+³   ³           ³                           ÃÄÄÄPrivate
+³   ³           ³                           ³       FirestorePigeonParser.h
+³   ³           ³                           ³       FLTTransactionStreamHandler.h
+³   ³           ³                           ³       FLTFirebaseFirestoreWriter.h
+³   ³           ³                           ³       FLTSnapshotsInSyncStreamHandler.h
+³   ³           ³                           ³       FLTLoadBundleStreamHandler.h
+³   ³           ³                           ³       FLTFirebaseFirestoreUtils.h
+³   ³           ³                           ³       FLTFirebaseFirestoreReader.h
+³   ³           ³                           ³       FLTDocumentSnapshotStreamHandler.h
+³   ³           ³                           ³       FLTFirebaseFirestoreExtension.h
+³   ³           ³                           ³       FLTQuerySnapshotStreamHandler.h
+³   ³           ³                           ³       
+³   ³           ³                           ÀÄÄÄPublic
+³   ³           ³                                   CustomPigeonHeaderFirestore.h
+³   ³           ³                                   FirestoreMessages.g.h
+³   ³           ³                                   FLTFirebaseFirestorePlugin.h
+³   ³           ³                                   
+³   ³           ÃÄÄÄdevice_info_plus
+³   ³           ³   ³   pubspec.yaml
+³   ³           ³   ³   README.md
+³   ³           ³   ³   CHANGELOG.md
+³   ³           ³   ³   LICENSE
+³   ³           ³   ³   
+³   ³           ³   ÃÄÄÄlib
+³   ³           ³   ³   ³   device_info_plus.dart
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÀÄÄÄsrc
+³   ³           ³   ³       ³   device_info_plus_web.dart
+³   ³           ³   ³       ³   device_info_plus_linux.dart
+³   ³           ³   ³       ³   device_info_plus_windows.dart
+³   ³           ³   ³       ³   device_info_plus_macos.dart
+³   ³           ³   ³       ³   
+³   ³           ³   ³       ÀÄÄÄmodel
+³   ³           ³   ³               web_browser_info.dart
+³   ³           ³   ³               ios_device_info.dart
+³   ³           ³   ³               windows_device_info.dart
+³   ³           ³   ³               android_device_info.dart
+³   ³           ³   ³               linux_device_info.dart
+³   ³           ³   ³               macos_device_info.dart
+³   ³           ³   ³               
+³   ³           ³   ÃÄÄÄandroid
+³   ³           ³   ³   ³   settings.gradle
+³   ³           ³   ³   ³   gradle.properties
+³   ³           ³   ³   ³   build.gradle
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÃÄÄÄsrc
+³   ³           ³   ³   ³   ÀÄÄÄmain
+³   ³           ³   ³   ³       ³   AndroidManifest.xml
+³   ³           ³   ³   ³       ³   
+³   ³           ³   ³   ³       ÀÄÄÄkotlin
+³   ³           ³   ³   ³           ÀÄÄÄdev
+³   ³           ³   ³   ³               ÀÄÄÄfluttercommunity
+³   ³           ³   ³   ³                   ÀÄÄÄplus
+³   ³           ³   ³   ³                       ÀÄÄÄdevice_info
+³   ³           ³   ³   ³                               MethodCallHandlerImpl.kt
+³   ³           ³   ³   ³                               DeviceInfoPlusPlugin.kt
+³   ³           ³   ³   ³                               
+³   ³           ³   ³   ÀÄÄÄgradle
+³   ³           ³   ³       ÀÄÄÄwrapper
+³   ³           ³   ³               gradle-wrapper.properties
+³   ³           ³   ³               
+³   ³           ³   ÃÄÄÄios
+³   ³           ³   ³   ³   PrivacyInfo.xcprivacy
+³   ³           ³   ³   ³   device_info_plus.podspec
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÀÄÄÄClasses
+³   ³           ³   ³           FPPDeviceInfoPlusPlugin.m
+³   ³           ³   ³           FPPDeviceInfoPlusPlugin.h
+³   ³           ³   ³           
+³   ³           ³   ÃÄÄÄexample
+³   ³           ³   ³   ³   pubspec.yaml
+³   ³           ³   ³   ³   README.md
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÃÄÄÄwindows
+³   ³           ³   ³   ³   ³   CMakeLists.txt
+³   ³           ³   ³   ³   ³   
+³   ³           ³   ³   ³   ÃÄÄÄflutter
+³   ³           ³   ³   ³   ³       CMakeLists.txt
+³   ³           ³   ³   ³   ³       
+³   ³           ³   ³   ³   ÀÄÄÄrunner
+³   ³           ³   ³   ³       ³   flutter_window.h
+³   ³           ³   ³   ³       ³   main.cpp
+³   ³           ³   ³   ³       ³   Runner.rc
+³   ³           ³   ³   ³       ³   run_loop.cpp
+³   ³           ³   ³   ³       ³   resource.h
+³   ³           ³   ³   ³       ³   win32_window.cpp
+³   ³           ³   ³   ³       ³   win32_window.h
+³   ³           ³   ³   ³       ³   CMakeLists.txt
+³   ³           ³   ³   ³       ³   runner.exe.manifest
+³   ³           ³   ³   ³       ³   utils.cpp
+³   ³           ³   ³   ³       ³   run_loop.h
+³   ³           ³   ³   ³       ³   utils.h
+³   ³           ³   ³   ³       ³   flutter_window.cpp
+³   ³           ³   ³   ³       ³   
+³   ³           ³   ³   ³       ÀÄÄÄresources
+³   ³           ³   ³   ³               app_icon.ico
+³   ³           ³   ³   ³               
+³   ³           ³   ³   ÃÄÄÄlib
+³   ³           ³   ³   ³       main.dart
+³   ³           ³   ³   ³       
+³   ³           ³   ³   ÃÄÄÄandroid
+³   ³           ³   ³   ³   ³   settings.gradle
+³   ³           ³   ³   ³   ³   gradle.properties
+³   ³           ³   ³   ³   ³   build.gradle
+³   ³           ³   ³   ³   ³   
+³   ³           ³   ³   ³   ÃÄÄÄgradle
+³   ³           ³   ³   ³   ³   ÀÄÄÄwrapper
+³   ³           ³   ³   ³   ³           gradle-wrapper.properties
+³   ³           ³   ³   ³   ³           
+³   ³           ³   ³   ³   ÀÄÄÄapp
+³   ³           ³   ³   ³       ³   build.gradle
+³   ³           ³   ³   ³       ³   
+³   ³           ³   ³   ³       ÀÄÄÄsrc
+³   ³           ³   ³   ³           ÃÄÄÄdebug
+³   ³           ³   ³   ³           ³       AndroidManifest.xml
+³   ³           ³   ³   ³           ³       
+³   ³           ³   ³   ³           ÃÄÄÄmain
+³   ³           ³   ³   ³           ³   ³   AndroidManifest.xml
+³   ³           ³   ³   ³           ³   ³   
+³   ³           ³   ³   ³           ³   ÃÄÄÄkotlin
+³   ³           ³   ³   ³           ³   ³   ÀÄÄÄio
+³   ³           ³   ³   ³           ³   ³       ÀÄÄÄflutter
+³   ³           ³   ³   ³           ³   ³           ÀÄÄÄplugins
+³   ³           ³   ³   ³           ³   ³               ÀÄÄÄdeviceinfoexample
+³   ³           ³   ³   ³           ³   ³                   ÀÄÄÄexample
+³   ³           ³   ³   ³           ³   ³                           MainActivity.kt
+³   ³           ³   ³   ³           ³   ³                           
+³   ³           ³   ³   ³           ³   ÀÄÄÄres
+³   ³           ³   ³   ³           ³       ÃÄÄÄmipmap-xhdpi
+³   ³           ³   ³   ³           ³       ³       ic_launcher.png
+³   ³           ³   ³   ³           ³       ³       
+³   ³           ³   ³   ³           ³       ÃÄÄÄvalues
+³   ³           ³   ³   ³           ³       ³       styles.xml
+³   ³           ³   ³   ³           ³       ³       
+³   ³           ³   ³   ³           ³       ÃÄÄÄmipmap-xxhdpi
+³   ³           ³   ³   ³           ³       ³       ic_launcher.png
+³   ³           ³   ³   ³           ³       ³       
+³   ³           ³   ³   ³           ³       ÃÄÄÄmipmap-xxxhdpi
+³   ³           ³   ³   ³           ³       ³       ic_launcher.png
+³   ³           ³   ³   ³           ³       ³       
+³   ³           ³   ³   ³           ³       ÃÄÄÄdrawable
+³   ³           ³   ³   ³           ³       ³       launch_background.xml
+³   ³           ³   ³   ³           ³       ³       
+³   ³           ³   ³   ³           ³       ÃÄÄÄmipmap-hdpi
+³   ³           ³   ³   ³           ³       ³       ic_launcher.png
+³   ³           ³   ³   ³           ³       ³       
+³   ³           ³   ³   ³           ³       ÀÄÄÄmipmap-mdpi
+³   ³           ³   ³   ³           ³               ic_launcher.png
+³   ³           ³   ³   ³           ³               
+³   ³           ³   ³   ³           ÀÄÄÄprofile
+³   ³           ³   ³   ³                   AndroidManifest.xml
+³   ³           ³   ³   ³                   
+³   ³           ³   ³   ÃÄÄÄlinux
+³   ³           ³   ³   ³   ³   my_application.cc
+³   ³           ³   ³   ³   ³   my_application.h
+³   ³           ³   ³   ³   ³   CMakeLists.txt
+³   ³           ³   ³   ³   ³   main.cc
+³   ³           ³   ³   ³   ³   
+³   ³           ³   ³   ³   ÀÄÄÄflutter
+³   ³           ³   ³   ³           CMakeLists.txt
+³   ³           ³   ³   ³           
+³   ³           ³   ³   ÃÄÄÄios
+³   ³           ³   ³   ³   ÃÄÄÄFlutter
+³   ³           ³   ³   ³   ³       AppFrameworkInfo.plist
+³   ³           ³   ³   ³   ³       Release.xcconfig
+³   ³           ³   ³   ³   ³       Debug.xcconfig
+³   ³           ³   ³   ³   ³       
+³   ³           ³   ³   ³   ÃÄÄÄRunner.xcodeproj
+³   ³           ³   ³   ³   ³   ³   project.pbxproj
+³   ³           ³   ³   ³   ³   ³   
+³   ³           ³   ³   ³   ³   ÃÄÄÄxcshareddata
+³   ³           ³   ³   ³   ³   ³   ÀÄÄÄxcschemes
+³   ³           ³   ³   ³   ³   ³           Runner.xcscheme
+³   ³           ³   ³   ³   ³   ³           
+³   ³           ³   ³   ³   ³   ÀÄÄÄproject.xcworkspace
+³   ³           ³   ³   ³   ³       ³   contents.xcworkspacedata
+³   ³           ³   ³   ³   ³       ³   
+³   ³           ³   ³   ³   ³       ÀÄÄÄxcshareddata
+³   ³           ³   ³   ³   ³               WorkspaceSettings.xcsettings
+³   ³           ³   ³   ³   ³               IDEWorkspaceChecks.plist
+³   ³           ³   ³   ³   ³               
+³   ³           ³   ³   ³   ÃÄÄÄRunner
+³   ³           ³   ³   ³   ³   ³   Info.plist
+³   ³           ³   ³   ³   ³   ³   AppDelegate.swift
+³   ³           ³   ³   ³   ³   ³   Runner-Bridging-Header.h
+³   ³           ³   ³   ³   ³   ³   
+³   ³           ³   ³   ³   ³   ÃÄÄÄBase.lproj
+³   ³           ³   ³   ³   ³   ³       Main.storyboard
+³   ³           ³   ³   ³   ³   ³       LaunchScreen.storyboard
+³   ³           ³   ³   ³   ³   ³       
+³   ³           ³   ³   ³   ³   ÀÄÄÄAssets.xcassets
+³   ³           ³   ³   ³   ³       ÃÄÄÄAppIcon.appiconset
+³   ³           ³   ³   ³   ³       ³       Icon-App-29x29@2x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-40x40@3x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-76x76@1x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-60x60@2x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-60x60@3x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-40x40@2x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-29x29@3x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-20x20@2x.png
+³   ³           ³   ³   ³   ³       ³       Contents.json
+³   ³           ³   ³   ³   ³       ³       Icon-App-20x20@3x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-83.5x83.5@2x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-1024x1024@1x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-20x20@1x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-40x40@1x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-29x29@1x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-76x76@2x.png
+³   ³           ³   ³   ³   ³       ³       
+³   ³           ³   ³   ³   ³       ÀÄÄÄLaunchImage.imageset
+³   ³           ³   ³   ³   ³               LaunchImage.png
+³   ³           ³   ³   ³   ³               Contents.json
+³   ³           ³   ³   ³   ³               README.md
+³   ³           ³   ³   ³   ³               LaunchImage@3x.png
+³   ³           ³   ³   ³   ³               LaunchImage@2x.png
+³   ³           ³   ³   ³   ³               
+³   ³           ³   ³   ³   ÃÄÄÄRunnerTests
+³   ³           ³   ³   ³   ³       RunnerTests.swift
+³   ³           ³   ³   ³   ³       
+³   ³           ³   ³   ³   ÀÄÄÄRunner.xcworkspace
+³   ³           ³   ³   ³       ³   contents.xcworkspacedata
+³   ³           ³   ³   ³       ³   
+³   ³           ³   ³   ³       ÀÄÄÄxcshareddata
+³   ³           ³   ³   ³               WorkspaceSettings.xcsettings
+³   ³           ³   ³   ³               IDEWorkspaceChecks.plist
+³   ³           ³   ³   ³               
+³   ³           ³   ³   ÃÄÄÄweb
+³   ³           ³   ³   ³   ³   manifest.json
+³   ³           ³   ³   ³   ³   favicon.png
+³   ³           ³   ³   ³   ³   index.html
+³   ³           ³   ³   ³   ³   
+³   ³           ³   ³   ³   ÀÄÄÄicons
+³   ³           ³   ³   ³           Icon-512.png
+³   ³           ³   ³   ³           Icon-192.png
+³   ³           ³   ³   ³           
+³   ³           ³   ³   ÃÄÄÄmacos
+³   ³           ³   ³   ³   ÃÄÄÄFlutter
+³   ³           ³   ³   ³   ³       Flutter-Release.xcconfig
+³   ³           ³   ³   ³   ³       Flutter-Debug.xcconfig
+³   ³           ³   ³   ³   ³       
+³   ³           ³   ³   ³   ÃÄÄÄRunner.xcodeproj
+³   ³           ³   ³   ³   ³   ³   project.pbxproj
+³   ³           ³   ³   ³   ³   ³   
+³   ³           ³   ³   ³   ³   ÃÄÄÄxcshareddata
+³   ³           ³   ³   ³   ³   ³   ÀÄÄÄxcschemes
+³   ³           ³   ³   ³   ³   ³           Runner.xcscheme
+³   ³           ³   ³   ³   ³   ³           
+³   ³           ³   ³   ³   ³   ÀÄÄÄproject.xcworkspace
+³   ³           ³   ³   ³   ³       ÀÄÄÄxcshareddata
+³   ³           ³   ³   ³   ³               IDEWorkspaceChecks.plist
+³   ³           ³   ³   ³   ³               
+³   ³           ³   ³   ³   ÃÄÄÄRunner
+³   ³           ³   ³   ³   ³   ³   Release.entitlements
+³   ³           ³   ³   ³   ³   ³   Info.plist
+³   ³           ³   ³   ³   ³   ³   AppDelegate.swift
+³   ³           ³   ³   ³   ³   ³   MainFlutterWindow.swift
+³   ³           ³   ³   ³   ³   ³   DebugProfile.entitlements
+³   ³           ³   ³   ³   ³   ³   
+³   ³           ³   ³   ³   ³   ÃÄÄÄConfigs
+³   ³           ³   ³   ³   ³   ³       Warnings.xcconfig
+³   ³           ³   ³   ³   ³   ³       Release.xcconfig
+³   ³           ³   ³   ³   ³   ³       Debug.xcconfig
+³   ³           ³   ³   ³   ³   ³       AppInfo.xcconfig
+³   ³           ³   ³   ³   ³   ³       
+³   ³           ³   ³   ³   ³   ÃÄÄÄBase.lproj
+³   ³           ³   ³   ³   ³   ³       MainMenu.xib
+³   ³           ³   ³   ³   ³   ³       
+³   ³           ³   ³   ³   ³   ÀÄÄÄAssets.xcassets
+³   ³           ³   ³   ³   ³       ÀÄÄÄAppIcon.appiconset
+³   ³           ³   ³   ³   ³               app_icon_32.png
+³   ³           ³   ³   ³   ³               Contents.json
+³   ³           ³   ³   ³   ³               app_icon_128.png
+³   ³           ³   ³   ³   ³               app_icon_512.png
+³   ³           ³   ³   ³   ³               app_icon_64.png
+³   ³           ³   ³   ³   ³               app_icon_256.png
+³   ³           ³   ³   ³   ³               app_icon_1024.png
+³   ³           ³   ³   ³   ³               app_icon_16.png
+³   ³           ³   ³   ³   ³               
+³   ³           ³   ³   ³   ÃÄÄÄRunnerTests
+³   ³           ³   ³   ³   ³       RunnerTests.swift
+³   ³           ³   ³   ³   ³       
+³   ³           ³   ³   ³   ÀÄÄÄRunner.xcworkspace
+³   ³           ³   ³   ³       ³   contents.xcworkspacedata
+³   ³           ³   ³   ³       ³   
+³   ³           ³   ³   ³       ÀÄÄÄxcshareddata
+³   ³           ³   ³   ³               IDEWorkspaceChecks.plist
+³   ³           ³   ³   ³               
+³   ³           ³   ³   ÀÄÄÄintegration_test
+³   ³           ³   ³           device_info_plus_test.dart
+³   ³           ³   ³           
+³   ³           ³   ÃÄÄÄtest
+³   ³           ³   ³   ³   device_info_plus_linux_test.dart
+³   ³           ³   ³   ³   device_info_plus_web_test.dart
+³   ³           ³   ³   ³   device_info_plus_windows_test.dart
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÀÄÄÄmodel
+³   ³           ³   ³           ios_device_info_test.dart
+³   ³           ³   ³           web_browser_info_test.dart
+³   ³           ³   ³           android_device_info_fake.dart
+³   ³           ³   ³           android_device_info_test.dart
+³   ³           ³   ³           windows_device_info_test.dart
+³   ³           ³   ³           macos_device_info_test.dart
+³   ³           ³   ³           linux_device_info_test.dart
+³   ³           ³   ³           
+³   ³           ³   ÀÄÄÄmacos
+³   ³           ³       ³   device_info_plus.podspec
+³   ³           ³       ³   
+³   ³           ³       ÀÄÄÄClasses
+³   ³           ³               CwlSysctl.swift
+³   ³           ³               DeviceInfoPlusMacosPlugin.swift
+³   ³           ³               SystemUUID.swift
+³   ³           ³               
+³   ³           ÃÄÄÄfirebase_auth
+³   ³           ³   ³   pubspec.yaml
+³   ³           ³   ³   README.md
+³   ³           ³   ³   CHANGELOG.md
+³   ³           ³   ³   LICENSE
+³   ³           ³   ³   
+³   ³           ³   ÃÄÄÄwindows
+³   ³           ³   ³   ³   firebase_auth_plugin_c_api.cpp
+³   ³           ³   ³   ³   plugin_version.h.in
+³   ³           ³   ³   ³   messages.g.cpp
+³   ³           ³   ³   ³   firebase_auth_plugin.cpp
+³   ³           ³   ³   ³   firebase_auth_plugin.h
+³   ³           ³   ³   ³   CMakeLists.txt
+³   ³           ³   ³   ³   messages.g.h
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÃÄÄÄinclude
+³   ³           ³   ³   ³   ÀÄÄÄfirebase_auth
+³   ³           ³   ³   ³           firebase_auth_plugin_c_api.h
+³   ³           ³   ³   ³           
+³   ³           ³   ³   ÀÄÄÄtest
+³   ³           ³   ³           firebase_auth_plugin_test.cpp
+³   ³           ³   ³           
+³   ³           ³   ÃÄÄÄlib
+³   ³           ³   ³   ³   firebase_auth.dart
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÀÄÄÄsrc
+³   ³           ³   ³           user_credential.dart
+³   ³           ³   ³           firebase_auth.dart
+³   ³           ³   ³           multi_factor.dart
+³   ³           ³   ³           user.dart
+³   ³           ³   ³           confirmation_result.dart
+³   ³           ³   ³           recaptcha_verifier.dart
+³   ³           ³   ³           
+³   ³           ³   ÃÄÄÄandroid
+³   ³           ³   ³   ³   settings.gradle
+³   ³           ³   ³   ³   gradle.properties
+³   ³           ³   ³   ³   user-agent.gradle
+³   ³           ³   ³   ³   build.gradle
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÃÄÄÄsrc
+³   ³           ³   ³   ³   ÀÄÄÄmain
+³   ³           ³   ³   ³       ³   AndroidManifest.xml
+³   ³           ³   ³   ³       ³   
+³   ³           ³   ³   ³       ÀÄÄÄjava
+³   ³           ³   ³   ³           ÀÄÄÄio
+³   ³           ³   ³   ³               ÀÄÄÄflutter
+³   ³           ³   ³   ³                   ÀÄÄÄplugins
+³   ³           ³   ³   ³                       ÀÄÄÄfirebase
+³   ³           ³   ³   ³                           ÀÄÄÄauth
+³   ³           ³   ³   ³                                   Constants.java
+³   ³           ³   ³   ³                                   FlutterFirebaseAuthPluginException.java
+³   ³           ³   ³   ³                                   FlutterFirebaseAuthPlugin.java
+³   ³           ³   ³   ³                                   FlutterFirebaseTotpMultiFactor.java
+³   ³           ³   ³   ³                                   AuthStateChannelStreamHandler.java
+³   ³           ³   ³   ³                                   IdTokenChannelStreamHandler.java
+³   ³           ³   ³   ³                                   GeneratedAndroidFirebaseAuth.java
+³   ³           ³   ³   ³                                   PigeonParser.java
+³   ³           ³   ³   ³                                   FlutterFirebaseMultiFactor.java
+³   ³           ³   ³   ³                                   PhoneNumberVerificationStreamHandler.java
+³   ³           ³   ³   ³                                   FlutterFirebaseTotpSecret.java
+³   ³           ³   ³   ³                                   FlutterFirebaseAuthRegistrar.java
+³   ³           ³   ³   ³                                   FlutterFirebaseAuthUser.java
+³   ³           ³   ³   ³                                   
+³   ³           ³   ³   ÀÄÄÄgradle
+³   ³           ³   ³       ÀÄÄÄwrapper
+³   ³           ³   ³               gradle-wrapper.properties
+³   ³           ³   ³               
+³   ³           ³   ÃÄÄÄios
+³   ³           ³   ³   ³   firebase_auth.podspec
+³   ³           ³   ³   ³   generated_firebase_sdk_version.txt
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÀÄÄÄfirebase_auth
+³   ³           ³   ³       ³   Package.swift
+³   ³           ³   ³       ³   
+³   ³           ³   ³       ÀÄÄÄSources
+³   ³           ³   ³           ÀÄÄÄfirebase_auth
+³   ³           ³   ³               ³   FLTPhoneNumberVerificationStreamHandler.m
+³   ³           ³   ³               ³   FLTAuthStateChannelStreamHandler.m
+³   ³           ³   ³               ³   FLTIdTokenChannelStreamHandler.m
+³   ³           ³   ³               ³   PigeonParser.m
+³   ³           ³   ³               ³   firebase_auth_messages.g.m
+³   ³           ³   ³               ³   FLTFirebaseAuthPlugin.m
+³   ³           ³   ³               ³   
+³   ³           ³   ³               ÃÄÄÄResources
+³   ³           ³   ³               ÀÄÄÄinclude
+³   ³           ³   ³                   ÃÄÄÄPrivate
+³   ³           ³   ³                   ³       FLTPhoneNumberVerificationStreamHandler.h
+³   ³           ³   ³                   ³       FLTIdTokenChannelStreamHandler.h
+³   ³           ³   ³                   ³       FLTAuthStateChannelStreamHandler.h
+³   ³           ³   ³                   ³       PigeonParser.h
+³   ³           ³   ³                   ³       
+³   ³           ³   ³                   ÀÄÄÄPublic
+³   ³           ³   ³                           FLTFirebaseAuthPlugin.h
+³   ³           ³   ³                           firebase_auth_messages.g.h
+³   ³           ³   ³                           CustomPigeonHeader.h
+³   ³           ³   ³                           
+³   ³           ³   ÃÄÄÄexample
+³   ³           ³   ³   ³   analysis_options.yaml
+³   ³           ³   ³   ³   pubspec.yaml
+³   ³           ³   ³   ³   README.md
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÃÄÄÄwindows
+³   ³           ³   ³   ³   ³   CMakeLists.txt
+³   ³           ³   ³   ³   ³   
+³   ³           ³   ³   ³   ÃÄÄÄflutter
+³   ³           ³   ³   ³   ³       CMakeLists.txt
+³   ³           ³   ³   ³   ³       
+³   ³           ³   ³   ³   ÀÄÄÄrunner
+³   ³           ³   ³   ³       ³   flutter_window.h
+³   ³           ³   ³   ³       ³   main.cpp
+³   ³           ³   ³   ³       ³   Runner.rc
+³   ³           ³   ³   ³       ³   resource.h
+³   ³           ³   ³   ³       ³   win32_window.cpp
+³   ³           ³   ³   ³       ³   win32_window.h
+³   ³           ³   ³   ³       ³   CMakeLists.txt
+³   ³           ³   ³   ³       ³   runner.exe.manifest
+³   ³           ³   ³   ³       ³   utils.cpp
+³   ³           ³   ³   ³       ³   utils.h
+³   ³           ³   ³   ³       ³   flutter_window.cpp
+³   ³           ³   ³   ³       ³   
+³   ³           ³   ³   ³       ÀÄÄÄresources
+³   ³           ³   ³   ³               app_icon.ico
+³   ³           ³   ³   ³               
+³   ³           ³   ³   ÃÄÄÄlib
+³   ³           ³   ³   ³       main.dart
+³   ³           ³   ³   ³       firebase_options.dart
+³   ³           ³   ³   ³       profile.dart
+³   ³           ³   ³   ³       auth.dart
+³   ³           ³   ³   ³       
+³   ³           ³   ³   ÃÄÄÄandroid
+³   ³           ³   ³   ³   ³   settings.gradle
+³   ³           ³   ³   ³   ³   gradle.properties
+³   ³           ³   ³   ³   ³   build.gradle
+³   ³           ³   ³   ³   ³   
+³   ³           ³   ³   ³   ÃÄÄÄgradle
+³   ³           ³   ³   ³   ³   ÀÄÄÄwrapper
+³   ³           ³   ³   ³   ³           gradle-wrapper.properties
+³   ³           ³   ³   ³   ³           
+³   ³           ³   ³   ³   ÀÄÄÄapp
+³   ³           ³   ³   ³       ³   google-services.json
+³   ³           ³   ³   ³       ³   build.gradle
+³   ³           ³   ³   ³       ³   
+³   ³           ³   ³   ³       ÀÄÄÄsrc
+³   ³           ³   ³   ³           ÃÄÄÄdebug
+³   ³           ³   ³   ³           ³       AndroidManifest.xml
+³   ³           ³   ³   ³           ³       
+³   ³           ³   ³   ³           ÃÄÄÄmain
+³   ³           ³   ³   ³           ³   ³   AndroidManifest.xml
+³   ³           ³   ³   ³           ³   ³   
+³   ³           ³   ³   ³           ³   ÃÄÄÄkotlin
+³   ³           ³   ³   ³           ³   ³   ÀÄÄÄio
+³   ³           ³   ³   ³           ³   ³       ÀÄÄÄflutter
+³   ³           ³   ³   ³           ³   ³           ÀÄÄÄplugins
+³   ³           ³   ³   ³           ³   ³               ÀÄÄÄfirebase
+³   ³           ³   ³   ³           ³   ³                   ÀÄÄÄauth
+³   ³           ³   ³   ³           ³   ³                       ÀÄÄÄexample
+³   ³           ³   ³   ³           ³   ³                               MainActivity.kt
+³   ³           ³   ³   ³           ³   ³                               
+³   ³           ³   ³   ³           ³   ÃÄÄÄjava
+³   ³           ³   ³   ³           ³   ³   ÀÄÄÄio
+³   ³           ³   ³   ³           ³   ³       ÀÄÄÄflutter
+³   ³           ³   ³   ³           ³   ³           ÀÄÄÄplugins
+³   ³           ³   ³   ³           ³   ÀÄÄÄres
+³   ³           ³   ³   ³           ³       ÃÄÄÄmipmap-xhdpi
+³   ³           ³   ³   ³           ³       ³       ic_launcher.png
+³   ³           ³   ³   ³           ³       ³       
+³   ³           ³   ³   ³           ³       ÃÄÄÄdrawable-v21
+³   ³           ³   ³   ³           ³       ³       launch_background.xml
+³   ³           ³   ³   ³           ³       ³       
+³   ³           ³   ³   ³           ³       ÃÄÄÄvalues
+³   ³           ³   ³   ³           ³       ³       styles.xml
+³   ³           ³   ³   ³           ³       ³       
+³   ³           ³   ³   ³           ³       ÃÄÄÄvalues-night
+³   ³           ³   ³   ³           ³       ³       styles.xml
+³   ³           ³   ³   ³           ³       ³       
+³   ³           ³   ³   ³           ³       ÃÄÄÄmipmap-xxhdpi
+³   ³           ³   ³   ³           ³       ³       ic_launcher.png
+³   ³           ³   ³   ³           ³       ³       
+³   ³           ³   ³   ³           ³       ÃÄÄÄmipmap-xxxhdpi
+³   ³           ³   ³   ³           ³       ³       ic_launcher.png
+³   ³           ³   ³   ³           ³       ³       
+³   ³           ³   ³   ³           ³       ÃÄÄÄdrawable
+³   ³           ³   ³   ³           ³       ³       launch_background.xml
+³   ³           ³   ³   ³           ³       ³       
+³   ³           ³   ³   ³           ³       ÃÄÄÄmipmap-hdpi
+³   ³           ³   ³   ³           ³       ³       ic_launcher.png
+³   ³           ³   ³   ³           ³       ³       
+³   ³           ³   ³   ³           ³       ÀÄÄÄmipmap-mdpi
+³   ³           ³   ³   ³           ³               ic_launcher.png
+³   ³           ³   ³   ³           ³               
+³   ³           ³   ³   ³           ÀÄÄÄprofile
+³   ³           ³   ³   ³                   AndroidManifest.xml
+³   ³           ³   ³   ³                   
+³   ³           ³   ³   ÃÄÄÄios
+³   ³           ³   ³   ³   ³   Podfile
+³   ³           ³   ³   ³   ³   firebase_app_id_file.json
+³   ³           ³   ³   ³   ³   
+³   ³           ³   ³   ³   ÃÄÄÄFlutter
+³   ³           ³   ³   ³   ³       AppFrameworkInfo.plist
+³   ³           ³   ³   ³   ³       Release.xcconfig
+³   ³           ³   ³   ³   ³       Debug.xcconfig
+³   ³           ³   ³   ³   ³       
+³   ³           ³   ³   ³   ÃÄÄÄRunner.xcodeproj
+³   ³           ³   ³   ³   ³   ³   project.pbxproj
+³   ³           ³   ³   ³   ³   ³   
+³   ³           ³   ³   ³   ³   ÃÄÄÄxcshareddata
+³   ³           ³   ³   ³   ³   ³   ÀÄÄÄxcschemes
+³   ³           ³   ³   ³   ³   ³           Runner.xcscheme
+³   ³           ³   ³   ³   ³   ³           
+³   ³           ³   ³   ³   ³   ÀÄÄÄproject.xcworkspace
+³   ³           ³   ³   ³   ³       ³   contents.xcworkspacedata
+³   ³           ³   ³   ³   ³       ³   
+³   ³           ³   ³   ³   ³       ÀÄÄÄxcshareddata
+³   ³           ³   ³   ³   ³           ³   WorkspaceSettings.xcsettings
+³   ³           ³   ³   ³   ³           ³   IDEWorkspaceChecks.plist
+³   ³           ³   ³   ³   ³           ³   
+³   ³           ³   ³   ³   ³           ÀÄÄÄswiftpm
+³   ³           ³   ³   ³   ³               ÀÄÄÄconfiguration
+³   ³           ³   ³   ³   ÃÄÄÄRunner
+³   ³           ³   ³   ³   ³   ³   Info.plist
+³   ³           ³   ³   ³   ³   ³   AppDelegate.swift
+³   ³           ³   ³   ³   ³   ³   AppDelegate.m
+³   ³           ³   ³   ³   ³   ³   main.m
+³   ³           ³   ³   ³   ³   ³   GoogleService-Info.plist
+³   ³           ³   ³   ³   ³   ³   Runner.entitlements
+³   ³           ³   ³   ³   ³   ³   Runner-Bridging-Header.h
+³   ³           ³   ³   ³   ³   ³   AppDelegate.h
+³   ³           ³   ³   ³   ³   ³   
+³   ³           ³   ³   ³   ³   ÃÄÄÄBase.lproj
+³   ³           ³   ³   ³   ³   ³       Main.storyboard
+³   ³           ³   ³   ³   ³   ³       LaunchScreen.storyboard
+³   ³           ³   ³   ³   ³   ³       
+³   ³           ³   ³   ³   ³   ÀÄÄÄAssets.xcassets
+³   ³           ³   ³   ³   ³       ÃÄÄÄAppIcon.appiconset
+³   ³           ³   ³   ³   ³       ³       Icon-App-29x29@2x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-40x40@3x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-76x76@1x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-60x60@2x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-60x60@3x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-40x40@2x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-29x29@3x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-20x20@2x.png
+³   ³           ³   ³   ³   ³       ³       Contents.json
+³   ³           ³   ³   ³   ³       ³       Icon-App-20x20@3x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-83.5x83.5@2x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-1024x1024@1x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-20x20@1x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-40x40@1x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-29x29@1x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-76x76@2x.png
+³   ³           ³   ³   ³   ³       ³       
+³   ³           ³   ³   ³   ³       ÀÄÄÄLaunchImage.imageset
+³   ³           ³   ³   ³   ³               LaunchImage.png
+³   ³           ³   ³   ³   ³               Contents.json
+³   ³           ³   ³   ³   ³               README.md
+³   ³           ³   ³   ³   ³               LaunchImage@3x.png
+³   ³           ³   ³   ³   ³               LaunchImage@2x.png
+³   ³           ³   ³   ³   ³               
+³   ³           ³   ³   ³   ÀÄÄÄRunner.xcworkspace
+³   ³           ³   ³   ³       ³   contents.xcworkspacedata
+³   ³           ³   ³   ³       ³   
+³   ³           ³   ³   ³       ÀÄÄÄxcshareddata
+³   ³           ³   ³   ³           ³   WorkspaceSettings.xcsettings
+³   ³           ³   ³   ³           ³   IDEWorkspaceChecks.plist
+³   ³           ³   ³   ³           ³   
+³   ³           ³   ³   ³           ÀÄÄÄswiftpm
+³   ³           ³   ³   ³               ÀÄÄÄconfiguration
+³   ³           ³   ³   ÃÄÄÄweb
+³   ³           ³   ³   ³   ³   manifest.json
+³   ³           ³   ³   ³   ³   favicon.png
+³   ³           ³   ³   ³   ³   index.html
+³   ³           ³   ³   ³   ³   
+³   ³           ³   ³   ³   ÀÄÄÄicons
+³   ³           ³   ³   ³           Icon-512.png
+³   ³           ³   ³   ³           Icon-maskable-512.png
+³   ³           ³   ³   ³           Icon-maskable-192.png
+³   ³           ³   ³   ³           Icon-192.png
+³   ³           ³   ³   ³           
+³   ³           ³   ³   ÀÄÄÄmacos
+³   ³           ³   ³       ³   Podfile
+³   ³           ³   ³       ³   firebase_app_id_file.json
+³   ³           ³   ³       ³   
+³   ³           ³   ³       ÃÄÄÄFlutter
+³   ³           ³   ³       ³       Flutter-Release.xcconfig
+³   ³           ³   ³       ³       Flutter-Debug.xcconfig
+³   ³           ³   ³       ³       
+³   ³           ³   ³       ÃÄÄÄRunner.xcodeproj
+³   ³           ³   ³       ³   ³   project.pbxproj
+³   ³           ³   ³       ³   ³   
+³   ³           ³   ³       ³   ÃÄÄÄxcshareddata
+³   ³           ³   ³       ³   ³   ÀÄÄÄxcschemes
+³   ³           ³   ³       ³   ³           Runner.xcscheme
+³   ³           ³   ³       ³   ³           
+³   ³           ³   ³       ³   ÀÄÄÄproject.xcworkspace
+³   ³           ³   ³       ³       ³   contents.xcworkspacedata
+³   ³           ³   ³       ³       ³   
+³   ³           ³   ³       ³       ÀÄÄÄxcshareddata
+³   ³           ³   ³       ³               IDEWorkspaceChecks.plist
+³   ³           ³   ³       ³               
+³   ³           ³   ³       ÃÄÄÄRunner
+³   ³           ³   ³       ³   ³   Release.entitlements
+³   ³           ³   ³       ³   ³   Info.plist
+³   ³           ³   ³       ³   ³   AppDelegate.swift
+³   ³           ³   ³       ³   ³   MainFlutterWindow.swift
+³   ³           ³   ³       ³   ³   GoogleService-Info.plist
+³   ³           ³   ³       ³   ³   DebugProfile.entitlements
+³   ³           ³   ³       ³   ³   
+³   ³           ³   ³       ³   ÃÄÄÄConfigs
+³   ³           ³   ³       ³   ³       Warnings.xcconfig
+³   ³           ³   ³       ³   ³       Release.xcconfig
+³   ³           ³   ³       ³   ³       Debug.xcconfig
+³   ³           ³   ³       ³   ³       AppInfo.xcconfig
+³   ³           ³   ³       ³   ³       
+³   ³           ³   ³       ³   ÃÄÄÄBase.lproj
+³   ³           ³   ³       ³   ³       MainMenu.xib
+³   ³           ³   ³       ³   ³       
+³   ³           ³   ³       ³   ÀÄÄÄAssets.xcassets
+³   ³           ³   ³       ³       ÀÄÄÄAppIcon.appiconset
+³   ³           ³   ³       ³               app_icon_32.png
+³   ³           ³   ³       ³               Contents.json
+³   ³           ³   ³       ³               app_icon_128.png
+³   ³           ³   ³       ³               app_icon_512.png
+³   ³           ³   ³       ³               app_icon_64.png
+³   ³           ³   ³       ³               app_icon_256.png
+³   ³           ³   ³       ³               app_icon_1024.png
+³   ³           ³   ³       ³               app_icon_16.png
+³   ³           ³   ³       ³               
+³   ³           ³   ³       ÀÄÄÄRunner.xcworkspace
+³   ³           ³   ³           ³   contents.xcworkspacedata
+³   ³           ³   ³           ³   
+³   ³           ³   ³           ÀÄÄÄxcshareddata
+³   ³           ³   ³                   WorkspaceSettings.xcsettings
+³   ³           ³   ³                   IDEWorkspaceChecks.plist
+³   ³           ³   ³                   
+³   ³           ³   ÃÄÄÄtest
+³   ³           ³   ³       mock.dart
+³   ³           ³   ³       firebase_auth_test.dart
+³   ³           ³   ³       user_test.dart
+³   ³           ³   ³       
+³   ³           ³   ÀÄÄÄmacos
+³   ³           ³       ³   firebase_auth.podspec
+³   ³           ³       ³   
+³   ³           ³       ÀÄÄÄfirebase_auth
+³   ³           ³           ³   Package.swift
+³   ³           ³           ³   
+³   ³           ³           ÀÄÄÄSources
+³   ³           ³               ÀÄÄÄfirebase_auth
+³   ³           ³                   ³   FLTPhoneNumberVerificationStreamHandler.m
+³   ³           ³                   ³   FLTAuthStateChannelStreamHandler.m
+³   ³           ³                   ³   FLTIdTokenChannelStreamHandler.m
+³   ³           ³                   ³   PigeonParser.m
+³   ³           ³                   ³   firebase_auth_messages.g.m
+³   ³           ³                   ³   FLTFirebaseAuthPlugin.m
+³   ³           ³                   ³   
+³   ³           ³                   ÃÄÄÄResource
+³   ³           ³                   ÀÄÄÄinclude
+³   ³           ³                       ÃÄÄÄPrivate
+³   ³           ³                       ³       FLTPhoneNumberVerificationStreamHandler.h
+³   ³           ³                       ³       FLTIdTokenChannelStreamHandler.h
+³   ³           ³                       ³       FLTAuthStateChannelStreamHandler.h
+³   ³           ³                       ³       PigeonParser.h
+³   ³           ³                       ³       
+³   ³           ³                       ÀÄÄÄPublic
+³   ³           ³                               FLTFirebaseAuthPlugin.h
+³   ³           ³                               firebase_auth_messages.g.h
+³   ³           ³                               CustomPigeonHeader.h
+³   ³           ³                               
+³   ³           ÃÄÄÄfirebase_core
+³   ³           ³   ³   pubspec.yaml
+³   ³           ³   ³   README.md
+³   ³           ³   ³   CHANGELOG.md
+³   ³           ³   ³   LICENSE
+³   ³           ³   ³   
+³   ³           ³   ÃÄÄÄwindows
+³   ³           ³   ³   ³   plugin_version.h.in
+³   ³           ³   ³   ³   messages.g.cpp
+³   ³           ³   ³   ³   firebase_core_plugin_c_api.cpp
+³   ³           ³   ³   ³   firebase_core_plugin.h
+³   ³           ³   ³   ³   firebase_core_plugin.cpp
+³   ³           ³   ³   ³   CMakeLists.txt
+³   ³           ³   ³   ³   messages.g.h
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÀÄÄÄinclude
+³   ³           ³   ³       ÀÄÄÄfirebase_core
+³   ³           ³   ³               firebase_core_plugin_c_api.h
+³   ³           ³   ³               
+³   ³           ³   ÃÄÄÄlib
+³   ³           ³   ³   ³   firebase_core.dart
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÀÄÄÄsrc
+³   ³           ³   ³           port_mapping.dart
+³   ³           ³   ³           firebase_app.dart
+³   ³           ³   ³           firebase.dart
+³   ³           ³   ³           
+³   ³           ³   ÃÄÄÄandroid
+³   ³           ³   ³   ³   settings.gradle
+³   ³           ³   ³   ³   gradle.properties
+³   ³           ³   ³   ³   user-agent.gradle
+³   ³           ³   ³   ³   build.gradle
+³   ³           ³   ³   ³   local-config.gradle
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÃÄÄÄsrc
+³   ³           ³   ³   ³   ÀÄÄÄmain
+³   ³           ³   ³   ³       ³   AndroidManifest.xml
+³   ³           ³   ³   ³       ³   
+³   ³           ³   ³   ³       ÀÄÄÄjava
+³   ³           ³   ³   ³           ÀÄÄÄio
+³   ³           ³   ³   ³               ÀÄÄÄflutter
+³   ³           ³   ³   ³                   ÀÄÄÄplugins
+³   ³           ³   ³   ³                       ÀÄÄÄfirebase
+³   ³           ³   ³   ³                           ÀÄÄÄcore
+³   ³           ³   ³   ³                                   FlutterFirebasePluginRegistry.java
+³   ³           ³   ³   ³                                   FlutterFirebaseCoreRegistrar.java
+³   ³           ³   ³   ³                                   FlutterFirebasePlugin.java
+³   ³           ³   ³   ³                                   FlutterFirebaseCorePlugin.java
+³   ³           ³   ³   ³                                   GeneratedAndroidFirebaseCore.java
+³   ³           ³   ³   ³                                   
+³   ³           ³   ³   ÀÄÄÄgradle
+³   ³           ³   ³       ÀÄÄÄwrapper
+³   ³           ³   ³               gradle-wrapper.properties
+³   ³           ³   ³               
+³   ³           ³   ÃÄÄÄios
+³   ³           ³   ³   ³   firebase_core.podspec
+³   ³           ³   ³   ³   firebase_sdk_version.rb
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÀÄÄÄfirebase_core
+³   ³           ³   ³       ³   Package.swift
+³   ³           ³   ³       ³   
+³   ³           ³   ³       ÀÄÄÄSources
+³   ³           ³   ³           ÀÄÄÄfirebase_core
+³   ³           ³   ³               ³   messages.g.m
+³   ³           ³   ³               ³   dummy.m
+³   ³           ³   ³               ³   FLTFirebasePluginRegistry.m
+³   ³           ³   ³               ³   FLTFirebasePlugin.m
+³   ³           ³   ³               ³   FLTFirebaseCorePlugin.m
+³   ³           ³   ³               ³   
+³   ³           ³   ³               ÃÄÄÄResources
+³   ³           ³   ³               ÀÄÄÄinclude
+³   ³           ³   ³                   ÀÄÄÄfirebase_core
+³   ³           ³   ³                           dummy.h
+³   ³           ³   ³                           FLTFirebasePluginRegistry.h
+³   ³           ³   ³                           FLTFirebasePlugin.h
+³   ³           ³   ³                           FLTFirebaseCorePlugin.h
+³   ³           ³   ³                           messages.g.h
+³   ³           ³   ³                           
+³   ³           ³   ÃÄÄÄexample
+³   ³           ³   ³   ³   analysis_options.yaml
+³   ³           ³   ³   ³   pubspec.yaml
+³   ³           ³   ³   ³   README.md
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÃÄÄÄwindows
+³   ³           ³   ³   ³   ³   CMakeLists.txt
+³   ³           ³   ³   ³   ³   
+³   ³           ³   ³   ³   ÃÄÄÄflutter
+³   ³           ³   ³   ³   ³       CMakeLists.txt
+³   ³           ³   ³   ³   ³       
+³   ³           ³   ³   ³   ÀÄÄÄrunner
+³   ³           ³   ³   ³       ³   flutter_window.h
+³   ³           ³   ³   ³       ³   main.cpp
+³   ³           ³   ³   ³       ³   Runner.rc
+³   ³           ³   ³   ³       ³   resource.h
+³   ³           ³   ³   ³       ³   win32_window.cpp
+³   ³           ³   ³   ³       ³   win32_window.h
+³   ³           ³   ³   ³       ³   CMakeLists.txt
+³   ³           ³   ³   ³       ³   runner.exe.manifest
+³   ³           ³   ³   ³       ³   utils.cpp
+³   ³           ³   ³   ³       ³   utils.h
+³   ³           ³   ³   ³       ³   flutter_window.cpp
+³   ³           ³   ³   ³       ³   
+³   ³           ³   ³   ³       ÀÄÄÄresources
+³   ³           ³   ³   ³               app_icon.ico
+³   ³           ³   ³   ³               
+³   ³           ³   ³   ÃÄÄÄlib
+³   ³           ³   ³   ³       main.dart
+³   ³           ³   ³   ³       firebase_options.dart
+³   ³           ³   ³   ³       
+³   ³           ³   ³   ÃÄÄÄandroid
+³   ³           ³   ³   ³   ³   settings.gradle
+³   ³           ³   ³   ³   ³   gradle.properties
+³   ³           ³   ³   ³   ³   build.gradle
+³   ³           ³   ³   ³   ³   
+³   ³           ³   ³   ³   ÃÄÄÄgradle
+³   ³           ³   ³   ³   ³   ÀÄÄÄwrapper
+³   ³           ³   ³   ³   ³           gradle-wrapper.properties
+³   ³           ³   ³   ³   ³           
+³   ³           ³   ³   ³   ÀÄÄÄapp
+³   ³           ³   ³   ³       ³   google-services.json
+³   ³           ³   ³   ³       ³   build.gradle
+³   ³           ³   ³   ³       ³   
+³   ³           ³   ³   ³       ÀÄÄÄsrc
+³   ³           ³   ³   ³           ÃÄÄÄdebug
+³   ³           ³   ³   ³           ³       AndroidManifest.xml
+³   ³           ³   ³   ³           ³       
+³   ³           ³   ³   ³           ÃÄÄÄmain
+³   ³           ³   ³   ³           ³   ³   AndroidManifest.xml
+³   ³           ³   ³   ³           ³   ³   
+³   ³           ³   ³   ³           ³   ÃÄÄÄkotlin
+³   ³           ³   ³   ³           ³   ³   ÀÄÄÄio
+³   ³           ³   ³   ³           ³   ³       ÀÄÄÄflutter
+³   ³           ³   ³   ³           ³   ³           ÀÄÄÄplugins
+³   ³           ³   ³   ³           ³   ³               ÀÄÄÄfirebasecoreexample
+³   ³           ³   ³   ³           ³   ³                       MainActivity.kt
+³   ³           ³   ³   ³           ³   ³                       
+³   ³           ³   ³   ³           ³   ÃÄÄÄjava
+³   ³           ³   ³   ³           ³   ³   ÀÄÄÄio
+³   ³           ³   ³   ³           ³   ³       ÀÄÄÄflutter
+³   ³           ³   ³   ³           ³   ³           ÀÄÄÄplugins
+³   ³           ³   ³   ³           ³   ÀÄÄÄres
+³   ³           ³   ³   ³           ³       ÃÄÄÄmipmap-xhdpi
+³   ³           ³   ³   ³           ³       ³       ic_launcher.png
+³   ³           ³   ³   ³           ³       ³       
+³   ³           ³   ³   ³           ³       ÃÄÄÄdrawable-v21
+³   ³           ³   ³   ³           ³       ³       launch_background.xml
+³   ³           ³   ³   ³           ³       ³       
+³   ³           ³   ³   ³           ³       ÃÄÄÄvalues
+³   ³           ³   ³   ³           ³       ³       styles.xml
+³   ³           ³   ³   ³           ³       ³       
+³   ³           ³   ³   ³           ³       ÃÄÄÄvalues-night
+³   ³           ³   ³   ³           ³       ³       styles.xml
+³   ³           ³   ³   ³           ³       ³       
+³   ³           ³   ³   ³           ³       ÃÄÄÄmipmap-xxhdpi
+³   ³           ³   ³   ³           ³       ³       ic_launcher.png
+³   ³           ³   ³   ³           ³       ³       
+³   ³           ³   ³   ³           ³       ÃÄÄÄmipmap-xxxhdpi
+³   ³           ³   ³   ³           ³       ³       ic_launcher.png
+³   ³           ³   ³   ³           ³       ³       
+³   ³           ³   ³   ³           ³       ÃÄÄÄdrawable
+³   ³           ³   ³   ³           ³       ³       launch_background.xml
+³   ³           ³   ³   ³           ³       ³       
+³   ³           ³   ³   ³           ³       ÃÄÄÄmipmap-hdpi
+³   ³           ³   ³   ³           ³       ³       ic_launcher.png
+³   ³           ³   ³   ³           ³       ³       
+³   ³           ³   ³   ³           ³       ÀÄÄÄmipmap-mdpi
+³   ³           ³   ³   ³           ³               ic_launcher.png
+³   ³           ³   ³   ³           ³               
+³   ³           ³   ³   ³           ÀÄÄÄprofile
+³   ³           ³   ³   ³                   AndroidManifest.xml
+³   ³           ³   ³   ³                   
+³   ³           ³   ³   ÃÄÄÄios
+³   ³           ³   ³   ³   ³   Podfile
+³   ³           ³   ³   ³   ³   
+³   ³           ³   ³   ³   ÃÄÄÄFlutter
+³   ³           ³   ³   ³   ³       AppFrameworkInfo.plist
+³   ³           ³   ³   ³   ³       Release.xcconfig
+³   ³           ³   ³   ³   ³       Debug.xcconfig
+³   ³           ³   ³   ³   ³       
+³   ³           ³   ³   ³   ÃÄÄÄRunner.xcodeproj
+³   ³           ³   ³   ³   ³   ³   project.pbxproj
+³   ³           ³   ³   ³   ³   ³   
+³   ³           ³   ³   ³   ³   ÃÄÄÄxcshareddata
+³   ³           ³   ³   ³   ³   ³   ÀÄÄÄxcschemes
+³   ³           ³   ³   ³   ³   ³           Runner.xcscheme
+³   ³           ³   ³   ³   ³   ³           
+³   ³           ³   ³   ³   ³   ÀÄÄÄproject.xcworkspace
+³   ³           ³   ³   ³   ³       ³   contents.xcworkspacedata
+³   ³           ³   ³   ³   ³       ³   
+³   ³           ³   ³   ³   ³       ÀÄÄÄxcshareddata
+³   ³           ³   ³   ³   ³               IDEWorkspaceChecks.plist
+³   ³           ³   ³   ³   ³               
+³   ³           ³   ³   ³   ÃÄÄÄRunner
+³   ³           ³   ³   ³   ³   ³   Info.plist
+³   ³           ³   ³   ³   ³   ³   AppDelegate.m
+³   ³           ³   ³   ³   ³   ³   main.m
+³   ³           ³   ³   ³   ³   ³   AppDelegate.h
+³   ³           ³   ³   ³   ³   ³   
+³   ³           ³   ³   ³   ³   ÃÄÄÄBase.lproj
+³   ³           ³   ³   ³   ³   ³       Main.storyboard
+³   ³           ³   ³   ³   ³   ³       LaunchScreen.storyboard
+³   ³           ³   ³   ³   ³   ³       
+³   ³           ³   ³   ³   ³   ÀÄÄÄAssets.xcassets
+³   ³           ³   ³   ³   ³       ÃÄÄÄAppIcon.appiconset
+³   ³           ³   ³   ³   ³       ³       Icon-App-29x29@2x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-40x40@3x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-76x76@1x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-60x60@2x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-60x60@3x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-40x40@2x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-29x29@3x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-20x20@2x.png
+³   ³           ³   ³   ³   ³       ³       Contents.json
+³   ³           ³   ³   ³   ³       ³       Icon-App-20x20@3x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-83.5x83.5@2x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-1024x1024@1x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-20x20@1x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-40x40@1x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-29x29@1x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-76x76@2x.png
+³   ³           ³   ³   ³   ³       ³       
+³   ³           ³   ³   ³   ³       ÀÄÄÄLaunchImage.imageset
+³   ³           ³   ³   ³   ³               LaunchImage.png
+³   ³           ³   ³   ³   ³               Contents.json
+³   ³           ³   ³   ³   ³               README.md
+³   ³           ³   ³   ³   ³               LaunchImage@3x.png
+³   ³           ³   ³   ³   ³               LaunchImage@2x.png
+³   ³           ³   ³   ³   ³               
+³   ³           ³   ³   ³   ÀÄÄÄRunner.xcworkspace
+³   ³           ³   ³   ³       ³   contents.xcworkspacedata
+³   ³           ³   ³   ³       ³   
+³   ³           ³   ³   ³       ÀÄÄÄxcshareddata
+³   ³           ³   ³   ³               IDEWorkspaceChecks.plist
+³   ³           ³   ³   ³               
+³   ³           ³   ³   ÃÄÄÄweb
+³   ³           ³   ³   ³   ³   manifest.json
+³   ³           ³   ³   ³   ³   favicon.png
+³   ³           ³   ³   ³   ³   index.html
+³   ³           ³   ³   ³   ³   
+³   ³           ³   ³   ³   ÀÄÄÄicons
+³   ³           ³   ³   ³           Icon-512.png
+³   ³           ³   ³   ³           Icon-maskable-512.png
+³   ³           ³   ³   ³           Icon-maskable-192.png
+³   ³           ³   ³   ³           Icon-192.png
+³   ³           ³   ³   ³           
+³   ³           ³   ³   ÀÄÄÄmacos
+³   ³           ³   ³       ³   Podfile
+³   ³           ³   ³       ³   
+³   ³           ³   ³       ÃÄÄÄFlutter
+³   ³           ³   ³       ³       Flutter-Release.xcconfig
+³   ³           ³   ³       ³       Flutter-Debug.xcconfig
+³   ³           ³   ³       ³       
+³   ³           ³   ³       ÃÄÄÄRunner.xcodeproj
+³   ³           ³   ³       ³   ³   project.pbxproj
+³   ³           ³   ³       ³   ³   
+³   ³           ³   ³       ³   ÃÄÄÄxcshareddata
+³   ³           ³   ³       ³   ³   ÀÄÄÄxcschemes
+³   ³           ³   ³       ³   ³           Runner.xcscheme
+³   ³           ³   ³       ³   ³           
+³   ³           ³   ³       ³   ÀÄÄÄproject.xcworkspace
+³   ³           ³   ³       ³       ³   contents.xcworkspacedata
+³   ³           ³   ³       ³       ³   
+³   ³           ³   ³       ³       ÀÄÄÄxcshareddata
+³   ³           ³   ³       ³               IDEWorkspaceChecks.plist
+³   ³           ³   ³       ³               
+³   ³           ³   ³       ÃÄÄÄRunner
+³   ³           ³   ³       ³   ³   Release.entitlements
+³   ³           ³   ³       ³   ³   Info.plist
+³   ³           ³   ³       ³   ³   AppDelegate.swift
+³   ³           ³   ³       ³   ³   MainFlutterWindow.swift
+³   ³           ³   ³       ³   ³   DebugProfile.entitlements
+³   ³           ³   ³       ³   ³   
+³   ³           ³   ³       ³   ÃÄÄÄConfigs
+³   ³           ³   ³       ³   ³       Warnings.xcconfig
+³   ³           ³   ³       ³   ³       Release.xcconfig
+³   ³           ³   ³       ³   ³       Debug.xcconfig
+³   ³           ³   ³       ³   ³       AppInfo.xcconfig
+³   ³           ³   ³       ³   ³       
+³   ³           ³   ³       ³   ÃÄÄÄBase.lproj
+³   ³           ³   ³       ³   ³       MainMenu.xib
+³   ³           ³   ³       ³   ³       
+³   ³           ³   ³       ³   ÀÄÄÄAssets.xcassets
+³   ³           ³   ³       ³       ÀÄÄÄAppIcon.appiconset
+³   ³           ³   ³       ³               app_icon_32.png
+³   ³           ³   ³       ³               Contents.json
+³   ³           ³   ³       ³               app_icon_128.png
+³   ³           ³   ³       ³               app_icon_512.png
+³   ³           ³   ³       ³               app_icon_64.png
+³   ³           ³   ³       ³               app_icon_256.png
+³   ³           ³   ³       ³               app_icon_1024.png
+³   ³           ³   ³       ³               app_icon_16.png
+³   ³           ³   ³       ³               
+³   ³           ³   ³       ÀÄÄÄRunner.xcworkspace
+³   ³           ³   ³           ³   contents.xcworkspacedata
+³   ³           ³   ³           ³   
+³   ³           ³   ³           ÀÄÄÄxcshareddata
+³   ³           ³   ³                   WorkspaceSettings.xcsettings
+³   ³           ³   ³                   IDEWorkspaceChecks.plist
+³   ³           ³   ³                   
+³   ³           ³   ÃÄÄÄtest
+³   ³           ³   ³       firebase_core_test.dart
+³   ³           ³   ³       
+³   ³           ³   ÀÄÄÄmacos
+³   ³           ³       ³   firebase_core.podspec
+³   ³           ³       ³   
+³   ³           ³       ÀÄÄÄfirebase_core
+³   ³           ³           ³   Package.swift
+³   ³           ³           ³   
+³   ³           ³           ÀÄÄÄSources
+³   ³           ³               ÀÄÄÄfirebase_core
+³   ³           ³                   ³   messages.g.m
+³   ³           ³                   ³   dummy.m
+³   ³           ³                   ³   FLTFirebasePluginRegistry.m
+³   ³           ³                   ³   FLTFirebasePlugin.m
+³   ³           ³                   ³   FLTFirebaseCorePlugin.m
+³   ³           ³                   ³   
+³   ³           ³                   ÃÄÄÄResources
+³   ³           ³                   ÀÄÄÄinclude
+³   ³           ³                       ³   dummy.h
+³   ³           ³                       ³   
+³   ³           ³                       ÀÄÄÄfirebase_core
+³   ³           ³                               FLTFirebasePluginRegistry.h
+³   ³           ³                               FLTFirebasePlugin.h
+³   ³           ³                               FLTFirebaseCorePlugin.h
+³   ³           ³                               messages.g.h
+³   ³           ³                               
+³   ³           ÃÄÄÄflutter_secure_storage_windows
+³   ³           ³   ³   analysis_options.yaml
+³   ³           ³   ³   pubspec.yaml
+³   ³           ³   ³   README.md
+³   ³           ³   ³   CHANGELOG.md
+³   ³           ³   ³   LICENSE
+³   ³           ³   ³   
+³   ³           ³   ÃÄÄÄwindows
+³   ³           ³   ³   ³   flutter_secure_storage_windows_plugin.cpp
+³   ³           ³   ³   ³   CMakeLists.txt
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÀÄÄÄinclude
+³   ³           ³   ³       ÀÄÄÄflutter_secure_storage_windows
+³   ³           ³   ³               flutter_secure_storage_windows_plugin.h
+³   ³           ³   ³               
+³   ³           ³   ÃÄÄÄlib
+³   ³           ³   ³   ³   flutter_secure_storage_windows.dart
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÀÄÄÄsrc
+³   ³           ³   ³           flutter_secure_storage_windows_stub.dart
+³   ³           ³   ³           flutter_secure_storage_windows_ffi.dart
+³   ³           ³   ³           
+³   ³           ³   ÃÄÄÄexample
+³   ³           ³   ³   ³   analysis_options.yaml
+³   ³           ³   ³   ³   pubspec.yaml
+³   ³           ³   ³   ³   README.md
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÃÄÄÄwindows
+³   ³           ³   ³   ³   ³   CMakeLists.txt
+³   ³           ³   ³   ³   ³   
+³   ³           ³   ³   ³   ÃÄÄÄflutter
+³   ³           ³   ³   ³   ³       generated_plugin_registrant.h
+³   ³           ³   ³   ³   ³       generated_plugins.cmake
+³   ³           ³   ³   ³   ³       CMakeLists.txt
+³   ³           ³   ³   ³   ³       generated_plugin_registrant.cc
+³   ³           ³   ³   ³   ³       
+³   ³           ³   ³   ³   ÀÄÄÄrunner
+³   ³           ³   ³   ³       ³   flutter_window.h
+³   ³           ³   ³   ³       ³   main.cpp
+³   ³           ³   ³   ³       ³   Runner.rc
+³   ³           ³   ³   ³       ³   resource.h
+³   ³           ³   ³   ³       ³   win32_window.cpp
+³   ³           ³   ³   ³       ³   win32_window.h
+³   ³           ³   ³   ³       ³   CMakeLists.txt
+³   ³           ³   ³   ³       ³   runner.exe.manifest
+³   ³           ³   ³   ³       ³   utils.cpp
+³   ³           ³   ³   ³       ³   utils.h
+³   ³           ³   ³   ³       ³   flutter_window.cpp
+³   ³           ³   ³   ³       ³   
+³   ³           ³   ³   ³       ÀÄÄÄresources
+³   ³           ³   ³   ³               app_icon.ico
+³   ³           ³   ³   ³               
+³   ³           ³   ³   ÃÄÄÄlib
+³   ³           ³   ³   ³       main.dart
+³   ³           ³   ³   ³       
+³   ³           ³   ³   ÀÄÄÄintegration_test
+³   ³           ³   ³           app_test.dart
+³   ³           ³   ³           
+³   ³           ³   ÀÄÄÄtest
+³   ³           ³           unit_test.dart
+³   ³           ³           
+³   ³           ÃÄÄÄgeolocator_windows
+³   ³           ³   ³   analysis_options.yaml
+³   ³           ³   ³   pubspec.yaml
+³   ³           ³   ³   README.md
+³   ³           ³   ³   AUTHORS
+³   ³           ³   ³   CHANGELOG.md
+³   ³           ³   ³   LICENSE
+³   ³           ³   ³   
+³   ³           ³   ÃÄÄÄwindows
+³   ³           ³   ³   ³   geolocator_enums.h
+³   ³           ³   ³   ³   geolocator_plugin.cpp
+³   ³           ³   ³   ³   geolocator_windows.cpp
+³   ³           ³   ³   ³   geolocator_plugin.h
+³   ³           ³   ³   ³   CMakeLists.txt
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÀÄÄÄinclude
+³   ³           ³   ³       ÀÄÄÄgeolocator_windows
+³   ³           ³   ³               geolocator_windows.h
+³   ³           ³   ³               
+³   ³           ³   ÀÄÄÄexample
+³   ³           ³       ³   pubspec.yaml
+³   ³           ³       ³   README.md
+³   ³           ³       ³   
+³   ³           ³       ÃÄÄÄwindows
+³   ³           ³       ³   ³   CMakeLists.txt
+³   ³           ³       ³   ³   
+³   ³           ³       ³   ÃÄÄÄflutter
+³   ³           ³       ³   ³       generated_plugin_registrant.h
+³   ³           ³       ³   ³       generated_plugins.cmake
+³   ³           ³       ³   ³       CMakeLists.txt
+³   ³           ³       ³   ³       generated_plugin_registrant.cc
+³   ³           ³       ³   ³       
+³   ³           ³       ³   ÀÄÄÄrunner
+³   ³           ³       ³       ³   flutter_window.h
+³   ³           ³       ³       ³   main.cpp
+³   ³           ³       ³       ³   Runner.rc
+³   ³           ³       ³       ³   resource.h
+³   ³           ³       ³       ³   win32_window.cpp
+³   ³           ³       ³       ³   win32_window.h
+³   ³           ³       ³       ³   CMakeLists.txt
+³   ³           ³       ³       ³   runner.exe.manifest
+³   ³           ³       ³       ³   utils.cpp
+³   ³           ³       ³       ³   utils.h
+³   ³           ³       ³       ³   flutter_window.cpp
+³   ³           ³       ³       ³   
+³   ³           ³       ³       ÀÄÄÄresources
+³   ³           ³       ³               app_icon.ico
+³   ³           ³       ³               
+³   ³           ³       ÃÄÄÄlib
+³   ³           ³       ³       main.dart
+³   ³           ³       ³       
+³   ³           ³       ÀÄÄÄres
+³   ³           ³           ÀÄÄÄimages
+³   ³           ³                   poweredByBaseflowLogoLight@3x.png
+³   ³           ³                   poweredByBaseflowLogoLight@2x.png
+³   ³           ³                   poweredByBaseflowLogoLight_2020-06-23.zip
+³   ³           ³                   poweredByBaseflowLogoLight.png
+³   ³           ³                   baseflow_logo_def_light-02.png
+³   ³           ³                   
+³   ³           ÃÄÄÄpackage_info_plus
+³   ³           ³   ³   pubspec.yaml
+³   ³           ³   ³   README.md
+³   ³           ³   ³   CHANGELOG.md
+³   ³           ³   ³   LICENSE
+³   ³           ³   ³   
+³   ³           ³   ÃÄÄÄlib
+³   ³           ³   ³   ³   package_info_plus.dart
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÀÄÄÄsrc
+³   ³           ³   ³           file_version_info.dart
+³   ³           ³   ³           file_attribute.dart
+³   ³           ³   ³           package_info_plus_linux.dart
+³   ³           ³   ³           package_info_plus_web.dart
+³   ³           ³   ³           package_info_plus_macos.dart
+³   ³           ³   ³           package_info_plus_windows.dart
+³   ³           ³   ³           
+³   ³           ³   ÃÄÄÄandroid
+³   ³           ³   ³   ³   settings.gradle
+³   ³           ³   ³   ³   gradle.properties
+³   ³           ³   ³   ³   build.gradle
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÃÄÄÄsrc
+³   ³           ³   ³   ³   ÀÄÄÄmain
+³   ³           ³   ³   ³       ³   AndroidManifest.xml
+³   ³           ³   ³   ³       ³   
+³   ³           ³   ³   ³       ÀÄÄÄkotlin
+³   ³           ³   ³   ³           ÀÄÄÄdev
+³   ³           ³   ³   ³               ÀÄÄÄfluttercommunity
+³   ³           ³   ³   ³                   ÀÄÄÄplus
+³   ³           ³   ³   ³                       ÀÄÄÄpackageinfo
+³   ³           ³   ³   ³                               PackageInfoPlugin.kt
+³   ³           ³   ³   ³                               
+³   ³           ³   ³   ÀÄÄÄgradle
+³   ³           ³   ³       ÀÄÄÄwrapper
+³   ³           ³   ³               gradle-wrapper.properties
+³   ³           ³   ³               
+³   ³           ³   ÃÄÄÄios
+³   ³           ³   ³   ³   package_info_plus.podspec
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÀÄÄÄpackage_info_plus
+³   ³           ³   ³       ³   Package.swift
+³   ³           ³   ³       ³   
+³   ³           ³   ³       ÀÄÄÄSources
+³   ³           ³   ³           ÀÄÄÄpackage_info_plus
+³   ³           ³   ³               ³   FPPPackageInfoPlusPlugin.m
+³   ³           ³   ³               ³   PrivacyInfo.xcprivacy
+³   ³           ³   ³               ³   
+³   ³           ³   ³               ÀÄÄÄinclude
+³   ³           ³   ³                   ÀÄÄÄpackage_info_plus
+³   ³           ³   ³                           FPPPackageInfoPlusPlugin.h
+³   ³           ³   ³                           
+³   ³           ³   ÃÄÄÄexample
+³   ³           ³   ³   ³   build.yaml
+³   ³           ³   ³   ³   analysis_options.yaml
+³   ³           ³   ³   ³   pubspec.yaml
+³   ³           ³   ³   ³   README.md
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÃÄÄÄwindows
+³   ³           ³   ³   ³   ³   CMakeLists.txt
+³   ³           ³   ³   ³   ³   
+³   ³           ³   ³   ³   ÃÄÄÄflutter
+³   ³           ³   ³   ³   ³       CMakeLists.txt
+³   ³           ³   ³   ³   ³       
+³   ³           ³   ³   ³   ÀÄÄÄrunner
+³   ³           ³   ³   ³       ³   flutter_window.h
+³   ³           ³   ³   ³       ³   main.cpp
+³   ³           ³   ³   ³       ³   Runner.rc
+³   ³           ³   ³   ³       ³   resource.h
+³   ³           ³   ³   ³       ³   win32_window.cpp
+³   ³           ³   ³   ³       ³   win32_window.h
+³   ³           ³   ³   ³       ³   CMakeLists.txt
+³   ³           ³   ³   ³       ³   runner.exe.manifest
+³   ³           ³   ³   ³       ³   utils.cpp
+³   ³           ³   ³   ³       ³   utils.h
+³   ³           ³   ³   ³       ³   flutter_window.cpp
+³   ³           ³   ³   ³       ³   
+³   ³           ³   ³   ³       ÀÄÄÄresources
+³   ³           ³   ³   ³               app_icon.ico
+³   ³           ³   ³   ³               
+³   ³           ³   ³   ÃÄÄÄlib
+³   ³           ³   ³   ³       main.dart
+³   ³           ³   ³   ³       
+³   ³           ³   ³   ÃÄÄÄandroid
+³   ³           ³   ³   ³   ³   settings.gradle
+³   ³           ³   ³   ³   ³   gradle.properties
+³   ³           ³   ³   ³   ³   build.gradle
+³   ³           ³   ³   ³   ³   
+³   ³           ³   ³   ³   ÃÄÄÄgradle
+³   ³           ³   ³   ³   ³   ÀÄÄÄwrapper
+³   ³           ³   ³   ³   ³           gradle-wrapper.properties
+³   ³           ³   ³   ³   ³           
+³   ³           ³   ³   ³   ÀÄÄÄapp
+³   ³           ³   ³   ³       ³   build.gradle
+³   ³           ³   ³   ³       ³   
+³   ³           ³   ³   ³       ÃÄÄÄsrc
+³   ³           ³   ³   ³       ³   ÃÄÄÄmain
+³   ³           ³   ³   ³       ³   ³   ³   AndroidManifest.xml
+³   ³           ³   ³   ³       ³   ³   ³   
+³   ³           ³   ³   ³       ³   ³   ÃÄÄÄjava
+³   ³           ³   ³   ³       ³   ³   ³   ÀÄÄÄio
+³   ³           ³   ³   ³       ³   ³   ³       ÀÄÄÄflutter
+³   ³           ³   ³   ³       ³   ³   ³           ÀÄÄÄplugins
+³   ³           ³   ³   ³       ³   ³   ÀÄÄÄres
+³   ³           ³   ³   ³       ³   ³       ÃÄÄÄmipmap-xhdpi
+³   ³           ³   ³   ³       ³   ³       ³       ic_launcher.png
+³   ³           ³   ³   ³       ³   ³       ³       
+³   ³           ³   ³   ³       ³   ³       ÃÄÄÄmipmap-xxhdpi
+³   ³           ³   ³   ³       ³   ³       ³       ic_launcher.png
+³   ³           ³   ³   ³       ³   ³       ³       
+³   ³           ³   ³   ³       ³   ³       ÃÄÄÄmipmap-xxxhdpi
+³   ³           ³   ³   ³       ³   ³       ³       ic_launcher.png
+³   ³           ³   ³   ³       ³   ³       ³       
+³   ³           ³   ³   ³       ³   ³       ÃÄÄÄmipmap-hdpi
+³   ³           ³   ³   ³       ³   ³       ³       ic_launcher.png
+³   ³           ³   ³   ³       ³   ³       ³       
+³   ³           ³   ³   ³       ³   ³       ÀÄÄÄmipmap-mdpi
+³   ³           ³   ³   ³       ³   ³               ic_launcher.png
+³   ³           ³   ³   ³       ³   ³               
+³   ³           ³   ³   ³       ³   ÀÄÄÄandroidTest
+³   ³           ³   ³   ³       ³       ÀÄÄÄjava
+³   ³           ³   ³   ³       ³           ÀÄÄÄio
+³   ³           ³   ³   ³       ³               ÀÄÄÄflutter
+³   ³           ³   ³   ³       ³                   ÀÄÄÄplugins
+³   ³           ³   ³   ³       ³                       ÀÄÄÄpackageinfoexample
+³   ³           ³   ³   ³       ³                               EmbedderV1ActivityTest.java
+³   ³           ³   ³   ³       ³                               MainActivityTest.java
+³   ³           ³   ³   ³       ³                               
+³   ³           ³   ³   ³       ÀÄÄÄgradle
+³   ³           ³   ³   ³           ÀÄÄÄwrapper
+³   ³           ³   ³   ³                   gradle-wrapper.properties
+³   ³           ³   ³   ³                   
+³   ³           ³   ³   ÃÄÄÄlinux
+³   ³           ³   ³   ³   ³   my_application.cc
+³   ³           ³   ³   ³   ³   my_application.h
+³   ³           ³   ³   ³   ³   CMakeLists.txt
+³   ³           ³   ³   ³   ³   main.cc
+³   ³           ³   ³   ³   ³   
+³   ³           ³   ³   ³   ÀÄÄÄflutter
+³   ³           ³   ³   ³           CMakeLists.txt
+³   ³           ³   ³   ³           
+³   ³           ³   ³   ÃÄÄÄios
+³   ³           ³   ³   ³   ÃÄÄÄFlutter
+³   ³           ³   ³   ³   ³       AppFrameworkInfo.plist
+³   ³           ³   ³   ³   ³       Release.xcconfig
+³   ³           ³   ³   ³   ³       Debug.xcconfig
+³   ³           ³   ³   ³   ³       
+³   ³           ³   ³   ³   ÃÄÄÄRunner.xcodeproj
+³   ³           ³   ³   ³   ³   ³   project.pbxproj
+³   ³           ³   ³   ³   ³   ³   
+³   ³           ³   ³   ³   ³   ÃÄÄÄxcshareddata
+³   ³           ³   ³   ³   ³   ³   ÀÄÄÄxcschemes
+³   ³           ³   ³   ³   ³   ³           Runner.xcscheme
+³   ³           ³   ³   ³   ³   ³           
+³   ³           ³   ³   ³   ³   ÀÄÄÄproject.xcworkspace
+³   ³           ³   ³   ³   ³       ³   contents.xcworkspacedata
+³   ³           ³   ³   ³   ³       ³   
+³   ³           ³   ³   ³   ³       ÀÄÄÄxcshareddata
+³   ³           ³   ³   ³   ³           ³   WorkspaceSettings.xcsettings
+³   ³           ³   ³   ³   ³           ³   IDEWorkspaceChecks.plist
+³   ³           ³   ³   ³   ³           ³   
+³   ³           ³   ³   ³   ³           ÀÄÄÄswiftpm
+³   ³           ³   ³   ³   ³               ÀÄÄÄconfiguration
+³   ³           ³   ³   ³   ÃÄÄÄRunner
+³   ³           ³   ³   ³   ³   ³   Info.plist
+³   ³           ³   ³   ³   ³   ³   AppDelegate.swift
+³   ³           ³   ³   ³   ³   ³   Runner-Bridging-Header.h
+³   ³           ³   ³   ³   ³   ³   
+³   ³           ³   ³   ³   ³   ÃÄÄÄBase.lproj
+³   ³           ³   ³   ³   ³   ³       Main.storyboard
+³   ³           ³   ³   ³   ³   ³       LaunchScreen.storyboard
+³   ³           ³   ³   ³   ³   ³       
+³   ³           ³   ³   ³   ³   ÀÄÄÄAssets.xcassets
+³   ³           ³   ³   ³   ³       ÃÄÄÄAppIcon.appiconset
+³   ³           ³   ³   ³   ³       ³       Icon-App-29x29@2x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-40x40@3x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-76x76@1x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-60x60@2x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-60x60@3x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-40x40@2x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-29x29@3x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-20x20@2x.png
+³   ³           ³   ³   ³   ³       ³       Contents.json
+³   ³           ³   ³   ³   ³       ³       Icon-App-20x20@3x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-83.5x83.5@2x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-1024x1024@1x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-20x20@1x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-40x40@1x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-29x29@1x.png
+³   ³           ³   ³   ³   ³       ³       Icon-App-76x76@2x.png
+³   ³           ³   ³   ³   ³       ³       
+³   ³           ³   ³   ³   ³       ÀÄÄÄLaunchImage.imageset
+³   ³           ³   ³   ³   ³               LaunchImage.png
+³   ³           ³   ³   ³   ³               Contents.json
+³   ³           ³   ³   ³   ³               README.md
+³   ³           ³   ³   ³   ³               LaunchImage@3x.png
+³   ³           ³   ³   ³   ³               LaunchImage@2x.png
+³   ³           ³   ³   ³   ³               
+³   ³           ³   ³   ³   ÃÄÄÄRunnerTests
+³   ³           ³   ³   ³   ³       RunnerTests.swift
+³   ³           ³   ³   ³   ³       
+³   ³           ³   ³   ³   ÀÄÄÄRunner.xcworkspace
+³   ³           ³   ³   ³       ³   contents.xcworkspacedata
+³   ³           ³   ³   ³       ³   
+³   ³           ³   ³   ³       ÀÄÄÄxcshareddata
+³   ³           ³   ³   ³           ³   WorkspaceSettings.xcsettings
+³   ³           ³   ³   ³           ³   IDEWorkspaceChecks.plist
+³   ³           ³   ³   ³           ³   
+³   ³           ³   ³   ³           ÀÄÄÄswiftpm
+³   ³           ³   ³   ³               ÀÄÄÄconfiguration
+³   ³           ³   ³   ÃÄÄÄweb
+³   ³           ³   ³   ³   ³   manifest.json
+³   ³           ³   ³   ³   ³   favicon.png
+³   ³           ³   ³   ³   ³   index.html
+³   ³           ³   ³   ³   ³   
+³   ³           ³   ³   ³   ÀÄÄÄicons
+³   ³           ³   ³   ³           Icon-512.png
+³   ³           ³   ³   ³           Icon-maskable-512.png
+³   ³           ³   ³   ³           Icon-maskable-192.png
+³   ³           ³   ³   ³           Icon-192.png
+³   ³           ³   ³   ³           
+³   ³           ³   ³   ÃÄÄÄmacos
+³   ³           ³   ³   ³   ÃÄÄÄFlutter
+³   ³           ³   ³   ³   ³       Flutter-Release.xcconfig
+³   ³           ³   ³   ³   ³       Flutter-Debug.xcconfig
+³   ³           ³   ³   ³   ³       
+³   ³           ³   ³   ³   ÃÄÄÄRunner.xcodeproj
+³   ³           ³   ³   ³   ³   ³   project.pbxproj
+³   ³           ³   ³   ³   ³   ³   
+³   ³           ³   ³   ³   ³   ÃÄÄÄxcshareddata
+³   ³           ³   ³   ³   ³   ³   ÀÄÄÄxcschemes
+³   ³           ³   ³   ³   ³   ³           Runner.xcscheme
+³   ³           ³   ³   ³   ³   ³           
+³   ³           ³   ³   ³   ³   ÀÄÄÄproject.xcworkspace
+³   ³           ³   ³   ³   ³       ÀÄÄÄxcshareddata
+³   ³           ³   ³   ³   ³           ³   IDEWorkspaceChecks.plist
+³   ³           ³   ³   ³   ³           ³   
+³   ³           ³   ³   ³   ³           ÀÄÄÄswiftpm
+³   ³           ³   ³   ³   ³               ÀÄÄÄconfiguration
+³   ³           ³   ³   ³   ÃÄÄÄRunner
+³   ³           ³   ³   ³   ³   ³   Release.entitlements
+³   ³           ³   ³   ³   ³   ³   Info.plist
+³   ³           ³   ³   ³   ³   ³   AppDelegate.swift
+³   ³           ³   ³   ³   ³   ³   MainFlutterWindow.swift
+³   ³           ³   ³   ³   ³   ³   DebugProfile.entitlements
+³   ³           ³   ³   ³   ³   ³   
+³   ³           ³   ³   ³   ³   ÃÄÄÄConfigs
+³   ³           ³   ³   ³   ³   ³       Warnings.xcconfig
+³   ³           ³   ³   ³   ³   ³       Release.xcconfig
+³   ³           ³   ³   ³   ³   ³       Debug.xcconfig
+³   ³           ³   ³   ³   ³   ³       AppInfo.xcconfig
+³   ³           ³   ³   ³   ³   ³       
+³   ³           ³   ³   ³   ³   ÃÄÄÄBase.lproj
+³   ³           ³   ³   ³   ³   ³       MainMenu.xib
+³   ³           ³   ³   ³   ³   ³       
+³   ³           ³   ³   ³   ³   ÀÄÄÄAssets.xcassets
+³   ³           ³   ³   ³   ³       ÀÄÄÄAppIcon.appiconset
+³   ³           ³   ³   ³   ³               app_icon_32.png
+³   ³           ³   ³   ³   ³               Contents.json
+³   ³           ³   ³   ³   ³               app_icon_128.png
+³   ³           ³   ³   ³   ³               app_icon_512.png
+³   ³           ³   ³   ³   ³               app_icon_64.png
+³   ³           ³   ³   ³   ³               app_icon_256.png
+³   ³           ³   ³   ³   ³               app_icon_1024.png
+³   ³           ³   ³   ³   ³               app_icon_16.png
+³   ³           ³   ³   ³   ³               
+³   ³           ³   ³   ³   ÃÄÄÄRunnerTests
+³   ³           ³   ³   ³   ³       RunnerTests.swift
+³   ³           ³   ³   ³   ³       
+³   ³           ³   ³   ³   ÀÄÄÄRunner.xcworkspace
+³   ³           ³   ³   ³       ³   contents.xcworkspacedata
+³   ³           ³   ³   ³       ³   
+³   ³           ³   ³   ³       ÀÄÄÄxcshareddata
+³   ³           ³   ³   ³           ³   IDEWorkspaceChecks.plist
+³   ³           ³   ³   ³           ³   
+³   ³           ³   ³   ³           ÀÄÄÄswiftpm
+³   ³           ³   ³   ³               ÀÄÄÄconfiguration
+³   ³           ³   ³   ÀÄÄÄintegration_test
+³   ³           ³   ³           package_info_plus_test.dart
+³   ³           ³   ³           package_info_plus_web_test.mocks.dart
+³   ³           ³   ³           driver.dart
+³   ³           ³   ³           package_info_plus_web_test.dart
+³   ³           ³   ³           
+³   ³           ³   ÃÄÄÄtest
+³   ³           ³   ³       package_info_test.dart
+³   ³           ³   ³       package_info_plus_linux_test.dart
+³   ³           ³   ³       package_info_plus_windows_test.dart
+³   ³           ³   ³       
+³   ³           ³   ÀÄÄÄmacos
+³   ³           ³       ³   package_info_plus.podspec
+³   ³           ³       ³   
+³   ³           ³       ÀÄÄÄpackage_info_plus
+³   ³           ³           ³   Package.swift
+³   ³           ³           ³   
+³   ³           ³           ÀÄÄÄSources
+³   ³           ³               ÀÄÄÄpackage_info_plus
+³   ³           ³                   ³   FPPPackageInfoPlusPlugin.m
+³   ³           ³                   ³   PrivacyInfo.xcprivacy
+³   ³           ³                   ³   
+³   ³           ³                   ÀÄÄÄinclude
+³   ³           ³                       ÀÄÄÄpackage_info_plus
+³   ³           ³                               FPPPackageInfoPlusPlugin.h
+³   ³           ³                               
+³   ³           ÃÄÄÄpath_provider_windows
+³   ³           ³   ³   pubspec.yaml
+³   ³           ³   ³   CHANGELOG.md
+³   ³           ³   ³   LICENSE
+³   ³           ³   ³   AUTHORS
+³   ³           ³   ³   README.md
+³   ³           ³   ³   
+³   ³           ³   ÃÄÄÄexample
+³   ³           ³   ³   ³   pubspec.yaml
+³   ³           ³   ³   ³   README.md
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÃÄÄÄintegration_test
+³   ³           ³   ³   ³       path_provider_test.dart
+³   ³           ³   ³   ³       
+³   ³           ³   ³   ÃÄÄÄtest_driver
+³   ³           ³   ³   ³       integration_test.dart
+³   ³           ³   ³   ³       
+³   ³           ³   ³   ÃÄÄÄlib
+³   ³           ³   ³   ³       main.dart
+³   ³           ³   ³   ³       
+³   ³           ³   ³   ÀÄÄÄwindows
+³   ³           ³   ³       ³   CMakeLists.txt
+³   ³           ³   ³       ³   
+³   ³           ³   ³       ÃÄÄÄflutter
+³   ³           ³   ³       ³       generated_plugins.cmake
+³   ³           ³   ³       ³       CMakeLists.txt
+³   ³           ³   ³       ³       
+³   ³           ³   ³       ÀÄÄÄrunner
+³   ³           ³   ³           ³   flutter_window.h
+³   ³           ³   ³           ³   run_loop.h
+³   ³           ³   ³           ³   flutter_window.cpp
+³   ³           ³   ³           ³   run_loop.cpp
+³   ³           ³   ³           ³   Runner.rc
+³   ³           ³   ³           ³   win32_window.cpp
+³   ³           ³   ³           ³   CMakeLists.txt
+³   ³           ³   ³           ³   utils.cpp
+³   ³           ³   ³           ³   main.cpp
+³   ³           ³   ³           ³   resource.h
+³   ³           ³   ³           ³   utils.h
+³   ³           ³   ³           ³   win32_window.h
+³   ³           ³   ³           ³   runner.exe.manifest
+³   ³           ³   ³           ³   
+³   ³           ³   ³           ÀÄÄÄresources
+³   ³           ³   ³                   app_icon.ico
+³   ³           ³   ³                   
+³   ³           ³   ÃÄÄÄtest
+³   ³           ³   ³       guid_test.dart
+³   ³           ³   ³       path_provider_windows_test.dart
+³   ³           ³   ³       
+³   ³           ³   ÀÄÄÄlib
+³   ³           ³       ³   path_provider_windows.dart
+³   ³           ³       ³   
+³   ³           ³       ÀÄÄÄsrc
+³   ³           ³               win32_wrappers.dart
+³   ³           ³               folders.dart
+³   ³           ³               path_provider_windows_stub.dart
+³   ³           ³               path_provider_windows_real.dart
+³   ³           ³               guid.dart
+³   ³           ³               folders_stub.dart
+³   ³           ³               
+³   ³           ÃÄÄÄshared_preferences_windows
+³   ³           ³   ³   AUTHORS
+³   ³           ³   ³   CHANGELOG.md
+³   ³           ³   ³   README.md
+³   ³           ³   ³   LICENSE
+³   ³           ³   ³   pubspec.yaml
+³   ³           ³   ³   
+³   ³           ³   ÃÄÄÄexample
+³   ³           ³   ³   ³   AUTHORS
+³   ³           ³   ³   ³   README.md
+³   ³           ³   ³   ³   LICENSE
+³   ³           ³   ³   ³   pubspec.yaml
+³   ³           ³   ³   ³   
+³   ³           ³   ³   ÃÄÄÄintegration_test
+³   ³           ³   ³   ³       shared_preferences_test.dart
+³   ³           ³   ³   ³       
+³   ³           ³   ³   ÃÄÄÄtest_driver
+³   ³           ³   ³   ³       integration_test.dart
+³   ³           ³   ³   ³       
+³   ³           ³   ³   ÃÄÄÄlib
+³   ³           ³   ³   ³       main.dart
+³   ³           ³   ³   ³       
+³   ³           ³   ³   ÀÄÄÄwindows
+³   ³           ³   ³       ³   CMakeLists.txt
+³   ³           ³   ³       ³   
+³   ³           ³   ³       ÃÄÄÄflutter
+³   ³           ³   ³       ³       CMakeLists.txt
+³   ³           ³   ³       ³       generated_plugins.cmake
+³   ³           ³   ³       ³       
+³   ³           ³   ³       ÀÄÄÄrunner
+³   ³           ³   ³           ³   main.cpp
+³   ³           ³   ³           ³   run_loop.cpp
+³   ³           ³   ³           ³   CMakeLists.txt
+³   ³           ³   ³           ³   Runner.rc
+³   ³           ³   ³           ³   flutter_window.h
+³   ³           ³   ³           ³   flutter_window.cpp
+³   ³           ³   ³           ³   win32_window.h
+³   ³           ³   ³           ³   utils.h
+³   ³           ³   ³           ³   run_loop.h
+³   ³           ³   ³           ³   runner.exe.manifest
+³   ³           ³   ³           ³   resource.h
+³   ³           ³   ³           ³   win32_window.cpp
+³   ³           ³   ³           ³   utils.cpp
+³   ³           ³   ³           ³   
+³   ³           ³   ³           ÀÄÄÄresources
+³   ³           ³   ³                   app_icon.ico
+³   ³           ³   ³                   
+³   ³           ³   ÃÄÄÄlib
+³   ³           ³   ³       shared_preferences_windows.dart
+³   ³           ³   ³       
+³   ³           ³   ÀÄÄÄtest
+³   ³           ³           fake_path_provider_windows.dart
+³   ³           ³           shared_preferences_windows_async_test.dart
+³   ³           ³           legacy_shared_preferences_windows_test.dart
+³   ³           ³           
+³   ³           ÀÄÄÄurl_launcher_windows
+³   ³               ³   CHANGELOG.md
+³   ³               ³   AUTHORS
+³   ³               ³   LICENSE
+³   ³               ³   README.md
+³   ³               ³   pubspec.yaml
+³   ³               ³   
+³   ³               ÃÄÄÄtest
+³   ³               ³       url_launcher_windows_test.dart
+³   ³               ³       
+³   ³               ÃÄÄÄexample
+³   ³               ³   ³   README.md
+³   ³               ³   ³   pubspec.yaml
+³   ³               ³   ³   
+³   ³               ³   ÃÄÄÄlib
+³   ³               ³   ³       main.dart
+³   ³               ³   ³       
+³   ³               ³   ÃÄÄÄwindows
+³   ³               ³   ³   ³   CMakeLists.txt
+³   ³               ³   ³   ³   
+³   ³               ³   ³   ÃÄÄÄflutter
+³   ³               ³   ³   ³       CMakeLists.txt
+³   ³               ³   ³   ³       generated_plugins.cmake
+³   ³               ³   ³   ³       
+³   ³               ³   ³   ÀÄÄÄrunner
+³   ³               ³   ³       ³   CMakeLists.txt
+³   ³               ³   ³       ³   Runner.rc
+³   ³               ³   ³       ³   flutter_window.cpp
+³   ³               ³   ³       ³   resource.h
+³   ³               ³   ³       ³   runner.exe.manifest
+³   ³               ³   ³       ³   run_loop.cpp
+³   ³               ³   ³       ³   flutter_window.h
+³   ³               ³   ³       ³   main.cpp
+³   ³               ³   ³       ³   win32_window.h
+³   ³               ³   ³       ³   utils.h
+³   ³               ³   ³       ³   run_loop.h
+³   ³               ³   ³       ³   utils.cpp
+³   ³               ³   ³       ³   win32_window.cpp
+³   ³               ³   ³       ³   
+³   ³               ³   ³       ÀÄÄÄresources
+³   ³               ³   ³               app_icon.ico
+³   ³               ³   ³               
+³   ³               ³   ÃÄÄÄtest_driver
+³   ³               ³   ³       integration_test.dart
+³   ³               ³   ³       
+³   ³               ³   ÀÄÄÄintegration_test
+³   ³               ³           url_launcher_test.dart
+³   ³               ³           
+³   ³               ÃÄÄÄlib
+³   ³               ³   ³   url_launcher_windows.dart
+³   ³               ³   ³   
+³   ³               ³   ÀÄÄÄsrc
+³   ³               ³           messages.g.dart
+³   ³               ³           
+³   ³               ÃÄÄÄwindows
+³   ³               ³   ³   CMakeLists.txt
+³   ³               ³   ³   system_apis.h
+³   ³               ³   ³   url_launcher_plugin.cpp
+³   ³               ³   ³   url_launcher_windows.cpp
+³   ³               ³   ³   messages.g.h
+³   ³               ³   ³   messages.g.cpp
+³   ³               ³   ³   url_launcher_plugin.h
+³   ³               ³   ³   system_apis.cpp
+³   ³               ³   ³   
+³   ³               ³   ÃÄÄÄtest
+³   ³               ³   ³       url_launcher_windows_test.cpp
+³   ³               ³   ³       
+³   ³               ³   ÀÄÄÄinclude
+³   ³               ³       ÀÄÄÄurl_launcher_windows
+³   ³               ³               url_launcher_windows.h
+³   ³               ³               
+³   ³               ÀÄÄÄpigeons
+³   ³                       copyright.txt
+³   ³                       messages.dart
+³   ³                       
+³   ÀÄÄÄrunner
+³       ³   CMakeLists.txt
+³       ³   flutter_window.cpp
+³       ³   flutter_window.h
+³       ³   main.cpp
+³       ³   resource.h
+³       ³   runner.exe.manifest
+³       ³   Runner.rc
+³       ³   utils.cpp
+³       ³   utils.h
+³       ³   win32_window.cpp
+³       ³   win32_window.h
+³       ³   
+³       ÀÄÄÄresources
+³               app_icon.ico
+³               
+ÀÄÄÄ__trash_20251028

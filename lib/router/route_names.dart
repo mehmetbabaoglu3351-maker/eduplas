@@ -5,10 +5,11 @@ class RouteNames {
 
   // Giriş / kayıt akışı
   static const giris = '/giris';
+  static const kayit = '/kayit';
   static const otp = '/otp';
   static const sozlesmeKabul = '/sozlesme_kabul';
 
-  // Tek sözleşmenin içerik ekranı (asset'ten okuyan sayfa)
+  // Hukuk sayfası (asset okuma)
   static const hukukiGenelSozlesme = '/hukuk/sozlesme';
 
   // Kayıt sihirbazı adımları
@@ -20,6 +21,9 @@ class RouteNames {
 
   // Ayarlar
   static const dilAyar = '/settings/language';
+
+  // A1 – SMS kurtarma (mock)
+  static const smsKurtarma = '/sms_kurtarma';
 
   // Rol ana sayfaları (ilerisi için)
   static const ogrenciAna = '/rol/ogrenci';

@@ -8,7 +8,7 @@ import '../giris/giris_sayfasi.dart';
 import '../onay/onay_sayfasi.dart';
 import '../beklemede/beklemede_sayfasi.dart';
 import '../onay/sozlesme_kabul_sayfasi.dart';
-import '../kayit/kayit_sayfasi.dart'; // ← kayıt yoksa buraya gideceğiz
+import '../kayit/kayit_sayfasi.dart'; // kayıt yoksa buraya gideceğiz
 
 // Rol bazlı ana sayfalar
 import '../rol_ana/ogrenci_anasayfasi.dart';
@@ -70,7 +70,6 @@ class _KimlikGecidiState extends State<KimlikGecidi> {
         'durum': 'approved',
         'createdAt': FieldValue.serverTimestamp(),
         'updatedAt': FieldValue.serverTimestamp(),
-        // hukuk burada set edilmez, sözleşme ekranı set eder
       }, SetOptions(merge: true));
     } catch (e) {
       debugPrint('Profil oluşturma hatası: $e');
@@ -120,7 +119,6 @@ class _KimlikGecidiState extends State<KimlikGecidi> {
         return StreamBuilder<DocumentSnapshot<Map<String, dynamic>>>(
           stream: regRef.snapshots(),
           builder: (ctx, regSnap) {
-            // kayıt dokümanı yüklenirken
             if (regSnap.connectionState == ConnectionState.waiting) {
               return const _LoadingScaffold();
             }
@@ -146,15 +144,14 @@ class _KimlikGecidiState extends State<KimlikGecidi> {
                 var role = (userDoc['role'] ?? '').toString().trim();
 
                 // 2) Kayıt yoksa → KAYIT SAYFASI
-                // Senin kuralın: "kullanıcı kayıtlı ise giriş, kayıt yoksa kayıt sayfasına gitmeli"
                 if (!regExists && !userDocExists) {
                   return const KayitSayfasi();
                 }
 
-                // Firestore’daki durum
+                // Firestore durum alanı
                 final durum = (userDoc['durum'] ?? '').toString();
 
-                // 3) Hukuk kontrolü — sadece tek alan
+                // 3) Hukuk kontrolü — tek sözleşme
                 final bool sozlesmeKabul =
                     userDoc['sozlesmeKabul'] == true;
 
@@ -190,13 +187,12 @@ class _KimlikGecidiState extends State<KimlikGecidi> {
                   }
 
                   if (status == 'approved' && !userDocExists) {
-                    // kayıt onaylanmış ama users yok → oluştur
                     _ensureUserProfileFromRegistration(uid: uid, reg: reg);
                     return const _LoadingScaffold();
                   }
                 }
 
-                // 5) role belirle
+                // 5) rol belirle
                 if (role.isEmpty) {
                   role = (reg['requestedRole'] ?? reg['roleIntent'] ?? 'ogrenci')
                       .toString()
@@ -221,63 +217,6 @@ class _LoadingScaffold extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(child: CircularProgressIndicator()),
-    );
-  }
-}
-
-class _Placeholder extends StatelessWidget {
-  final String baslik;
-  final String aciklama;
-  const _Placeholder({required this.baslik, required this.aciklama});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('EduPlas')),
-      body: Center(
-        child: ConstrainedBox(
-          constraints: const BoxConstraints(maxWidth: 520),
-          child: Card(
-            shape: const RoundedRectangleBorder(
-              borderRadius: BorderRadius.all(Radius.circular(16)),
-            ),
-            child: Padding(
-              padding: const EdgeInsets.all(20),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  const Icon(Icons.info_outline, size: 64),
-                  const SizedBox(height: 12),
-                  Text(
-                    baslik,
-                    style: const TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w700,
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
-                  const SizedBox(height: 8),
-                  Text(
-                    aciklama,
-                    style: const TextStyle(fontSize: 14),
-                    textAlign: TextAlign.center,
-                  ),
-                  const SizedBox(height: 16),
-                  ElevatedButton.icon(
-                    onPressed: () {
-                      Navigator.of(context).push(
-                        MaterialPageRoute(builder: (_) => const OnaySayfasi()),
-                      );
-                    },
-                    icon: const Icon(Icons.verified),
-                    label: const Text('Onaylarım'),
-                  ),
-                ],
-              ),
-            ),
-          ),
-        ),
-      ),
     );
   }
 }
